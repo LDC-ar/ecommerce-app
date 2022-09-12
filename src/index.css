@@ -1,13 +1,36 @@
+/** CUSTOM PROPERTIES **/
+
+:root {
+	--first-color: #121212;
+	--second-color: #f4f4f6;
+	--third-color: #afafb4;
+	--link-color: #2573bc;
+	--new-color: #e99d0a;
+	--black-color: #000000;
+	--black-alpha-color: #0000007f;
+	--white-color: #ffffff;
+	--first-font: "Montserrat", sans-serif;
+	--second-font: "Nunito", sans-serif;
+}
+
+/* ** estilos **
+
+First-color =  fondo de navbar, footer y texto con fondo blanco
+Second-color = Icono de Apple, iconos de buscar y carrito, letras en hover, títulos de secciones, 
+Third-color = color de textos en navbar, footer y texto de algunas secciones con fondo oscuro
+Link-color = botones y enlaces llamativos
+New-color = sección de las tarjetas
+Black-color = por si se tiene q usar negro puro
+White-color = por si se tiene q usar blanco puro
+Black-alpha-color = negro con transparencia */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
