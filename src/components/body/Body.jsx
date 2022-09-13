@@ -1,11 +1,12 @@
+import React from "react";
 import "./Body.css";
 
-const Body = () => {
+function Body() {
 	return (
 		<div className="container-body">
 			<h1>Body</h1>
 		</div>
 	);
-};
+}
 
 export default Body;
