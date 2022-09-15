@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*.************** CUSTOM PROPERTIES **************.*/
 
 :root {
@@ -14,6 +15,24 @@
 }
 
 /* *********** estilos ***************
+=======
+/** CUSTOM PROPERTIES **/
+
+:root {
+	--first-color: #121212;
+	--second-color: #f4f4f6;
+	--third-color: #afafb4;
+	--link-color: #2573bc;
+	--new-color: #e99d0a;
+	--black-color: #000000;
+	--black-alpha-color: #1c1c1c;
+	--white-color: #ffffff;
+	--first-font: "Montserrat", sans-serif;
+	--second-font: "Nunito", sans-serif;
+}
+
+/* ** estilos **
+>>>>>>> dfbb57a38a9b99d7083daf0d86ebfc086a59e607
 
 First-color =  fondo de navbar, footer y texto con fondo blanco
 Second-color = Icono de Apple, iconos de buscar y carrito, letras en hover, títulos de secciones, 
@@ -25,9 +44,21 @@ White-color = por si se tiene q usar blanco puro
 Black-alpha-color = negro con transparencia */
 
 body {
+<<<<<<< HEAD
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 
+=======
+	margin: 0;
+	font-family: var(--first-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+>>>>>>> dfbb57a38a9b99d7083daf0d86ebfc086a59e607
