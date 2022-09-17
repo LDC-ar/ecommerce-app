@@ -5,9 +5,10 @@
 	--second-color: #f4f4f6;
 	--third-color: #afafb4;
 	--link-color: #2573bc;
+  --link-alpha-color: #2573bc40;
 	--new-color: #e99d0a;
 	--black-color: #000000;
-	--black-alpha-color: #0000007f;
+	--black-alpha-color: #1c1c1c79;
 	--white-color: #ffffff;
 	--first-font: "Montserrat", sans-serif;
 	--second-font: "Nunito", sans-serif;
@@ -25,12 +26,9 @@ White-color = por si se tiene q usar blanco puro
 Black-alpha-color = negro con transparencia */
 
 body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
+
