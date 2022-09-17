@@ -1,19 +1,20 @@
-/*.************** CUSTOM PROPERTIES **************.*/
+/** CUSTOM PROPERTIES **/
 
 :root {
-  --first-color: #121212;
-  --second-color: #F4F4F6;
-  --third-color: #AFAFB4;
-  --link-color: #2573BC;
-  --new-color: #E99D0A;
-  --black-color: #000000;
-  --black-alpha-color: #0000007F;
-  --white-color: #ffffff;
-  --first-font: 'Montserrat', sans-serif;
-  --second-font: 'Nunito', sans-serif;
+	--first-color: #121212;
+	--second-color: #f4f4f6;
+	--third-color: #afafb4;
+	--link-color: #2573bc;
+  --link-alpha-color: #2573bc40;
+	--new-color: #e99d0a;
+	--black-color: #000000;
+	--black-alpha-color: #1c1c1c79;
+	--white-color: #ffffff;
+	--first-font: "Montserrat", sans-serif;
+	--second-font: "Nunito", sans-serif;
 }
 
-/* *********** estilos ***************
+/* ** estilos **
 
 First-color =  fondo de navbar, footer y texto con fondo blanco
 Second-color = Icono de Apple, iconos de buscar y carrito, letras en hover, títulos de secciones, 
