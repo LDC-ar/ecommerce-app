@@ -7,7 +7,7 @@ import ButtonGde from "./components/main/ButtonGde";
 import ButtonInfo from "./components/main/ButtonInfo";
 import ButtonInfoGde from "./components/main/ButtonInfoGde";
 import SectionCard from "./components/main/SectionCard";
-import { textButton, sectionTitle } from "./components/helpers/data";
+import { textButton, sectionTitle, cardsInfo } from "./components/helpers/data";
 
 function App(props) {
 	return (
@@ -22,6 +22,7 @@ function App(props) {
 				<ButtonInfoGde />
 				<SectionCard>
 					<h3 className="section-title">{sectionTitle.title1}</h3>
+          
 				</SectionCard>
 			</Main>
 
