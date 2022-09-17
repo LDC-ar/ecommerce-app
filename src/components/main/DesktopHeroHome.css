@@ -2,33 +2,45 @@
 	margin: 0 auto;
 	width: 100%;
 	display: flex;
-}
-
-.container-DesktopHeroHome h1 {
-	margin: 0;
-	width: 60%;
-	font-size: 4rem;
+	text-align: center;
 }
 
 .col-left {
-	margin: 0;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-}
-
-.col-right {
-	margin: 0;
+	margin-top: 9rem;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
+.container-DesktopHeroHome h1 {
+	margin: 0;
+	margin-bottom: 6rem;
+	width: 90%;
+	font-size: 4.5rem;
+}
+
 .ApplePersonaWatch {
-	width: 100%;
+	width: 105%;
+	margin-left: 11rem;
+}
+
+.col-right {
+	margin-top: 9rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .AppleWatch {
-	width: 60%;
+	width: 70%;
+}
+
+.col-right p {
+	margin-top: 4rem;
+	width: 70%;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	text-align: center;
 }
