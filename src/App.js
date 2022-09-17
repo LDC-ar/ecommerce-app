@@ -11,8 +11,9 @@ import { textButton, sectionTitle, cardsInfo } from "./components/helpers/data";
 
 function App(props) {
 	return (
-		<div className="App">
+		<div>
 			<Header />
+
 			<Main>
 				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
 				<ButtonGde>{textButton.textoUno}</ButtonGde>

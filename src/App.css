@@ -1,9 +1,0 @@
-.App {
-	color: var(--second-color);
-	text-align: center;
-	font-size: 4rem;
-	padding: 0 5vw;
-	display: grid;
-	place-content: center;
-	background-color: var(--first-color);
-}
