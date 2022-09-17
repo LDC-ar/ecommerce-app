@@ -1,3 +1,48 @@
-.container-nav {
-	background: rgb(0, 0, 0);
+/* Layout */
+
+header {
+	margin: 0;
+	width: 100%;
+	height: 4rem;
+	background: var(--first-color);
 }
+
+.container-header {
+	margin: 0 auto;
+	width: 90vw;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-nav {
+	width: 283px;
+}
+
+.container-nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-nav a {
+	color: var(--third-color);
+	font-size: 1.5rem;
+}
+
+.container-icons {
+	width: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 42px;
+}
+
+.icon {
+	height: 33px;
+}
+
+/* Typography & Design */
