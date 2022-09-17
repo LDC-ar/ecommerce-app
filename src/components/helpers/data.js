@@ -40,7 +40,7 @@ export const cardsInfo = [
 		title: "Iphone SE",
 		description: "Serious power. Serious value",
 		price: "From $429",
-		img: "",
+		img: "src/components/images/iphone-se.png",
 	},
 	{
 		id: 5,
