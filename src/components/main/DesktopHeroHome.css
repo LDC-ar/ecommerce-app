@@ -1,6 +1,6 @@
 .container-DesktopHeroHome {
 	margin: 0 auto;
-	width: 100%;
+	width: 95%;
 	display: flex;
 	text-align: center;
 }
@@ -34,11 +34,13 @@
 }
 
 .AppleWatch {
+	margin-left: 10%;
 	width: 70%;
 }
 
 .col-right p {
 	margin-top: 4rem;
+	margin-left: 10%;
 	width: 70%;
 	font-size: 1.8rem;
 	line-height: 2.4rem;

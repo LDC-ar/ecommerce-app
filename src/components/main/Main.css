@@ -1,11 +1,5 @@
 main {
 	margin: 0;
-	width: 100%;
-	background: var(--first-color);
-}
-
-.container-main {
-	margin: 0 auto;
-	width: 90vw;
-	background: rgb(255, 255, 255);
+	width: 100vw;
+	background: var(--second-color);
 }
