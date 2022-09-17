@@ -1,40 +1,36 @@
 /* Layout */
 
 header {
-	margin: 0;
-	width: 100%;
 	height: 4rem;
-	background: var(--first-color);
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
 }
 
 .container-header {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
 	margin: 0 auto;
 	width: 90vw;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .container-nav {
-	width: 283px;
+	width: 15rem;
 }
 
 .container-nav ul {
+	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-}
-
-.container-nav a {
-	color: var(--third-color);
-	font-size: 1.5rem;
 }
 
 .container-icons {
-	width: 90px;
 	display: flex;
 	justify-content: space-between;
+	width: 90px;
 }
 
 .logo {
@@ -46,3 +42,12 @@ header {
 }
 
 /* Typography & Design */
+
+header {
+	background: var(--first-color);
+}
+
+.container-nav a {
+	color: var(--third-color);
+	font-size: 1.2rem;
+}
