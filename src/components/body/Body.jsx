@@ -1,10 +1,13 @@
 import React from "react";
-import "./Body.css";
+import ButtonBuy from "./ButtonBuy";
 
-function Body() {
+
+function Body(props) {
 	return (
 		<div className="container-body">
+      {props.children}
 			<h1>Body</h1>
+      <ButtonBuy>{}</ButtonBuy>
 		</div>
 	);
 }

@@ -5,5 +5,5 @@
 	padding: 0 5vw;
 	display: grid;
 	place-content: center;
-	background-color: var(--black-alpha-color);
+	background-color: var(--first-color);
 }
