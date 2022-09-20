@@ -1,0 +1,30 @@
+.container-SectionCard {
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+	padding-top: 8rem;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-SectionCard h3 {
+	font-size: 3rem;
+}
+
+.cards {
+	width: 100%;
+	margin-top: 5rem;
+	margin-bottom: 8rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.cards p {
+	background: var(--new-color);
+	width: 250px;
+	height: 500px;
+	display: grid;
+	place-content: center;
+	font-size: 3rem;
+	border-radius: 20px;
+}

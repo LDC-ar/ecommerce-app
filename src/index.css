@@ -5,6 +5,7 @@
 	--second-color: #f4f4f6;
 	--third-color: #afafb4;
 	--link-color: #2573bc;
+	--link-alpha-color: #2573bc40;
 	--new-color: #e99d0a;
 	--black-color: #000000;
 	--black-alpha-color: #1c1c1c;
@@ -24,13 +25,23 @@ Black-color = por si se tiene q usar negro puro
 White-color = por si se tiene q usar blanco puro
 Black-alpha-color = negro con transparencia */
 
+/*#####################*/
+/*       Layout        */
+/*#####################*/
 body {
+	box-sizing: border-box;
 	margin: 0;
-	font-family: var(--first-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+/*#####################*/
+/* Typography & Design */
+/*#####################*/
+html {
+	scroll-behavior: smooth;
+}
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+body {
+	color: var(--black-alpha-color);
+	font-family: var(--first-font);
 }

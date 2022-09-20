@@ -1,0 +1,61 @@
+/*#####################*/
+/*       Layout        */
+/*#####################*/
+.container-hero-iphone {
+	margin-top: -11.6%;
+	padding-top: 15rem;
+	position: relative;
+	z-index: 1;
+	background-color: var(--black-color);
+	display: flex;
+}
+
+.col-left-iphone {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 5%;
+	margin-top: 6%;
+	width: 50%;
+}
+
+.col-left-iphone span {
+	margin-bottom: -2%;
+}
+
+.col-left-iphone p {
+	margin-top: 1%;
+}
+
+.btn-hero-iphone {
+	margin-top: 3%;
+}
+
+.col-right-iphone {
+	width: 50%;
+}
+
+.IphoneProHero {
+	width: 100%;
+}
+
+/*#####################*/
+/* Typography & Design */
+/*#####################*/
+
+.col-left-iphone span {
+	color: var(--third-color);
+	font-size: 3rem;
+}
+
+.col-left-iphone h2 {
+	color: var(--second-color);
+	font-size: 5.5rem;
+}
+
+.col-left-iphone p {
+	color: var(--third-color);
+	font-size: 1.7rem;
+	line-height: 2.6rem;
+	letter-spacing: 0.04rem;
+}

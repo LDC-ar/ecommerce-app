@@ -1,0 +1,62 @@
+/*#####################*/
+/*       Layout        */
+/*#####################*/
+.container-hero-home {
+	display: flex;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 95%;
+	z-index: 0;
+}
+
+.col-left-hero-home {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 13rem;
+	width: 50%;
+}
+
+.container-hero-home h1 {
+	margin: 0;
+	margin-bottom: 6rem;
+	width: 90%;
+}
+
+.ApplePersonaWatch {
+	margin-left: 11rem;
+	width: 105%;
+}
+
+.col-right-hero-home {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 13rem;
+	width: 50%;
+}
+
+.AppleWatch {
+	margin-left: 10%;
+	width: 70%;
+}
+
+.col-right-hero-home p {
+	margin-left: 10%;
+	margin-top: 4rem;
+	width: 70%;
+}
+
+/*#####################*/
+/* Typography & Design */
+/*#####################*/
+.container-hero-home h1 {
+	font-size: 4.5rem;
+}
+
+.col-right-hero-home p {
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	text-align: center;
+}

@@ -1,3 +1,53 @@
+/* Layout */
+
+header {
+	height: 4rem;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.container-header {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90vw;
+}
+
 .container-nav {
-	background: black;
+	width: 15rem;
+}
+
+.container-nav ul {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container-icons {
+	display: flex;
+	justify-content: space-between;
+	width: 90px;
+}
+
+.logo {
+	height: 42px;
+}
+
+.icon {
+	height: 33px;
+}
+
+/* Typography & Design */
+
+header {
+	background: var(--first-color);
+}
+
+.container-nav a {
+	color: var(--third-color);
+	font-size: 1.2rem;
 }
