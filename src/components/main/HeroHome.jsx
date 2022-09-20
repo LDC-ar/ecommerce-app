@@ -1,11 +1,11 @@
 import React from "react";
-import "./DesktopHeroHome.css";
+import "./HeroHome.css";
 import ApplePersonaWatch from "../images/apple-persona-watch.png";
 import AppleWatch from "../images/apple-watch.png";
 
 const DesktopHeroHome = () => {
 	return (
-		<div className="container-DesktopHeroHome">
+		<div className="container-hero-home">
 			<div className="col-left-hero-home">
 				<h1>The future of health is on your wrist.</h1>
 				<img src={ApplePersonaWatch} alt="Apple Persona Watch" className="ApplePersonaWatch" />

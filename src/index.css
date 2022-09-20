@@ -37,6 +37,10 @@ body {
 /*#####################*/
 /* Typography & Design */
 /*#####################*/
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: var(--black-alpha-color);
 	font-family: var(--first-font);
