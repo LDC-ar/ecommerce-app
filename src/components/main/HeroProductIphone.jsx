@@ -1,13 +1,13 @@
 import React from "react";
-import "./DesktopHeroProductIphone.css";
+import "./HeroProductIphone.css";
 import IphoneProHero from "../images/iphone-pro-hero2.png";
 import ButtonGde from "./ButtonGde";
 import ButtonInfoGde from "./ButtonInfoGde";
-import { textButton, sectionTitle, cardsInfo } from "../helpers/data";
+import { textButton } from "../helpers/data";
 
-const DesktopHeroProductIphone = () => {
+const HeroProductIphone = () => {
 	return (
-		<div className="container-DesktopHeroIphone">
+		<div className="container-hero-iphone">
 			<div className="col-left-iphone">
 				<span>New</span>
 				<h2>iPhone 14 Pro</h2>
@@ -30,4 +30,4 @@ const DesktopHeroProductIphone = () => {
 	);
 };
 
-export default DesktopHeroProductIphone;
+export default HeroProductIphone;

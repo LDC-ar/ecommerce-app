@@ -1,14 +1,18 @@
 import React from "react";
-import ButtonBuy from "./ButtonBuy";
-import DesktopHeroHome from "./DesktopHeroHome";
-import DesktopHeroProductIphone from "./DesktopHeroProductIphone";
 import "./Main.css";
+import ButtonBuy from "./ButtonBuy";
+import HeroHome from "./HeroHome";
+import HeroProductIphone from "./HeroProductIphone";
+import SectionCardIphone from "./SectionCardIphone";
+import HeroProductMac from "./HeroProductMac";
 
 function Main(props) {
 	return (
 		<div className="container-main">
-			<DesktopHeroHome />
-			<DesktopHeroProductIphone />
+			<HeroHome />
+			<HeroProductIphone />
+			<SectionCardIphone />
+			<HeroProductMac />
 
 			{props.children}
 			<ButtonBuy>{}</ButtonBuy>

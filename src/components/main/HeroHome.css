@@ -1,7 +1,7 @@
 /*#####################*/
 /*       Layout        */
 /*#####################*/
-.container-DesktopHeroHome {
+.container-hero-home {
 	display: flex;
 	margin: 0 auto;
 	position: relative;
@@ -18,7 +18,7 @@
 	width: 50%;
 }
 
-.container-DesktopHeroHome h1 {
+.container-hero-home h1 {
 	margin: 0;
 	margin-bottom: 6rem;
 	width: 90%;
@@ -51,7 +51,7 @@
 /*#####################*/
 /* Typography & Design */
 /*#####################*/
-.container-DesktopHeroHome h1 {
+.container-hero-home h1 {
 	font-size: 4.5rem;
 }
 
