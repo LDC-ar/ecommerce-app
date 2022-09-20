@@ -18,4 +18,4 @@ const DesktopHeroHome = () => {
 	);
 };
 
-export default DesktopHeroHome;
+export default DesktopHeroHome
