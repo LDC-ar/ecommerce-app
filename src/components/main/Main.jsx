@@ -15,7 +15,6 @@ function Main(props) {
 			<HeroProductMac />
 
 			{props.children}
-			<ButtonBuy>{}</ButtonBuy>
 		</div>
 	);
 }
