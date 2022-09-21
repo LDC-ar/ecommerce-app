@@ -6,7 +6,7 @@ import ButtonBuy from "./components/main/ButtonBuy";
 import ButtonGde from "./components/main/ButtonGde";
 import ButtonInfo from "./components/main/ButtonInfo";
 import ButtonInfoGde from "./components/main/ButtonInfoGde";
-import { textButton, sectionTitle, cardsInfo } from "./components/helpers/data";
+import { textButton } from "./components/helpers/data";
 
 function App(props) {
 	return (

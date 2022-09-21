@@ -18,7 +18,7 @@ export const cardsInfo = [
 		description: "The ultimate iPhone",
 		price: "From $999",
 		new: <a href=" ">New</a>,
-		img: "src/components/images/iphone-14-pro-png",
+		img: "./images/iphone-14-pro-png",
 	},
 	{
 		id: 2,
@@ -26,21 +26,21 @@ export const cardsInfo = [
 		description: "A total powerhouse",
 		price: "From $799",
 		new: <a href=" ">New</a>,
-		img: "src/components/images/iphone-14.png",
+		img: "./images/iphone-14.png",
 	},
 	{
 		id: 3,
 		title: "Iphone 13",
 		description: "As amazing as ever",
 		price: "From $599",
-		img: "src/components/images/iphone-13-pro.png",
+		img: "./images/iphone-13-pro.png",
 	},
 	{
 		id: 4,
 		title: "Iphone SE",
 		description: "Serious power. Serious value",
 		price: "From $429",
-		img: "",
+		img: "src/components/images/iphone-se.png",
 	},
 	{
 		id: 5,
@@ -101,5 +101,44 @@ export const cardsInfo = [
 		description: "Mega power. Mini sized",
 		price: "From $499",
 		img: "src/components/images/ipad-mini.png",
+	},
+];
+
+export const SliderData = [
+	{
+		image: "./images/tv-friday-night-baseball.jpg",
+		id: 1,
+	},
+	{
+		image: "../images/tv-central-park.jpg",
+		id: 2,
+	},
+	{
+		image: "../images/tv-five-days-at-memorial.jpg",
+		id: 3,
+	},
+	{
+		image: "../images/tv-black-bird.jpg",
+		id: 4,
+	},
+	{
+		image: "../images/tv-gutsy.jpg",
+		id: 5,
+	},
+	{
+		image: "../images/tv-life-by-ella.jpg",
+		id: 6,
+	},
+	{
+		image: "../images/tv-luck.jpg",
+		id: 7,
+	},
+	{
+		image: "../images/tv-see.jpg",
+		id: 8,
+	},
+	{
+		image: "../images/tv-severance.jpg",
+		id: 9,
 	},
 ];
