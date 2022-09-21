@@ -1,4 +1,4 @@
-import { SliderData } from './components/helpers/data'
+import { SliderData } from '../helpers/data'
 import React from 'react'
 import { useState } from 'react';
 import './ImageSlider.css';
@@ -22,8 +22,8 @@ const ImageSlider = ({slides}) => {
 
   return (
     <section className='slider'>
-      <img src='src\images\left-arrow.png' alt='arrow' className='left-arrow' onClick={prevSlide} />
-      <img src='src\images\right-arrow.png' alt='arrow' className='right-arrow' onClick={nextSlide} />
+      <img src='..\images\left-arrow.png' alt='arrow' className='left-arrow' onClick={prevSlide} />
+      <img src='..\images\right-arrow.png' alt='arrow' className='right-arrow' onClick={nextSlide} />
 
     {SliderData.map((slide, index) => {
       return (
