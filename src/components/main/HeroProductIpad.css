@@ -1,8 +1,7 @@
 /*#####################*/
 /*       Layout        */
 /*#####################*/
-.container-hero-iphone {
-	margin-top: -11.6%;
+.container-hero-ipad {
 	padding-top: 15rem;
 	position: relative;
 	z-index: 1;
@@ -10,7 +9,7 @@
 	display: flex;
 }
 
-.col-left-iphone {
+.col-left-ipad {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -19,7 +18,7 @@
 	width: 50%;
 }
 
-.col-left-iphone span {
+.col-left-ipad span {
 	margin-bottom: -2%;
 }
 
@@ -27,33 +26,33 @@
 	margin-top: 3%;
 }
 
-.btn-hero-iphone {
+.btn-hero-ipad {
 	margin-top: 3%;
 }
 
-.col-right-iphone {
+.col-right-ipad {
 	width: 50%;
 }
 
-.IphoneProHero {
-	width: 100%;
+.IpadProHero {
+	width: 60%;
 }
 
 /*#####################*/
 /* Typography & Design */
 /*#####################*/
 
-.col-left-iphone span {
+.col-left-ipad span {
 	color: var(--third-color);
 	font-size: 3rem;
 }
 
-.col-left-iphone h2 {
+.col-left-ipad h2 {
 	color: var(--second-color);
 	font-size: 5.5rem;
 }
 
-.col-left-iphone p {
+.col-left-ipad p {
 	color: var(--third-color);
 	font-size: 1.7rem;
 	line-height: 2.6rem;
