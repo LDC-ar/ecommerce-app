@@ -5,6 +5,10 @@ import HeroHome from "./HeroHome";
 import HeroProductIphone from "./HeroProductIphone";
 import SectionCardIphone from "./SectionCardIphone";
 import HeroProductMac from "./HeroProductMac";
+import SectionCardMac from "./SectionCardMac";
+import HeroProductIpad from "./HeroProductIpad";
+import SectionCardIpad from "./SectionCardIpad";
+import Footer from "../footer/Footer";
 
 function Main(props) {
 	return (
@@ -13,7 +17,9 @@ function Main(props) {
 			<HeroProductIphone />
 			<SectionCardIphone />
 			<HeroProductMac />
-
+			<SectionCardMac />
+			<HeroProductIpad />
+			<SectionCardIpad />
 			{props.children}
 			<ButtonBuy>{}</ButtonBuy>
 		</div>

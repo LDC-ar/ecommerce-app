@@ -6,7 +6,6 @@ import ButtonBuy from "./components/main/ButtonBuy";
 import ButtonGde from "./components/main/ButtonGde";
 import ButtonInfo from "./components/main/ButtonInfo";
 import ButtonInfoGde from "./components/main/ButtonInfoGde";
-import SectionCard from "./components/main/SectionCard";
 import { textButton, sectionTitle, cardsInfo } from "./components/helpers/data";
 
 function App(props) {
@@ -21,10 +20,6 @@ function App(props) {
 				<ButtonGde>{textButton.textoDos}</ButtonGde>
 				<ButtonInfo />
 				<ButtonInfoGde />
-				<SectionCard>
-					<h3 className="section-title">{sectionTitle.title1}</h3>
-          
-				</SectionCard>
 			</Main>
 
 			<Footer />
