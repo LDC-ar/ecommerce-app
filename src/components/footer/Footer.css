@@ -1,6 +1,82 @@
-.container-footer {
+/* .container-footer {
 	background: black;
 	height: 15rem;
 	color: whitesmoke;
 	text-align: center;
+} */
+
+.container-footer {
+	background: black;
+	width: 100%;
+	height: 247px;
+	position: relative;
+}
+
+.logo-footer {
+	position: relative;
+	width: 51px;
+	height: 59px;
+	left: 650px;
+	top: 64px;
+}
+
+.footer-content {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	margin-left: 195px;
+}
+
+.footer-content h2 {
+	width: 84px;
+	height: 20.72px;
+	margin-top: -35px;
+	font-family: var(--first-font);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	text-align: center;
+	line-height: 17.07px;
+	color: var(--third-color);
+}
+
+.footer-content a {
+	width: 151px;
+	height: 20.72px;
+	top: 61.63px;
+	left: 290px;
+	font-family: var(--first-font);
+	font-style: normal;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	color: var(--third-color);
+	text-decoration: none;
+	display: grid;
+	margin-left: -35px;
+}
+
+.line {
+	color: var(--third-color);
+	position: absolute;
+	border: 1px solid #afafb4;
+	width: 95%;
+	height: 0px;
+	margin-top: 15px;
+	left: 20px;
+}
+
+.text-footer {
+	font-family: "nunito";
+	font-weight: 300;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 13.64px;
+	width: 531px;
+	height: 13px;
+	top: 204px;
+	left: 20px;
+	color: var(--third-color);
+	position: absolute;
+	margin-top: -10px;
 }

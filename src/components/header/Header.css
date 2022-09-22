@@ -50,4 +50,5 @@ header {
 .container-nav a {
 	color: var(--third-color);
 	font-size: 1.2rem;
+	text-decoration: none;
 }
