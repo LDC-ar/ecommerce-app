@@ -1,16 +1,25 @@
 import React from "react";
-import "./SectionCardIphone.css";
-import { sectionTitle } from "../helpers/data";
+import "./SectionCard.css";
+import { sectionTitle, cardsInfoMac} from "../helpers/data";
+import Cards from "./Cards";
 
 const SectionCardMac = () => {
 	return (
 		<div className="container-SectionCard">
 			<h3>{sectionTitle.title2}</h3>
 			<div className="cards">
-				<p>Card 1</p>
-				<p>Card 2</p>
-				<p>Card 3</p>
-				<p>Card 4</p>
+					{cardsInfoMac.map((card)=>{
+					return (
+						<div key={card.id}>
+							<Cards
+							src={card.img}
+							title={card.title}
+							condition={card.condition}
+							description={card.description}
+							price={card.price}
+							/>
+						 </div>
+					)})}			
 			</div>
 		</div>
 	);
