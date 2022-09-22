@@ -27,7 +27,6 @@ const ImageSlider = ({ slides }) => {
 			<img src={RightArrow} alt="arrow" className="right-arrow" onClick={nextSlide} />
 
 			{SliderData.map((slide, index) => {
-				console.log(slide.image);
 				return (
 					<div className={index === current ? "slide.active" : "slide"} key={index}>
 						{index === current && <img src={slide.image} alt="apple TV" className="image" />}

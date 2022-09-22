@@ -11,6 +11,25 @@
 	font-size: 3rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cards {
 	width: 100%;
 	margin-top: 5rem;
@@ -19,7 +38,7 @@
 	justify-content: space-around;
 }
 
-.cards p {
+/* .cards p {
 	background: var(--new-color);
 	width: 250px;
 	height: 500px;
@@ -27,4 +46,4 @@
 	place-content: center;
 	font-size: 3rem;
 	border-radius: 20px;
-}
+}  */
