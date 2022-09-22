@@ -106,39 +106,39 @@ export const cardsInfo = [
 
 export const SliderData = [
   {
-    image: './components/images/tv-friday-night-baseball.jpg',
+    image: '../images/tv-friday-night-baseball.jpg',
     id: 1
   },
   {
-    image: './components/images/tv-central-park.jpg',
+    image: '../images/tv-central-park.jpg',
     id: 2
   },
   {
-    image: './components/images/tv-five-days-at-memorial.jpg',
+    image: '../images/tv-five-days-at-memorial.jpg',
     id: 3
   },
   {
-    image: './components/images/tv-black-bird.jpg',
+    image: '../images/tv-black-bird.jpg',
     id: 4
   },
   {
-    image: './components/images/tv-gutsy.jpg',
+    image: '../images/tv-gutsy.jpg',
     id: 5
   },
   {
-    image: './components/images/tv-life-by-ella.jpg',
+    image: '../images/tv-life-by-ella.jpg',
     id: 6
   },
   {
-    image: './components/images/tv-luck.jpg',
+    image: '../images/tv-luck.jpg',
     id: 7
   },
   {
-    image: './components/images/tv-see.jpg',
+    image: '../images/tv-see.jpg',
     id: 8
   },
   {
-    image: './components/images/tv-severance.jpg',
+    image: '../images/tv-severance.jpg',
     id: 9
   },
 ]
