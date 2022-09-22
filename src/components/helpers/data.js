@@ -17,7 +17,7 @@ export const cardsInfo = [
 		title: "Iphone 14 Pro",
 		description: "The ultimate iPhone",
 		price: "From $999",
-		new: <a href=" ">New</a>,
+		new: '<a href=" ">New</a>',
 		img: "https://i.imgur.com/Yfh05r1.png",
 	},
 	{
