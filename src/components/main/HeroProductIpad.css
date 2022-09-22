@@ -2,9 +2,7 @@
 /*       Layout        */
 /*#####################*/
 .container-hero-ipad {
-	padding-top: 15rem;
-	position: relative;
-	z-index: 1;
+	padding-top: 10.3rem;
 	background-color: var(--black-color);
 	display: flex;
 }
@@ -14,7 +12,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	margin-left: 5%;
-	margin-top: 6%;
+	margin-top: 9%;
 	width: 50%;
 }
 
@@ -35,7 +33,8 @@
 }
 
 .IpadProHero {
-	width: 60%;
+	width: 65%;
+	margin-bottom: -0.4%;
 }
 
 /*#####################*/

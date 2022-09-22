@@ -9,9 +9,9 @@
 }
 
 .slider {
-	width: 95vw;
-	height: 100%;
+	width: 90vw;
 	margin: auto;
+	margin-top: 13.5rem;
 }
 
 .image {
@@ -22,7 +22,7 @@
 .right-arrow {
 	position: absolute;
 	top: 50%;
-	right: -1.5vw;
+	right: -3vw;
 	font-size: 3rem;
 	color: black;
 	z-index: 10;
@@ -33,7 +33,7 @@
 .left-arrow {
 	position: absolute;
 	top: 50%;
-	left: -1.5vw;
+	left: -3vw;
 	font-size: 3rem;
 	color: black;
 	z-index: 10;

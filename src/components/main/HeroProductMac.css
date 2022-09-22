@@ -1,5 +1,5 @@
 .container-hero-mac {
-	padding-top: 10rem;
+	padding-top: 7.5rem;
 	padding-bottom: 4.5rem;
 	background-color: var(--black-color);
 	display: flex;
@@ -8,6 +8,7 @@
 }
 
 .container-hero-mac h2 {
+	margin-bottom: 0.3em;
 	color: var(--second-color);
 	font-size: 5.5rem;
 	position: relative;

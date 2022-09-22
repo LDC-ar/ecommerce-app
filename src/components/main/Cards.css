@@ -1,4 +1,66 @@
 .container-card {
+	/* background-color: #e99d0a; */
+	height: 31.5rem;
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* gap: 2rem; */
+	justify-content: space-between;
+}
+.card-image {
+	height: 12em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.card-image img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card-description {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.new {
+	color: #e99d0a;
+	font-weight: 500;
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+.nombre {
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: black;
+	margin-top: 0.2em;
+}
+
+.caract {
+	width: 70%;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.precio {
+	font-size: 1rem;
+	text-align: center;
+	color: black;
+}
+
+/*  Query 1024
+
+.container-card {
   height: 500px;
   width: 245px;
   display: flex;
@@ -45,3 +107,5 @@
   text-align: center;
   color: black;
 }
+
+*/

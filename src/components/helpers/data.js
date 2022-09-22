@@ -18,7 +18,7 @@ export const cardsInfoIphone = [
 		description: "The ultimate iPhone",
 		price: "From $999",
 		condition: "New",
-		img: "https://i.imgur.com/Yfh05r1.png",
+		img: "https://i.imgur.com/25ia4FG.png",
 	},
 	{
 		id: 2,
@@ -26,32 +26,32 @@ export const cardsInfoIphone = [
 		description: "A total powerhouse",
 		price: "From $799",
 		condition: "New",
-		img: "https://i.imgur.com/CKBLDiz.png",
+		img: "https://i.imgur.com/DDEuK2p.png",
 	},
 	{
 		id: 3,
-		title: "Iphone 13",
+		title: "Iphone 13 Pro",
 		description: "As amazing as ever",
 		price: "From $599",
-		condition:"",
-		img: "https://i.imgur.com/l93knXJ.png",
+		condition: "",
+		img: "https://i.imgur.com/3v8MevH.png",
 	},
 	{
 		id: 4,
 		title: "Iphone SE",
 		description: "Serious power. Serious value",
 		price: "From $429",
-		condition:"",
-		img: "https://i.imgur.com/PKzcSNQ.png",
-	}
-	]
+		condition: "",
+		img: "https://i.imgur.com/WSJErze.png",
+	},
+];
 export const cardsInfoMac = [
 	{
 		id: 1,
 		title: "MacBook 16 Pro",
 		description: "Supercharged for pros",
 		price: "From $1999",
-		condition:"",
+		condition: "",
 		img: "https://i.imgur.com/Ho9bBbR.png",
 	},
 	{
@@ -75,18 +75,18 @@ export const cardsInfoMac = [
 		title: "MacBook Air",
 		description: "M1 Chip",
 		price: "From $999",
-		condition:"",
+		condition: "",
 		img: "https://i.imgur.com/H20QUh3.png",
-	}
-	]
+	},
+];
 export const cardsInfoIpad = [
 	{
 		id: 1,
 		title: "Ipad Pro",
 		description: "The ultimate iPad experience.",
 		price: "From $799",
-		condition:"",
-		img: "https://i.imgur.com/Pxs3VNl.png",
+		condition: "",
+		img: "https://i.imgur.com/1AUuL9E.png",
 	},
 	{
 		id: 2,
@@ -94,7 +94,7 @@ export const cardsInfoIpad = [
 		description: "Powerfull. Colorfull",
 		price: "From $599",
 		condition: "New",
-		img: "https://i.imgur.com/yuxPTIi.png",
+		img: "https://i.imgur.com/x5HNXVW.png",
 	},
 	{
 		id: 3,
@@ -102,15 +102,15 @@ export const cardsInfoIpad = [
 		description: "Delightfully capable",
 		price: "From $329",
 		condition: "New",
-		img: "https://i.imgur.com/sNB9rMO.png",
+		img: "https://i.imgur.com/uW3PeMN.png",
 	},
 	{
 		id: 4,
 		title: "Ipad Mini",
 		description: "Mega power. Mini sized",
 		price: "From $499",
-		condition:"",
-		img: "https://i.imgur.com/VyQLGYj.png",
+		condition: "",
+		img: "https://i.imgur.com/gYpWHeL.png",
 	},
 ];
 
