@@ -1,5 +1,5 @@
 .container-hero-mac {
-	padding-top: 7.5rem;
+	padding-top: 9rem;
 	padding-bottom: 4.5rem;
 	background-color: var(--black-color);
 	display: flex;
@@ -28,5 +28,5 @@
 }
 
 .btn-hero-mac {
-	margin-top: 3rem;
+	margin-top: 2rem;
 }

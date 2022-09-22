@@ -2,7 +2,7 @@
 /*       Layout        */
 /*#####################*/
 .container-hero-ipad {
-	padding-top: 10.3rem;
+	padding-top: 12rem;
 	background-color: var(--black-color);
 	display: flex;
 }
