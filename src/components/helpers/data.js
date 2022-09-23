@@ -1,4 +1,3 @@
-
 export const textButton = {
 	textoUno: "Pre-order",
 	textoDos: "Buy",
