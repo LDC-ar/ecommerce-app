@@ -12,13 +12,13 @@ function Header() {
 				<nav className="container-nav">
 					<ul>
 						<li>
-							<a href="#">iPhone</a>
+							<a href=" ">iPhone</a>
 						</li>
 						<li>
-							<a href="#">Mac</a>
+							<a href=" ">Mac</a>
 						</li>
 						<li>
-							<a href="#">iPad</a>
+							<a href=" ">iPad</a>
 						</li>
 					</ul>
 				</nav>

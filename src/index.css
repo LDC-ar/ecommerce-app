@@ -25,23 +25,18 @@ Black-color = por si se tiene q usar negro puro
 White-color = por si se tiene q usar blanco puro
 Black-alpha-color = negro con transparencia */
 
-/*#####################*/
-/*       Layout        */
-/*#####################*/
-body {
+* {
 	box-sizing: border-box;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
-/*#####################*/
-/* Typography & Design */
-/*#####################*/
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	color: var(--black-alpha-color);
 	font-family: var(--first-font);
 }
