@@ -5,7 +5,7 @@ import "./ImageSlider.css";
 import LeftArrow from "../images/left-arrow.png";
 import RightArrow from "../images/right-arrow.png";
 
-console.log(window)
+console.log(window);
 
 const ImageSlider = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
@@ -18,13 +18,13 @@ const ImageSlider = ({ slides }) => {
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
 	};
-    
-  useEffect (() => {
-    const slideInterval = setInterval (() => {
-      nextSlide ()
-      },3000);
-      return () => clearInterval(slideInterval)
-  });
+
+	useEffect(() => {
+		const slideInterval = setInterval(() => {
+			nextSlide();
+		}, 3000);
+		return () => clearInterval(slideInterval);
+	});
 
 	if (!Array.isArray(slides) || slides.length <= 0) {
 		return null;
