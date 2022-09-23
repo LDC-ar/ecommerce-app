@@ -1,0 +1,60 @@
+/*#####################*/
+/*       Layout        */
+/*#####################*/
+.container-hero-ipad {
+	padding-top: 15rem;
+	position: relative;
+	z-index: 1;
+	background-color: var(--black-color);
+	display: flex;
+}
+
+.col-left-ipad {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 5%;
+	margin-top: 6%;
+	width: 50%;
+}
+
+.col-left-ipad span {
+	margin-bottom: -2%;
+}
+
+.col-left-iphone p {
+	margin-top: 3%;
+}
+
+.btn-hero-ipad {
+	margin-top: 3%;
+}
+
+.col-right-ipad {
+	width: 50%;
+}
+
+.IpadProHero {
+	width: 60%;
+}
+
+/*#####################*/
+/* Typography & Design */
+/*#####################*/
+
+.col-left-ipad span {
+	color: var(--third-color);
+	font-size: 3rem;
+}
+
+.col-left-ipad h2 {
+	color: var(--second-color);
+	font-size: 5.5rem;
+}
+
+.col-left-ipad p {
+	color: var(--third-color);
+	font-size: 1.7rem;
+	line-height: 2.6rem;
+	letter-spacing: 0.04rem;
+}

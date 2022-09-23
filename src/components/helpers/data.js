@@ -11,95 +11,144 @@ export const sectionTitle = {
 	title3: "Which iPad is right for you?",
 };
 
-export const cardsInfo = [
+export const cardsInfoIphone = [
 	{
 		id: 1,
 		title: "Iphone 14 Pro",
 		description: "The ultimate iPhone",
 		price: "From $999",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/iphone-14-pro-png",
+		condition: "New",
+		img: "https://i.imgur.com/Yfh05r1.png",
 	},
 	{
 		id: 2,
 		title: "Iphone 14",
 		description: "A total powerhouse",
 		price: "From $799",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/iphone-14.png",
+		condition: "New",
+		img: "https://i.imgur.com/CKBLDiz.png",
 	},
 	{
 		id: 3,
 		title: "Iphone 13",
 		description: "As amazing as ever",
 		price: "From $599",
-		img: "src/components/images/iphone-13-pro.png",
+		condition:"",
+		img: "https://i.imgur.com/l93knXJ.png",
 	},
 	{
 		id: 4,
 		title: "Iphone SE",
 		description: "Serious power. Serious value",
 		price: "From $429",
-		img: "src/components/images/iphone-se.png",
-	},
+		condition:"",
+		img: "https://i.imgur.com/PKzcSNQ.png",
+	}
+	]
+export const cardsInfoMac = [
 	{
-		id: 5,
+		id: 1,
 		title: "MacBook 16 Pro",
 		description: "Supercharged for pros",
 		price: "From $1999",
-		img: "src/components/images/macbook-pro-16.png",
+		condition:"",
+		img: "https://i.imgur.com/Ho9bBbR.png",
 	},
 	{
-		id: 6,
+		id: 2,
 		title: "MacBook 13 Pro",
 		description: "Pro anywhere",
 		price: "From $1299",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/macbook-pro-13.png",
+		condition: "New",
+		img: "https://i.imgur.com/j3JA5Z3.png",
 	},
 	{
-		id: 7,
+		id: 3,
 		title: "MacBook Air",
-		description: "M2 chip",
+		description: "M2 Chip",
 		price: "From $1199",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/macbook-air-m2.png",
+		condition: "New",
+		img: "https://i.imgur.com/Q67Gfta.png",
 	},
 	{
-		id: 8,
+		id: 4,
 		title: "MacBook Air",
-		description: "M1chip",
+		description: "M1 Chip",
 		price: "From $999",
-		img: "src/components/images/macbook-air-m1.png",
-	},
+		condition:"",
+		img: "https://i.imgur.com/H20QUh3.png",
+	}
+	]
+export const cardsInfoIpad = [
 	{
-		id: 9,
+		id: 1,
 		title: "Ipad Pro",
 		description: "The ultimate iPad experience.",
 		price: "From $799",
-		img: "src/components/images/ipad-pro.png",
+		condition:"",
+		img: "https://i.imgur.com/Pxs3VNl.png",
 	},
 	{
-		id: 10,
+		id: 2,
 		title: "Ipad Air",
 		description: "Powerfull. Colorfull",
 		price: "From $599",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/ipad-air.png",
+		condition: "New",
+		img: "https://i.imgur.com/yuxPTIi.png",
 	},
 	{
-		id: 11,
+		id: 3,
 		title: "Ipad",
 		description: "Delightfully capable",
 		price: "From $329",
-		new: <a href=" ">New</a>,
-		img: "src/components/images/ipad.png",
+		condition: "New",
+		img: "https://i.imgur.com/sNB9rMO.png",
 	},
 	{
-		id: 12,
+		id: 4,
 		title: "Ipad Mini",
 		description: "Mega power. Mini sized",
 		price: "From $499",
-		img: "src/components/images/ipad-mini.png",
+		condition:"",
+		img: "https://i.imgur.com/VyQLGYj.png",
+	},
+];
+
+export const SliderData = [
+	{
+		image: "https://i.imgur.com/81wn4AA.jpg",
+		id: 1,
+	},
+	{
+		image: "https://i.imgur.com/Dh0C6XS.jpg",
+		id: 2,
+	},
+	{
+		image: "https://i.imgur.com/A6Ov5Lz.jpg",
+		id: 3,
+	},
+	{
+		image: "https://i.imgur.com/3klcdtD.jpg",
+		id: 4,
+	},
+	{
+		image: "https://i.imgur.com/xL6rcDi.jpg",
+		id: 5,
+	},
+	{
+		image: "https://i.imgur.com/NatpPLh.jpg",
+		id: 6,
+	},
+	{
+		image: "https://i.imgur.com/c6N5mdk.jpg",
+		id: 7,
+	},
+	{
+		image: "https://i.imgur.com/EyoH0bi.jpg",
+		id: 8,
+	},
+	{
+		image: "https://i.imgur.com/TbID5A7.jpg",
+		id: 9,
 	},
 ];
