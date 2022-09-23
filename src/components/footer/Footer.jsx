@@ -10,34 +10,34 @@ function Footer() {
 				<div className="footer-content">
 					<div>
 						<h2>Services</h2>
-						<a href="#">Apple Music</a>
-						<a href="#">Apple TV+</a>
-						<a href="#">icloud</a>
-						<a href="#">Apple Books</a>
-						<a href="#">Apple Store</a>
+						<a href=" ">Apple Music</a>
+						<a href=" ">Apple TV+</a>
+						<a href=" ">icloud</a>
+						<a href=" ">Apple Books</a>
+						<a href=" ">Apple Store</a>
 					</div>
 					<div>
 						<h2>Account</h2>
-						<a href="#">Manage Your Apple iD</a>
-						<a href="#">Apple Store Account</a>
-						<a href="#">icloud.com</a>
-						<a href="#">Support</a>
+						<a href=" ">Manage Your Apple iD</a>
+						<a href=" ">Apple Store Account</a>
+						<a href=" ">icloud.com</a>
+						<a href=" ">Support</a>
 					</div>
 					<div>
 						<h2>Store</h2>
-						<a href="#">Find a Store</a>
-						<a href="#">Store App</a>
-						<a href="#">Financing</a>
-						<a href="#">Order Status</a>
-						<a href="#">Shopping Help</a>
+						<a href=" ">Find a Store</a>
+						<a href=" ">Store App</a>
+						<a href=" ">Financing</a>
+						<a href=" ">Order Status</a>
+						<a href=" ">Shopping Help</a>
 					</div>
 					<div>
 						<h2>About</h2>
-						<a href="#">Career Opportunities</a>
-						<a href="#">inventors</a>
-						<a href="#"> Ethics & Compliance</a>
-						<a href="#">Events</a>
-						<a href="#">Contact Apple</a>
+						<a href=" ">Career Opportunities</a>
+						<a href=" ">inventors</a>
+						<a href=" "> Ethics & Compliance</a>
+						<a href=" ">Events</a>
+						<a href=" ">Contact Apple</a>
 					</div>
 				</div>
 				<hr className="line" />
