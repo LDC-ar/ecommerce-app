@@ -2,7 +2,7 @@
 /*       Layout        */
 /*#####################*/
 .container-hero-iphone {
-	margin-top: -11.6%;
+	margin-top: -11.3%;
 	padding-top: 15rem;
 	position: relative;
 	z-index: 1;
@@ -37,6 +37,7 @@
 
 .IphoneProHero {
 	width: 100%;
+	margin-bottom: -0.3%;
 }
 
 /*#####################*/
