@@ -21,11 +21,9 @@ const ImageSlider = ({ slides }) => {
     
   useEffect (() => {
     const slideInterval = setInterval (() => {
-
-      setCurrent (current => current < slides.length -1 ? current + 1 : 0)
+      nextSlide ()
       },3000);
       return () => clearInterval(slideInterval)
-
   });
 
 	if (!Array.isArray(slides) || slides.length <= 0) {
