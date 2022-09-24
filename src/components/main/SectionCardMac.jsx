@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 const SectionCardMac = () => {
 	return (
-		<div className="container-SectionCard">
+		<div id="home-mac" className="container-SectionCard">
 			<h3>{sectionTitle.title2}</h3>
 			<div className="cards">
 				{cardsInfoMac.map(card => {

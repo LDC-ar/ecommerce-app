@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 const SectionCardIphone = () => {
 	return (
-		<div className="container-SectionCard">
+		<div id="home-iphone" className="container-SectionCard">
 			<h3>{sectionTitle.title1}</h3>
 			<div className="cards">
 				{cardsInfoIphone.map(card => {
