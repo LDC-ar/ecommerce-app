@@ -5,7 +5,7 @@ import Cards from "./Cards";
 
 const SectionCardIpad = () => {
 	return (
-		<div className="container-SectionCard">
+		<div id="home-ipad" className="container-SectionCard">
 			<h3>{sectionTitle.title3}</h3>
 			<div className="cards">
 				{cardsInfoIpad.map(card => {

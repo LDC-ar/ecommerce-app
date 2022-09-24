@@ -8,17 +8,20 @@ function Header() {
 	return (
 		<header>
 			<div className="container-header">
-				<img src={logo} alt="logo apple" className="logo" />
+				<a href="#">
+					<img src={logo} alt="logo apple" className="logo" />
+				</a>
+				
 				<nav className="container-nav">
 					<ul>
 						<li>
-							<a href=" ">iPhone</a>
+							<a href="#home-iphone">iPhone</a>
 						</li>
 						<li>
-							<a href=" ">Mac</a>
+							<a href="#home-mac">Mac</a>
 						</li>
 						<li>
-							<a href=" ">iPad</a>
+							<a href="#home-ipad">iPad</a>
 						</li>
 					</ul>
 				</nav>
