@@ -8,7 +8,7 @@ function Header() {
 	return (
 		<header>
 			<div className="container-header">
-				<a href="#">
+				<a href="#hero-home">
 					<img src={logo} alt="logo apple" className="logo" />
 				</a>
 				
