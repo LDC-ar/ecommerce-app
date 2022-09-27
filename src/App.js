@@ -13,7 +13,7 @@ function App(props) {
 		<div>
 			<Header />
 
-			<Main>
+			{/* <Main>
 				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
 				<ButtonGde>{textButton.textoUno}</ButtonGde>
 				<ButtonBuy>{textButton.textoUno}</ButtonBuy>
@@ -22,7 +22,7 @@ function App(props) {
 				<ButtonInfoGde />
 			</Main>
 
-			<Footer />
+			<Footer /> */}
 		</div>
 	);
 }
