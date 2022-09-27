@@ -14,16 +14,15 @@ function Main(props) {
 	return (
 		<div className="container-main">
 			<HeroHome />
-			<HeroProductIphone />
-			<SectionCardIphone />
-			<HeroProductMac />
-			<SectionCardMac />
-			<HeroProductIpad />
-			<SectionCardIpad />
-			<ImageSlider slides={SliderData} />
+			{/* <HeroProductIphone /> */}
+			{/* <SectionCardIphone /> */}
+			{/* <HeroProductMac /> */}
+			{/* <SectionCardMac /> */}
+			{/* <HeroProductIpad /> */}
+			{/* <SectionCardIpad /> */}
+			{/* <ImageSlider slides={SliderData} /> */}
 		</div>
 	);
 }
-
 
 export default Main;

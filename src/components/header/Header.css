@@ -55,6 +55,7 @@ header {
 }
 
 .container-nav ul {
+	width: 100%;
 	padding-block: 1rem;
 	display: flex;
 	flex-direction: column;
