@@ -14,7 +14,7 @@ function Main(props) {
 	return (
 		<div className="container-main">
 			<HeroHome />
-			{/* <HeroProductIphone /> */}
+			<HeroProductIphone />
 			{/* <SectionCardIphone /> */}
 			{/* <HeroProductMac /> */}
 			{/* <SectionCardMac /> */}

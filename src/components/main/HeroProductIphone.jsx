@@ -1,9 +1,8 @@
 import React from "react";
 import "./HeroProductIphone.css";
 import IphoneProHero from "../images/iphone-pro-hero2.png";
-import ButtonGde from "./ButtonGde";
-import ButtonInfoGde from "./ButtonInfoGde";
-import { textButton } from "../helpers/data";
+import ButtonOrder from "./ButtonOrder";
+import ButtonInfo from "./ButtonInfo";
 
 const HeroProductIphone = () => {
 	return (
@@ -19,8 +18,8 @@ const HeroProductIphone = () => {
 					or $999 before trade-in*
 				</p>
 				<div className="btn-hero-iphone">
-					<ButtonGde>{textButton.textoUno}</ButtonGde>
-					<ButtonInfoGde />
+					<ButtonOrder />
+					<ButtonInfo />
 				</div>
 			</div>
 			<div className="col-right-iphone">

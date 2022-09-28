@@ -1,12 +1,9 @@
-import React from 'react'
-import "./Buttons.css"
+import React from "react";
+import { textButton } from "../helpers/data";
+import "./Buttons.css";
 
+const ButtonBuy = () => {
+	return <button className="btn btnCH btnBuy">{textButton.buy}</button>;
+};
 
-
-const ButtonBuy = (props) => {
-  return (
-    <button className='btn btnCH btnBuy'>{props.children}</button>
-  )
-}
-
-export default ButtonBuy
+export default ButtonBuy;

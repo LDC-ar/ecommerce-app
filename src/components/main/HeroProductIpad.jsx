@@ -1,9 +1,8 @@
 import React from "react";
 import "./HeroProductIpad.css";
 import IpadProHero from "../images/ipad-pro-hero.png";
-import ButtonGde from "./ButtonGde";
-import ButtonInfoGde from "./ButtonInfoGde";
-import { textButton } from "../helpers/data";
+import ButtonOrder from "./ButtonOrder";
+import ButtonInfo from "./ButtonInfo";
 
 const HeroProductIpad = () => {
 	return (
@@ -19,8 +18,8 @@ const HeroProductIpad = () => {
 					Surprisingly affordable.
 				</p>
 				<div className="btn-hero-ipad">
-					<ButtonGde>{textButton.textoUno}</ButtonGde>
-					<ButtonInfoGde />
+					<ButtonOrder />
+					<ButtonInfo />
 				</div>
 			</div>
 			<div className="col-right-ipad">

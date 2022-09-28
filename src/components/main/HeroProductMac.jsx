@@ -1,9 +1,8 @@
 import React from "react";
 import "./HeroProductMac.css";
 import ImacHero from "../images/imac-hero.png";
-import ButtonGde from "./ButtonGde";
-import ButtonInfoGde from "./ButtonInfoGde";
-import { textButton } from "../helpers/data";
+import ButtonOrder from "./ButtonOrder";
+import ButtonInfo from "./ButtonInfo";
 
 const HeroProductMac = () => {
 	return (
@@ -12,8 +11,8 @@ const HeroProductMac = () => {
 			<img src={ImacHero} alt="" className="MacProHero" />
 			<p>Pro anywhere.</p>
 			<div className="btn-hero-mac">
-				<ButtonGde>{textButton.textoUno}</ButtonGde>
-				<ButtonInfoGde />
+				<ButtonOrder />
+				<ButtonInfo />
 			</div>
 		</div>
 	);
