@@ -167,4 +167,8 @@ header {
 		align-items: center;
 		gap: 0;
 	}
+
+	.container-icons {
+		justify-content: space-between;
+	}
 }
