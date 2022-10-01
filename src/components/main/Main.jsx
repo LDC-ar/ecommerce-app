@@ -40,9 +40,9 @@ function Main(props) {
 			<HeroProductIphone />
 			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductMac />
-			{/* <SectionCardMac /> */}
+			<SectionCardMac />
 			<HeroProductIpad />
-			{/* <SectionCardIpad /> */}
+			<SectionCardIpad />
 			{/* <ImageSlider slides={SliderData} /> */}
 		</div>
 	);

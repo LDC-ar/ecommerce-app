@@ -23,8 +23,19 @@
 	animation: fadeInDown 0.3s;
 }
 
-.btn-close,
-.btn-close span {
+.modal-carrito {
+	width: 450px;
+	height: 300px;
+	background: var(--second-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	animation: fadeInDown 0.3s;
+}
+
+.btn-close {
 	position: absolute;
 	top: 15px;
 	right: 15px;

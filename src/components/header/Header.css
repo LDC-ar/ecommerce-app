@@ -37,6 +37,7 @@ header {
 
 .icon {
 	height: 33px;
+	cursor: pointer;
 }
 
 .container-nav {

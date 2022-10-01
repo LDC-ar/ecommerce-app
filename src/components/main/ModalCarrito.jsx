@@ -1,14 +1,14 @@
 import React from "react";
 import "./Modal.css";
 
-const Modal = ({ show, onClose, children }) => {
+const ModalCarrito = ({ show, onClose, children }) => {
 	if (!show) {
 		return null;
 	}
 
 	return (
 		<div className="Wrapper">
-			<div className="modal">
+			<div className="modal-carrito">
 				<button onClick={onClose} className="btn-close">
 					<span>X</span>
 				</button>
@@ -18,6 +18,4 @@ const Modal = ({ show, onClose, children }) => {
 	);
 };
 
-export default Modal;
-
-//    <div className={`modal ${true ? "modal-carrito" : null}`}>
+export default ModalCarrito;

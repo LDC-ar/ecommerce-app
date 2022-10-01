@@ -1,15 +1,24 @@
 import React from "react";
 import { useState } from "react";
+import ModalCarrito from "../main/ModalCarrito";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
 import "./Header.css";
+import "../main/Buttons.css";
+import "../main/Modal.css";
 
 function Header() {
+	// Modal de botones ///////////
+	const [show, setShow] = useState(false);
+	////// Fin Modal de botones ///////////
+
+	// Estado del menu responsive //
 	const [clicked, setClicked] = useState(false);
 	const handleClick = () => {
 		setClicked(!clicked);
 	};
+	/////////////////////////////////
 
 	return (
 		<header>
@@ -43,12 +52,20 @@ function Header() {
 					</ul>
 				</nav>
 				<div className="container-icons">
-					<a href=" ">
+					<a href="">
 						<img src={search} alt="search" className="icon" />
 					</a>
-					<a href=" ">
-						<img src={bag} alt="cart" className="icon" />
-					</a>
+					<img
+						src={bag}
+						alt="cart"
+						className="icon"
+						onClick={() => {
+							setShow(true);
+						}}
+					/>
+					<ModalCarrito show={show} onClose={() => setShow(false)}>
+						<h1>Carrito de compra</h1>
+					</ModalCarrito>
 				</div>
 			</div>
 		</header>
@@ -56,3 +73,10 @@ function Header() {
 }
 
 export default Header;
+
+// onClick={() => {
+// 	const fun1 = setShow(true);
+// 	const fun2 = setIsModalCarrito(true);
+// 	fun1();
+// 	fun2();
+// }}

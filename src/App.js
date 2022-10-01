@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-// import Footer from "./components/footer/Footer";
+import Footer from "./components/footer/Footer";
 import ButtonBuy from "./components/main/ButtonBuy";
 import ButtonOrder from "./components/main/ButtonOrder";
 import ButtonInfo from "./components/main/ButtonInfo";
@@ -22,7 +22,7 @@ function App(props) {
 				<ButtonInfoGde />
 			</Main>
 
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }
