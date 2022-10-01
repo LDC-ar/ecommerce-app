@@ -6,7 +6,7 @@ import ButtonInfo from "./ButtonInfo";
 
 const HeroProductMac = () => {
 	return (
-		<div className="container-hero-mac">
+		<div id="home-mac" className="container-hero-mac">
 			<h2>MacBook Pro 13”</h2>
 			<img src={ImacHero} alt="" className="MacProHero" />
 			<p>Pro anywhere.</p>

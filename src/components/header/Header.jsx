@@ -27,7 +27,7 @@ function Header() {
 					<ul>
 						<li>
 							<a href="#home-iphone" onClick={handleClick}>
-								IPhone
+								Iphone
 							</a>
 						</li>
 						<li>

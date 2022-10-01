@@ -65,7 +65,7 @@
 
 	.col-left-iphone p {
 		font-size: 1.4rem;
-		line-height: 2.4rem;
+		line-height: 2.1rem;
 	}
 }
 
@@ -73,18 +73,11 @@
 	.col-left-iphone span {
 		font-size: 1.8rem;
 	}
-
-	.col-left-iphone h2 {
-		font-size: 4.5rem;
-	}
-
-	.col-left-iphone p {
-		font-size: 1.5rem;
-	}
 }
 
 @media screen and (min-width: 1366px) {
 	.container-hero-iphone {
+		height: 100vh;
 		margin-top: 3.5rem;
 		padding-top: 0rem;
 		position: relative;
@@ -94,14 +87,15 @@
 
 	.col-left-iphone {
 		margin-left: 5%;
-		margin-top: 6%;
+		margin-top: 0%;
+		padding-left: 5rem;
 		width: 50%;
 		align-items: flex-start;
 		text-align: left;
 	}
 
 	.col-left-iphone span {
-		margin-bottom: -0.8rem;
+		margin-bottom: -0.4rem;
 	}
 
 	.btn-hero-iphone {

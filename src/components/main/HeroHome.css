@@ -111,6 +111,7 @@
 	}
 
 	.container-hero-home h1 {
+		max-width: 35rem;
 		min-height: 12rem;
 		margin-bottom: 5rem;
 	}

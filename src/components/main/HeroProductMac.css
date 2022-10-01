@@ -5,12 +5,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100vh;
 }
 
 .container-hero-mac h2 {
 	margin-bottom: 0.3em;
 	color: var(--second-color);
-	font-size: 5.5rem;
+	font-size: 3.5rem;
 	position: relative;
 }
 

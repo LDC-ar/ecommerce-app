@@ -6,7 +6,7 @@ import ButtonInfo from "./ButtonInfo";
 
 const HeroProductIpad = () => {
 	return (
-		<div className="container-hero-ipad">
+		<div id="home-ipad" className="container-hero-ipad">
 			<div className="col-left-ipad">
 				<span>New</span>
 				<h2>iPad Pro</h2>

@@ -6,7 +6,7 @@ import ButtonInfo from "./ButtonInfo";
 
 const HeroProductIphone = () => {
 	return (
-		<div className="container-hero-iphone">
+		<div id="home-iphone" className="container-hero-iphone">
 			<div className="col-left-iphone">
 				<span>New</span>
 				<h2>iPhone 14 Pro</h2>

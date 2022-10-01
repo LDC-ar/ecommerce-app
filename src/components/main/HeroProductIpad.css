@@ -2,6 +2,7 @@
 /*       Layout        */
 /*#####################*/
 .container-hero-ipad {
+	height: 100vh;
 	padding-top: 12rem;
 	background-color: var(--black-color);
 	display: flex;
@@ -33,8 +34,8 @@
 }
 
 .IpadProHero {
-	width: 65%;
-	margin-bottom: -0.4%;
+	width: 56.8%;
+	/* margin-bottom: -0.4%; */
 }
 
 /*#####################*/
