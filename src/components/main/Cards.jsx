@@ -4,7 +4,7 @@ import ButtonBuy from "./ButtonBuy";
 import { textButton } from "../helpers/data";
 import ButtonInfo from "./ButtonInfo";
 
-function Cards({ src, title, condition, description, price }) {
+function Cards({ src, title, condition, description, price, id }) {
 	return (
 		<div className="container-card">
 			<div className="card-image">
@@ -15,6 +15,7 @@ function Cards({ src, title, condition, description, price }) {
 				<p className="nombre">{title}</p>
 				<p className="caract">{description}</p>
 				<p className="precio">{price}</p>
+				{/* El ID se lo tenes que pasar a los botones para los modales*/}
 				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
 				<ButtonInfo />
 			</div>

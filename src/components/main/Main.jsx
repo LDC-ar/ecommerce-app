@@ -40,10 +40,10 @@ function Main(props) {
 			<HeroProductIphone />
 			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductMac />
-			<SectionCardMac />
+			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
-			<SectionCardIpad />
-			{/* <ImageSlider slides={SliderData} /> */}
+			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
+			<ImageSlider slides={SliderData} />
 		</div>
 	);
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./HeroProductMac.css";
 import ImacHero from "../images/imac-hero.png";
+import ImacHero2 from "../images/imac-hero2.png";
 import ButtonOrder from "./ButtonOrder";
 import ButtonInfo from "./ButtonInfo";
 
@@ -9,6 +10,7 @@ const HeroProductMac = () => {
 		<div id="home-mac" className="container-hero-mac">
 			<h2>MacBook Pro 13”</h2>
 			<img src={ImacHero} alt="" className="MacProHero" />
+			<img src={ImacHero2} alt="" className="MacProHero2" />
 			<p>Pro anywhere.</p>
 			<div className="btn-hero-mac">
 				<ButtonOrder />
