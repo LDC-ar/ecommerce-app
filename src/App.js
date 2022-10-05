@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 import Footer from "./components/footer/Footer";
 import ButtonBuy from "./components/main/ButtonBuy";
-import ButtonGde from "./components/main/ButtonGde";
+import ButtonOrder from "./components/main/ButtonOrder";
 import ButtonInfo from "./components/main/ButtonInfo";
 import ButtonInfoGde from "./components/main/ButtonInfoGde";
 import { textButton } from "./components/helpers/data";
@@ -15,9 +15,9 @@ function App(props) {
 
 			<Main>
 				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
-				<ButtonGde>{textButton.textoUno}</ButtonGde>
+				<ButtonOrder>{textButton.textoUno}</ButtonOrder>
 				<ButtonBuy>{textButton.textoUno}</ButtonBuy>
-				<ButtonGde>{textButton.textoDos}</ButtonGde>
+				<ButtonOrder>{textButton.textoDos}</ButtonOrder>
 				<ButtonInfo />
 				<ButtonInfoGde />
 			</Main>

@@ -5,11 +5,12 @@ import AppleWatch from "../images/apple-watch.png";
 
 const DesktopHeroHome = () => {
 	return (
-		<div id='hero-home'className="container-hero-home">
+		<div id="hero-home" className="container-hero-home">
 			<div className="col-left-hero-home">
 				<h1>The future of health is on your wrist.</h1>
 				<img src={ApplePersonaWatch} alt="Apple Persona Watch" className="ApplePersonaWatch" />
 			</div>
+			<div className="mobile-background"></div>
 			<div className="col-right-hero-home">
 				<img src={AppleWatch} alt="Apple Watch" className="AppleWatch" />
 				<p>

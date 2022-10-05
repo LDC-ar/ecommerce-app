@@ -1,6 +1,7 @@
 export const textButton = {
-	textoUno: "Pre-order",
-	textoDos: "Buy",
+	order: "Pre-order",
+	buy: "Buy",
+	learnMore: "Learn More",
 };
 
 export const sectionTitle = {

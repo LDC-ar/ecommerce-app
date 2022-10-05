@@ -1,0 +1,78 @@
+.Wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #5050507e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.modal {
+	width: 450px;
+	height: 300px;
+	background: var(--second-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	animation: fadeInDown 0.3s;
+	text-align: center;
+}
+
+.modal-carrito {
+	width: 450px;
+	height: 300px;
+	background: var(--second-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	animation: fadeInDown 0.3s;
+}
+
+.btn-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: blue;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--first-color);
+}
+
+/* .btn-close span {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: rgb(29, 218, 23);
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--first-color);
+} */
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 385px) {
+	.modal {
+		width: 340px;
+	}
+}

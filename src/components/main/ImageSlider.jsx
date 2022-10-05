@@ -5,8 +5,6 @@ import "./ImageSlider.css";
 import LeftArrow from "../images/left-arrow.png";
 import RightArrow from "../images/right-arrow.png";
 
-console.log(window);
-
 const ImageSlider = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
 	const length = slides.length;
