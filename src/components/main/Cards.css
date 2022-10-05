@@ -1,7 +1,7 @@
 .container-card {
 	/* background-color: #e99d0a; */
-	height: 34em;
-	width: 20em;
+	height: 30em;
+	width: 19em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

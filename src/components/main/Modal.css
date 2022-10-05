@@ -21,6 +21,7 @@
 	align-items: center;
 	position: relative;
 	animation: fadeInDown 0.3s;
+	text-align: center;
 }
 
 .modal-carrito {

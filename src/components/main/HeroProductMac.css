@@ -1,7 +1,5 @@
 .container-hero-mac {
-	width: 100vw;
-	margin-top: 20vw;
-	padding: 20vw 5% 10vw;
+	padding: 7rem 5%;
 	background-color: var(--black-color);
 	text-align: center;
 	display: flex;
@@ -24,102 +22,53 @@
 
 .MacProHero {
 	display: none;
-	width: 260%;
-	/* height: 500px; */
-	object-fit: cover;
-}
-
-.btn-hero-mac {
-	margin-top: 2rem;
 }
 
 .MacProHero2 {
-	width: 100%;
-	margin-bottom: 3em;
+	width: 90%;
+	margin-bottom: 10vw;
+}
+
+.btn-hero-mac {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
 }
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 768px) {
 	.container-hero-mac {
-		/* margin-top: 20vw; */
-		padding-top: 13vw;
+		padding-block: 13vw;
 	}
 
 	.container-hero-mac h2 {
-		margin-bottom: 1.5em;
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 
 	.container-hero-mac p {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		line-height: 2.1rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.container-hero-mac {
-		padding-top: 9rem;
-		padding-bottom: 4.5rem;
-		height: 100%;
+		padding: 8vw 5%;
 	}
 
 	.container-hero-mac h2 {
-		margin-bottom: 0.3em;
-		/* color: var(--second-color); */
-		font-size: 3.5rem;
-		/* position: relative; */
-	}
-
-	.container-hero-mac p {
-		font-size: 1.7rem;
-		line-height: 2.6rem;
-		letter-spacing: 0.04rem;
+		margin-bottom: 0.5em;
 	}
 
 	.MacProHero {
-		display: inherit;
 		width: 100%;
-		height: 500px;
-		/* object-fit: cover; */
+		margin-bottom: 1em;
+		display: inherit;
 	}
 
 	.MacProHero2 {
 		display: none;
-	}
-}
-
-@media screen and (min-width: 1366px) {
-	.container-hero-mac {
-		padding-top: 9rem;
-		padding-bottom: 4.5rem;
-		background-color: var(--black-color);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		height: 100vh;
-	}
-
-	.container-hero-mac h2 {
-		margin-bottom: 0.3em;
-		color: var(--second-color);
-		font-size: 3.5rem;
-		position: relative;
-	}
-
-	.container-hero-mac p {
-		color: var(--third-color);
-		font-size: 1.7rem;
-		line-height: 2.6rem;
-		letter-spacing: 0.04rem;
-	}
-
-	.MacProHero {
-		width: 90%;
-		height: 500px;
-		object-fit: cover;
-	}
-
-	.btn-hero-mac {
-		margin-top: 2rem;
 	}
 }

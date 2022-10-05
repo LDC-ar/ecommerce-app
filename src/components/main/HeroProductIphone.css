@@ -1,6 +1,6 @@
 .container-hero-iphone {
 	margin-top: 20vw;
-	padding-top: 20vw;
+	padding-top: 7rem;
 	background-color: var(--black-color);
 	display: flex;
 	flex-direction: column;
@@ -8,21 +8,21 @@
 }
 
 .col-left-iphone {
-	width: 100%;
+	margin: 0 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
 
-.col-left-iphone span {
+.col-left-iphone > span {
 	margin-bottom: 0;
 	color: var(--new-color);
 	font-size: 1rem;
 }
 
 .col-left-iphone h2 {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1em;
 	color: var(--second-color);
 	font-size: 2.6rem;
 }
@@ -39,12 +39,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1rem;
+	gap: 0.2rem;
 }
 
 .col-right-iphone {
 	width: 100%;
-	margin-top: 10vw;
+	margin-top: 4rem;
 }
 
 .IphoneProHero {
@@ -54,31 +54,29 @@
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 768px) {
-	.col-left-iphone span {
+	.col-left-iphone {
+		margin: 0;
+	}
+
+	.col-left-iphone > span {
 		font-size: 1.2rem;
 	}
 
 	.col-left-iphone h2 {
-		margin-bottom: 0.8rem;
-		font-size: 3.5rem;
+		margin-bottom: 0.8em;
+		font-size: 3rem;
 	}
 
 	.col-left-iphone p {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		line-height: 2.1rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.col-left-iphone span {
-		font-size: 1.8rem;
-	}
-}
-
-@media screen and (min-width: 1366px) {
 	.container-hero-iphone {
-		height: 100vh;
-		margin-top: 3.5rem;
+		height: 80vh;
+		margin-top: 6rem;
 		padding-top: 0rem;
 		position: relative;
 		z-index: 1;
@@ -86,16 +84,27 @@
 	}
 
 	.col-left-iphone {
-		margin-left: 5%;
-		margin-top: 0%;
-		padding-left: 5rem;
 		width: 50%;
+		height: 100%;
+		margin-top: 0%;
+		margin-left: 5%;
+		padding-left: 3em;
+		justify-content: center;
 		align-items: flex-start;
 		text-align: left;
 	}
 
-	.col-left-iphone span {
+	.col-left-iphone > span {
 		margin-bottom: -0.4rem;
+	}
+
+	.col-left-iphone h2 {
+		font-size: 2.5rem;
+	}
+
+	.col-left-iphone p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
 	}
 
 	.btn-hero-iphone {
@@ -103,10 +112,36 @@
 	}
 
 	.col-right-iphone {
-		width: 50%;
+		height: 100%;
+		width: 60%;
+		margin-top: 0;
+		display: flex;
+		justify-content: end;
+		align-items: flex-end;
 	}
 
 	.IphoneProHero {
 		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.container-hero-iphone {
+		height: 100vh;
+	}
+
+	.col-left-iphone h2 {
+		font-size: 3rem;
+	}
+
+	.col-left-iphone p {
+		font-size: 1.3rem;
+		line-height: 2.1rem;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.container-hero-iphone {
+		height: 100vh;
 	}
 }

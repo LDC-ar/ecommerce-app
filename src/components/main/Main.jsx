@@ -43,7 +43,7 @@ function Main(props) {
 			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
 			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
-			<ImageSlider slides={SliderData} />
+			{/* <ImageSlider slides={SliderData} /> */}
 		</div>
 	);
 }

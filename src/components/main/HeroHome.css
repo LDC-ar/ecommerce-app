@@ -47,7 +47,7 @@
 }
 
 .AppleWatch {
-	width: 100%;
+	width: 90%;
 	max-width: 700px;
 	order: 1;
 }
@@ -97,7 +97,7 @@
 	.container-hero-home {
 		width: 95%;
 		height: 100vh;
-		padding-top: 12rem;
+		padding-top: 10rem;
 		z-index: 0;
 		flex-direction: row;
 	}
@@ -129,12 +129,13 @@
 		width: 50%;
 		height: 100%;
 		margin-top: 0;
+		padding-right: 0;
 		background: transparent;
 		gap: 0;
 	}
 
 	.AppleWatch {
-		width: 90%;
+		width: 80%;
 		max-width: 530px;
 		margin-left: 15%;
 		order: 0;
@@ -143,7 +144,7 @@
 	.col-right-hero-home p {
 		width: 75%;
 		margin-left: 15%;
-		margin-top: 6rem;
+		margin-top: 3rem;
 		color: var(--first-color);
 	}
 }

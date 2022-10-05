@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroProductMac.css";
-import ImacHero from "../images/imac-hero.png";
+import ImacHero from "../images/imac-hero.jpg";
 import ImacHero2 from "../images/imac-hero2.png";
 import ButtonOrder from "./ButtonOrder";
 import ButtonInfo from "./ButtonInfo";
