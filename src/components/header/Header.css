@@ -3,7 +3,7 @@ header {
 	width: 100vw;
 	height: 4rem;
 	position: fixed;
-	z-index: 2;
+	z-index: 10;
 	background: var(--first-color);
 }
 
@@ -44,7 +44,7 @@ header {
 	position: fixed;
 	left: 0;
 	top: 4rem;
-	width: 100%;
+	width: 40%;
 	background-color: var(--black-alpha-color);
 	opacity: 0;
 	pointer-events: none;

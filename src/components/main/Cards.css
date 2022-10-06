@@ -1,11 +1,9 @@
 .container-card {
-	/* background-color: #e99d0a; */
-	height: 30em;
-	width: 19em;
+	height: 28em;
+	width: 18em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* gap: 2rem; */
 	justify-content: space-between;
 }
 .card-image {
@@ -18,44 +16,38 @@
 
 .card-image img {
 	max-width: 100%;
-	/* max-height: 100%; */
 }
 
 .card-description {
-	/* height: 50%; */
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.new {
+.card-new {
 	color: #e99d0a;
 	font-weight: 500;
-	/* font-size: 1rem; */
-	/* margin: 0;
-	padding: 0; */
 }
 
-.nombre {
+.card-name {
+	margin-bottom: 0.4em;
+	font-size: 1.7rem;
 	font-weight: 500;
-	font-size: 2rem;
-	margin-bottom: 0.7em;
 }
 
-.caract {
-	/* width: 60%; */
+.card-caract {
+	margin-bottom: 2.2em;
+	font-size: 1rem;
 	font-weight: 400;
-	font-size: 1.1rem;
 	line-height: 20px;
 	text-align: center;
-	margin-bottom: 2.8em;
 }
 
-.precio {
+.card-price {
+	margin-bottom: 0.9em;
 	font-size: 1rem;
 	text-align: center;
-	margin-bottom: 0.9em;
 }
 
 /*  Query 1024
