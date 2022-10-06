@@ -14,10 +14,10 @@ function Cards({ src, title, condition, description, price, id }) {
 				<p className="card-new">{condition}</p>
 				<p className="card-name">{title}</p>
 				<p className="card-caract">{description}</p>
-				<p className="card-price">{price}</p>
+				<p className="card-price">${price}</p>
 				{/* El ID se lo tenes que pasar a los botones para los modales*/}
 				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
-				<ButtonInfo />
+				<ButtonInfo id={id} />
 			</div>
 		</div>
 	);

@@ -13,33 +13,49 @@
 }
 
 .buttons {
-	width: 95%;
+	width: 20%;
 	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	z-index: 3;
-	bottom: 3%;
+	bottom: 2%;
 }
 
 .right-arrow,
 .left-arrow {
-	width: 30px;
+	width: 25px;
 	cursor: pointer;
 	user-select: none;
 }
 
-/* ############################################ */
-/* ESTO DE ABAJO CREO QUE NO ESTÁ FUNCIONANDO */
+/*  ESTO NO ESTARIA FUNCIONANDO
 
-/* .slide {
+.slide {
 	opacity: 0;
+	transform: translateX(0);
 	transition: transform 5s ease-in-out;
 }
 
 .slide.active {
 	opacity: 1;
-	transition: transform 5s ease-in-out;
 	transform: translateX(550px);
 } */
 
-/* ############################################ */
+/*########### MEDIA QUERIES #########  */
+@media screen and (min-width: 768px) {
+	.buttons {
+		width: 15%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.buttons {
+		width: 10%;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.buttons {
+		width: 5%;
+	}
+}

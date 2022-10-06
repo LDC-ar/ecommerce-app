@@ -1,6 +1,6 @@
 import React from "react";
 import "./SectionCard.css";
-import { sectionTitle, cardsInfoMac } from "../helpers/data";
+import { sectionTitle, cardsInfoMac, productsInfo } from "../helpers/data";
 import Cards from "./Cards";
 
 const SectionCardMac = ({ windowWidth, breakPoint }) => {
@@ -9,11 +9,20 @@ const SectionCardMac = ({ windowWidth, breakPoint }) => {
 			<h3>{sectionTitle.title2}</h3>
 			{/* Asi chequeas la condicion y renderiza un componente u otro*/}
 			{windowWidth < breakPoint ? (
-				<Cards src={cardsInfoMac[0].img} title={cardsInfoMac[0].title} condition={cardsInfoMac[0].condition} description={cardsInfoMac[0].description} price={cardsInfoMac[0].price} />
+				<Cards
+					id={cardsInfoMac[0].id}
+					src={cardsInfoMac[0].img}
+					title={cardsInfoMac[0].title}
+					condition={cardsInfoMac[0].condition}
+					description={cardsInfoMac[0].description}
+					price={cardsInfoMac[0].price}
+				/>
 			) : (
 				<div className="cards">
-					{cardsInfoMac.map(card => {
-						return <Cards key={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
+					{productsInfo.map(card => {
+						if (card.category == "Computer") {
+							return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
+						}
 					})}
 				</div>
 			)}
