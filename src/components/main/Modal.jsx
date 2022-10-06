@@ -1,10 +1,12 @@
 import React from "react";
 import "./Modal.css";
 
-const Modal = ({ show, onClose, children }) => {
+const Modal = ({ show, onClose, productInfo }) => {
 	if (!show) {
 		return null;
 	}
+
+	const { title, price, img } = productInfo;
 
 	return (
 		<div className="Wrapper">
@@ -12,7 +14,9 @@ const Modal = ({ show, onClose, children }) => {
 				<button onClick={onClose} className="btn-close">
 					<span>X</span>
 				</button>
-				{children}
+				<img src={img} alt={title} style={{ width: "20%" }} />
+				<h3>{title}</h3>
+				<h4>${price}</h4>
 			</div>
 		</div>
 	);
