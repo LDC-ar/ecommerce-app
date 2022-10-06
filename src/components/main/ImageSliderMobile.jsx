@@ -1,11 +1,11 @@
 import React from "react";
-import { SliderData } from "../helpers/data";
+import { SliderDataMobile } from "../helpers/data";
 import { useState, useEffect } from "react";
 import LeftArrow from "../images/left-arrow2.png";
 import RightArrow from "../images/right-arrow2.png";
 import "./ImageSlider.css";
 
-const ImageSlider = ({ slides }) => {
+const ImageSliderMobile = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
 	const length = slides.length;
 
@@ -30,7 +30,7 @@ const ImageSlider = ({ slides }) => {
 
 	return (
 		<section className="slider">
-			{SliderData.map((slide, index) => {
+			{SliderDataMobile.map((slide, index) => {
 				return (
 					<div className={index === current ? "slide.active" : "slide"} key={index}>
 						{index === current && <img src={slide.image} alt="apple TV" className="image" />}
@@ -45,4 +45,4 @@ const ImageSlider = ({ slides }) => {
 	);
 };
 
-export default ImageSlider;
+export default ImageSliderMobile;
