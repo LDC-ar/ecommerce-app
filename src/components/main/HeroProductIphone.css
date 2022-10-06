@@ -144,5 +144,23 @@
 @media screen and (min-width: 1920px) {
 	.container-hero-iphone {
 		height: 100vh;
+		margin-top: 0;
+		padding-top: 7rem;
+	}
+
+	.col-left-iphone > span {
+		margin-bottom: -0.4rem;
+		font-size: 1.2rem;
+	}
+
+	.col-left-iphone h2 {
+		margin-bottom: 0.8em;
+		font-size: 3.8rem;
+	}
+
+	.col-left-iphone p {
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		letter-spacing: 0.06rem;
 	}
 }

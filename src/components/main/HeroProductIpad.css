@@ -144,3 +144,23 @@
 		width: 475px;
 	}
 }
+
+@media screen and (min-width: 1920px) {
+	.container-hero-ipad {
+		padding-top: 8em;
+	}
+
+	.col-left-ipad h2 {
+		font-size: 3.8rem;
+	}
+
+	.col-left-ipad p {
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		letter-spacing: 0.06rem;
+	}
+
+	.IpadProHero {
+		width: 600px;
+	}
+}
