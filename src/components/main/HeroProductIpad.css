@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1024px) {
 	.container-hero-ipad {
-		height: 80vh;
+		height: 100vh;
 		padding: 0 5%;
 		flex-direction: row;
 	}
@@ -121,16 +121,12 @@
 	}
 
 	.IpadProHero {
-		width: 380px;
+		width: 420px;
 		margin-bottom: 0;
 	}
 }
 
 @media screen and (min-width: 1366px) {
-	.container-hero-ipad {
-		height: 100vh;
-	}
-
 	.col-left-ipad h2 {
 		font-size: 3rem;
 	}
@@ -147,7 +143,16 @@
 
 @media screen and (min-width: 1920px) {
 	.container-hero-ipad {
+		padding-left: 0;
+		padding-right: 0;
 		padding-top: 8em;
+	}
+
+	.col-left-ipad {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-left: 0;
 	}
 
 	.col-left-ipad h2 {

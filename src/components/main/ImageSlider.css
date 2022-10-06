@@ -1,6 +1,6 @@
 .slider {
 	width: 100vw;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 	position: relative;
 	display: flex;
 	flex-direction: column;
