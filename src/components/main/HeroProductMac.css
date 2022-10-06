@@ -55,7 +55,8 @@
 
 @media screen and (min-width: 1024px) {
 	.container-hero-mac {
-		padding: 8vw 5%;
+		height: 100vh;
+		padding: 10vw 5%;
 	}
 
 	.container-hero-mac h2 {
@@ -64,11 +65,43 @@
 
 	.MacProHero {
 		width: 100%;
-		margin-bottom: 1em;
 		display: inherit;
 	}
 
 	.MacProHero2 {
 		display: none;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.container-hero-mac {
+		height: 100vh;
+		padding: 8vw 5%;
+	}
+
+	.MacProHero {
+		width: 80%;
+		margin-bottom: 0;
+		display: inherit;
+	}
+
+	.btn-hero-mac {
+		margin-top: 2em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.container-hero-mac {
+		padding-top: 8em;
+	}
+
+	.container-hero-mac h2 {
+		font-size: 3.8rem;
+	}
+
+	.container-hero-mac p {
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		letter-spacing: 0.06rem;
 	}
 }

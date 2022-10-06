@@ -157,13 +157,13 @@
 	.container-hero-home h1 {
 		max-width: 38rem;
 		min-height: 12rem;
-		margin-bottom: 3rem;
+		margin-bottom: 1em;
 		font-size: 3.5rem;
 	}
 
 	.col-right-hero-home p {
 		width: 75%;
 		margin-left: 15%;
-		margin-top: 3rem;
+		margin-top: 4em;
 	}
 }

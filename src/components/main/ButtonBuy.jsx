@@ -14,7 +14,7 @@ const ButtonBuy = () => {
 					{textButton.buy}
 				</button>
 				<Modal show={show} onClose={() => setShow(false)}>
-					<h1>Producto agregado al carrito ✔</h1>
+					<h1>Producto agregado al carrito</h1>
 				</Modal>
 			</div>
 		</div>
