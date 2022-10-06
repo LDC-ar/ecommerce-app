@@ -9,7 +9,7 @@ function Footer() {
 				<div className="footer-grid">
 					<div className="footer-links">
             <details>
-            <summary><h2>Services</h2></summary>
+            <summary>Services</summary>
 						<summary><a href=" ">Apple Music</a></summary>
 						<summary><a href=" ">Apple TV+</a></summary>
 						<summary><a href=" ">icloud</a></summary>
@@ -19,7 +19,7 @@ function Footer() {
 					</div>
 					<div className="footer-links">
             <details>
-            <summary><h2>Account</h2></summary>
+            <summary>Account</summary>
 						<summary><a href=" ">Manage Your Apple iD</a></summary>
 						<summary><a href=" ">Apple Store Account</a></summary>
 						<summary><a href=" ">icloud.com</a></summary>
@@ -28,7 +28,7 @@ function Footer() {
 					</div>
 					<div className="footer-links">
             <details>
-              <summary><h2>Store</h2></summary>
+              <summary>Store</summary>
               <summary><a href=" ">Find a Store</a></summary>
               <summary><a href=" ">Store App</a></summary>
               <summary><a href=" ">Financing</a></summary>
@@ -38,7 +38,7 @@ function Footer() {
 					</div>
 					<div className="footer-links">
             <details>
-            <summary><h2>About</h2></summary>
+            <summary>About</summary>
 						<summary><a href=" ">Career Opportunities</a></summary>
 						<summary><a href=" ">inventors</a></summary>
 						<summary><a href=" "> Ethics & Compliance</a></summary>
