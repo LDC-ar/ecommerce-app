@@ -1,59 +1,171 @@
-/*#####################*/
-/*       Layout        */
-/*#####################*/
 .container-hero-ipad {
-	padding-top: 12rem;
+	padding-top: 7rem;
 	background-color: var(--black-color);
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .col-left-ipad {
+	margin: 0 5%;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	margin-left: 5%;
-	margin-top: 9%;
-	width: 50%;
+	align-items: center;
+	text-align: center;
 }
 
-.col-left-ipad span {
-	margin-bottom: -2%;
-}
-
-.col-left-iphone p {
-	margin-top: 3%;
-}
-
-.btn-hero-ipad {
-	margin-top: 3%;
-}
-
-.col-right-ipad {
-	width: 50%;
-}
-
-.IpadProHero {
-	width: 65%;
-	margin-bottom: -0.4%;
-}
-
-/*#####################*/
-/* Typography & Design */
-/*#####################*/
-
-.col-left-ipad span {
-	color: var(--third-color);
-	font-size: 3rem;
+.col-left-ipad > span {
+	margin-bottom: 0;
+	color: var(--new-color);
+	font-size: 1rem;
 }
 
 .col-left-ipad h2 {
+	margin-bottom: 1em;
 	color: var(--second-color);
-	font-size: 5.5rem;
+	font-size: 2.6rem;
 }
 
 .col-left-ipad p {
 	color: var(--third-color);
-	font-size: 1.7rem;
-	line-height: 2.6rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
 	letter-spacing: 0.04rem;
+}
+
+.btn-hero-ipad {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.2rem;
+}
+
+.col-right-ipad {
+	width: 80%;
+	margin-top: 4rem;
+}
+
+.IpadProHero {
+	width: 100%;
+	margin-bottom: -0.25rem;
+}
+
+/*########### MEDIA QUERIES #########  */
+@media screen and (min-width: 768px) {
+	.col-left-ipad {
+		margin: 0;
+	}
+
+	.col-left-ipad > span {
+		font-size: 1.2rem;
+	}
+
+	.col-left-ipad h2 {
+		margin-bottom: 0.8em;
+		font-size: 3rem;
+	}
+
+	.col-left-ipad p {
+		font-size: 1.3rem;
+		line-height: 2.1rem;
+	}
+
+	.col-right-ipad {
+		width: 70%;
+		margin-top: 4rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container-hero-ipad {
+		height: 100vh;
+		padding: 0 5%;
+		flex-direction: row;
+	}
+
+	.col-left-ipad {
+		width: 50%;
+		height: 100%;
+		margin-top: 0%;
+		padding-left: 3em;
+		justify-content: center;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.col-left-ipad > span {
+		margin-bottom: -0.4rem;
+	}
+
+	.col-left-ipad h2 {
+		font-size: 2.5rem;
+	}
+
+	.col-left-ipad p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+	}
+
+	.btn-hero-ipad {
+		flex-direction: row;
+	}
+
+	.col-right-ipad {
+		height: 100%;
+		width: 50%;
+		margin-top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+	.IpadProHero {
+		width: 420px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.col-left-ipad h2 {
+		font-size: 3rem;
+	}
+
+	.col-left-ipad p {
+		font-size: 1.3rem;
+		line-height: 2.1rem;
+	}
+
+	.IpadProHero {
+		width: 475px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.container-hero-ipad {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 8em;
+	}
+
+	.col-left-ipad {
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.col-left-ipad h2 {
+		font-size: 3.8rem;
+	}
+
+	.col-left-ipad p {
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+		letter-spacing: 0.06rem;
+	}
+
+	.IpadProHero {
+		width: 600px;
+	}
 }

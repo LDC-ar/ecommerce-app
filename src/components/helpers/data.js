@@ -1,6 +1,7 @@
 export const textButton = {
-	textoUno: "Pre-order",
-	textoDos: "Buy",
+	order: "Pre-order",
+	buy: "Buy",
+	learnMore: "Learn More",
 };
 
 export const sectionTitle = {
@@ -147,6 +148,45 @@ export const SliderData = [
 	},
 	{
 		image: "https://i.imgur.com/TbID5A7.jpg",
+		id: 9,
+	},
+];
+
+export const SliderDataMobile = [
+	{
+		image: "https://i.imgur.com/KI1x2xb.jpg",
+		id: 1,
+	},
+	{
+		image: "https://i.imgur.com/GE5AFma.jpg",
+		id: 2,
+	},
+	{
+		image: "https://i.imgur.com/KlPDZgU.jpg",
+		id: 3,
+	},
+	{
+		image: "https://i.imgur.com/3zgnnt4.jpg",
+		id: 4,
+	},
+	{
+		image: "https://i.imgur.com/vVc8q9E.jpg",
+		id: 5,
+	},
+	{
+		image: "https://i.imgur.com/4TVpCIS.jpg",
+		id: 6,
+	},
+	{
+		image: "https://i.imgur.com/gA1j9Yz.jpg",
+		id: 7,
+	},
+	{
+		image: "https://i.imgur.com/77S6Dsn.jpg",
+		id: 8,
+	},
+	{
+		image: "https://i.imgur.com/3o4NC56.jpg",
 		id: 9,
 	},
 ];
