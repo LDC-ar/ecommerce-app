@@ -22,9 +22,6 @@ function Footer() {
 						<a href="#">icloud.com</a>
 						<a href="#">Support</a>
 					</div>
-					<div className="footer-logo">
-						<img src={logo} alt="logo-apple" />
-					</div>
 					<div className="footer-links">
 						<h2>Store</h2>
 						<a href="#">Find a Store</a>
@@ -40,6 +37,9 @@ function Footer() {
 						<a href="#"> Ethics & Compliance</a>
 						<a href="#">Events</a>
 						<a href="#">Contact Apple</a>
+					</div>
+					<div className="footer-logo">
+						<img src={logo} alt="logo-apple" />
 					</div>
 				</div>
 				<hr className="line" />

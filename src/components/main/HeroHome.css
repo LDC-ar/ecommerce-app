@@ -1,66 +1,150 @@
-/*#####################*/
-/*       Layout        */
-/*#####################*/
 .container-hero-home {
-	display: flex;
 	margin: 0 auto;
-	position: relative;
 	text-align: center;
-	width: 95%;
-	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .col-left-hero-home {
-	align-items: center;
+	width: 100%;
+	margin-top: 9rem;
+	padding: 0 5%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 13rem;
-	width: 50%;
+	align-items: center;
 }
 
 .container-hero-home h1 {
-	margin: 0;
-	margin-bottom: 6rem;
 	width: 90%;
+	margin: 0;
+	margin-bottom: 18vw;
+	font-size: 2.5rem;
 }
 
 .ApplePersonaWatch {
-	margin-left: 11rem;
-	width: 105%;
+	width: 100%;
+}
+
+.mobile-background {
+	width: 100%;
+	height: 20rem;
+	margin-top: -9.6rem;
+	background: linear-gradient(6deg, rgba(0, 0, 0, 1) 74.7%, rgba(255, 255, 255, 0) 75%);
 }
 
 .col-right-hero-home {
-	align-items: center;
+	width: 100%;
+	margin-top: -6rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 0 5%;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 79%, rgba(255, 255, 255, 1) 79%);
 	display: flex;
 	flex-direction: column;
-	margin-top: 13rem;
-	width: 50%;
+	align-items: center;
+	gap: 6rem;
 }
 
 .AppleWatch {
-	margin-left: 10%;
-	width: 70%;
+	width: 90%;
+	max-width: 700px;
+	order: 1;
 }
 
 .col-right-hero-home p {
-	margin-left: 10%;
-	margin-top: 4rem;
-	width: 70%;
-}
-
-/*#####################*/
-/* Typography & Design */
-/*#####################*/
-.container-hero-home h1 {
-	font-size: 4.5rem;
-}
-
-.col-right-hero-home p {
-	font-size: 1.8rem;
-	line-height: 2.4rem;
+	width: 90%;
+	color: var(--third-color);
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	letter-spacing: 0.05rem;
 	text-align: center;
 }
 
-@media screen {
-  
+/*########### MEDIA QUERIES #########  */
+@media screen and (min-width: 768px) {
+	.col-left-hero-home {
+		margin-top: 20vw;
+	}
+
+	.col-right-hero-home {
+		background: linear-gradient(180deg, rgba(0, 0, 0, 1) 70%, rgba(255, 255, 255, 1) 70%);
+	}
+
+	.col-right-hero-home p {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container-hero-home h1 {
+		font-size: 3.2rem;
+	}
+
+	.mobile-background {
+		background: linear-gradient(4deg, rgba(0, 0, 0, 1) 74.7%, rgba(255, 255, 255, 0) 75%);
+	}
+
+	.col-right-hero-home p {
+		width: 80%;
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.container-hero-home {
+		width: 95%;
+		height: 100vh;
+		padding-top: 10rem;
+		z-index: 0;
+		flex-direction: row;
+	}
+
+	.col-left-hero-home {
+		width: 50%;
+		height: 100%;
+		margin-top: 0;
+		padding: 0;
+		justify-content: space-between;
+	}
+
+	.container-hero-home h1 {
+		max-width: 35rem;
+		min-height: 12rem;
+		margin-bottom: 5rem;
+	}
+
+	.ApplePersonaWatch {
+		width: 120%;
+		margin-left: 15rem;
+	}
+
+	.mobile-background {
+		display: none;
+	}
+
+	.col-right-hero-home {
+		width: 50%;
+		height: 100%;
+		margin-top: 0;
+		padding-right: 0;
+		background: transparent;
+		gap: 0;
+	}
+
+	.AppleWatch {
+		width: 80%;
+		max-width: 530px;
+		margin-left: 15%;
+		order: 0;
+	}
+
+	.col-right-hero-home p {
+		width: 75%;
+		margin-left: 15%;
+		margin-top: 3rem;
+		color: var(--first-color);
+	}
 }
