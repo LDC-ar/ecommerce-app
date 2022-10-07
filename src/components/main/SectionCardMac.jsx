@@ -10,12 +10,12 @@ const SectionCardMac = ({ windowWidth, breakPoint }) => {
 			{/* Asi chequeas la condicion y renderiza un componente u otro*/}
 			{windowWidth < breakPoint ? (
 				<Cards
-					id={cardsInfoMac[0].id}
-					src={cardsInfoMac[0].img}
-					title={cardsInfoMac[0].title}
-					condition={cardsInfoMac[0].condition}
-					description={cardsInfoMac[0].description}
-					price={cardsInfoMac[0].price}
+					id={cardsInfoMac[5].id}
+					src={cardsInfoMac[5].img}
+					title={cardsInfoMac[5].title}
+					condition={cardsInfoMac[5].condition}
+					description={cardsInfoMac[5].description}
+					price={cardsInfoMac[5].price}
 				/>
 			) : (
 				<div className="cards">

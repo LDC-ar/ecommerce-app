@@ -10,12 +10,12 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 			{/* Asi chequeas la condicion y renderiza un componente u otro*/}
 			{windowWidth < breakPoint ? (
 				<Cards
-					id={cardsInfoIphone[0].id}
-					src={cardsInfoIphone[0].img}
-					title={cardsInfoIphone[0].title}
-					condition={cardsInfoIphone[0].condition}
-					description={cardsInfoIphone[0].description}
-					price={cardsInfoIphone[0].price}
+					id={cardsInfoIphone[1].id}
+					src={cardsInfoIphone[1].img}
+					title={cardsInfoIphone[1].title}
+					condition={cardsInfoIphone[1].condition}
+					description={cardsInfoIphone[1].description}
+					price={cardsInfoIphone[1].price}
 				/>
 			) : (
 				<div className="cards">
@@ -24,10 +24,6 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 							return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
 						}
 					})}
-
-					{/* {cardsInfoIphone.map(card => {
-						return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
-					})} */}
 				</div>
 			)}
 		</div>
