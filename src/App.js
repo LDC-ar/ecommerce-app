@@ -8,7 +8,7 @@ import ButtonInfo from "./components/main/ButtonInfo";
 import ButtonInfoGde from "./components/main/ButtonInfoGde";
 import { textButton } from "./components/helpers/data";
 
-function App(props) {
+function App() {
 	return (
 		<div>
 			<Header />

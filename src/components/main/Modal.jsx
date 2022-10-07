@@ -14,9 +14,11 @@ const Modal = ({ show, onClose, productInfo }) => {
 				<button onClick={onClose} className="btn-close">
 					<span>X</span>
 				</button>
-				<img src={img} alt={title} style={{ width: "20%" }} />
-				<h3>{title}</h3>
-				<h4>${price}</h4>
+				<div className="modal-content">
+					<img src={img} alt={title} style={{ width: "20%" }} />
+					<h3>{title}</h3>
+					<h4>${price}</h4>
+				</div>
 			</div>
 		</div>
 	);

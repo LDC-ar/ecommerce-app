@@ -16,7 +16,7 @@ const ButtonBuy = ({ id }) => {
 	};
 
 	function checkId(id) {
-		return productsInfo.filter(product => product.id == id);
+		return productsInfo.filter(product => product.id === id);
 	}
 	// FIN Estado 2 //
 
