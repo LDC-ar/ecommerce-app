@@ -24,10 +24,6 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 							return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
 						}
 					})}
-
-					{/* {cardsInfoIphone.map(card => {
-						return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
-					})} */}
 				</div>
 			)}
 		</div>
