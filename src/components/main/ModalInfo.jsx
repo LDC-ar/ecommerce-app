@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-const Modal = ({ show, onClose, productInfo }) => {
+const ModalInfo = ({ show, onClose, productInfo }) => {
 	if (!show) {
 		return null;
 	}
@@ -24,6 +24,4 @@ const Modal = ({ show, onClose, productInfo }) => {
 	);
 };
 
-export default Modal;
-
-//    <div className={`modal ${true ? "modal-carrito" : null}`}>
+export default ModalInfo;

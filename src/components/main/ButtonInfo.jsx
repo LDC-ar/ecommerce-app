@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { textButton, productsInfo } from "../helpers/data";
-import Modal from "./Modal";
+import ModalInfo from "./ModalInfo";
 import "./Buttons.css";
 import "./Modal.css";
 
@@ -26,7 +26,7 @@ const ButtonInfo = ({ id }) => {
 				<button className="btn btnInfo btnCH" onClick={() => handleClick(id)}>
 					{textButton.learnMore}
 				</button>
-				<Modal show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
+				<ModalInfo show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
 			</div>
 		</div>
 	);

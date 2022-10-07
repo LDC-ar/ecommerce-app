@@ -15,7 +15,7 @@
 	width: 500px;
 	height: 500px;
 	background: var(--second-color);
-	border-radius: 5px;
+	border-radius: 10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,17 +47,45 @@
 	color: var(--first-color);
 }
 
-/* .btn-close span {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	background-color: rgb(29, 218, 23);
-	font-size: 20px;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	color: var(--first-color);
-} */
+.modal-buy-container {
+	height: 90%;
+	width: 90%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.modal-buy-img {
+	width: 60%;
+	margin-bottom: 0.5em;
+}
+
+.modal-buy-title {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.modal-buy-description {
+	margin-bottom: 1.2em;
+	font-weight: 400;
+}
+
+.modal-buy-price {
+	margin-bottom: 1em;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.modal-buy-added {
+	margin-bottom: 1em;
+	font-size: 1.2rem;
+}
+
+.ItemAddedAnimation {
+	width: 60px;
+}
 
 @keyframes scale {
 	0% {
@@ -69,11 +97,5 @@
 		opacity: 1;
 		transform: scaleY(100%) scaleX(100%);
 		/* transform: translateY(0); */
-	}
-}
-
-@media (max-width: 385px) {
-	.modal {
-		width: 340px;
 	}
 }
