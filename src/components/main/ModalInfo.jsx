@@ -1,12 +1,13 @@
 import React from "react";
+import ModalInfoPhone from "./ModalInfoPhone";
+import ModalInfoComputer from "./ModalInfoComputer";
+import ModalInfoIpad from "./ModalInfoIpad";
 import "./Modal.css";
 
-const ModalInfo = ({ show, onClose, productInfo }) => {
+const ModalInfo = ({ category, show, onClose, productInfo }) => {
 	if (!show) {
 		return null;
 	}
-
-	const { title, price, img } = productInfo;
 
 	return (
 		<div className="Wrapper">
@@ -14,14 +15,26 @@ const ModalInfo = ({ show, onClose, productInfo }) => {
 				<button onClick={onClose} className="btn-close">
 					<span>X</span>
 				</button>
-				<div className="modal-content">
-					<img src={img} alt={title} style={{ width: "20%" }} />
-					<h3>{title}</h3>
-					<h4>${price}</h4>
-				</div>
+				{(() => {
+					switch (category) {
+						case "Phone":
+							return <ModalInfoPhone productInfo={productInfo} />;
+						case "Computer":
+							return <ModalInfoComputer productInfo={productInfo} />;
+						case "Ipad":
+							return <ModalInfoIpad productInfo={productInfo} />;
+						default:
+							return null;
+					}
+				})()}
 			</div>
 		</div>
 	);
 };
 
 export default ModalInfo;
+
+/* <img src={img} alt={title} className="modal-info-img" />
+<h3 className="modal-info-title">{title}</h3>
+<h4 className="modal-info-description">{description}</h4>
+<h5 className="modal-info-price">${price}</h5> */

@@ -11,6 +11,7 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 			{windowWidth < breakPoint ? (
 				<Cards
 					id={productsInfo[1].id}
+					category={productsInfo[1].category}
 					src={productsInfo[1].img}
 					title={productsInfo[1].title}
 					condition={productsInfo[1].condition}
@@ -21,7 +22,7 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 				<div className="cards">
 					{productsInfo.map(card => {
 						if (card.category === "Phone") {
-							return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
+							return <Cards key={card.id} id={card.id} category={card.category} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
 						}
 					})}
 				</div>

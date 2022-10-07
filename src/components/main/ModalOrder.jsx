@@ -17,7 +17,7 @@ const ModalOrder = ({ show, onClose, productInfo }) => {
 				<div className="modal-content">
 					<img src={img} alt={title} style={{ width: "20%" }} />
 					<h3>{title}</h3>
-					<h4>${price}</h4>
+					<input type="email" placeholder="Enter your email here"></input>
 				</div>
 			</div>
 		</div>

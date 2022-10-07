@@ -14,7 +14,7 @@ export const productsInfo = [
 	{
 		id: 1,
 		title: "Iphone 14 Pro",
-		category: "OrderOnly",
+		category: "Phone-Order",
 		description: "The ultimate iPhone.",
 		displaySize: '6.7" or 6.1"',
 		displayType: "Super Retina XDR display. ProMotion technology. Always-On display",

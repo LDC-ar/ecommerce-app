@@ -20,7 +20,7 @@ const HeroProductIphone = () => {
 				</p>
 				<div className="btn-hero-iphone">
 					<ButtonOrder id={productsInfo[0].id} />
-					<ButtonInfo id={productsInfo[0].id} />
+					<ButtonInfo id={productsInfo[0].id} category={"Phone"} />
 				</div>
 			</div>
 			<div className="col-right-iphone">
