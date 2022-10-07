@@ -27,16 +27,28 @@ Black-alpha-color = negro con transparencia */
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	/* padding: 0; */
 }
 
 html {
 	scroll-behavior: smooth;
+	font-family: var(--first-font);
 }
 
 body {
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	color: var(--black-alpha-color);
-	font-family: var(--first-font);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+
+a:hover {
+	opacity: 0.75;
+}
+
+.none {
+	display: none;
 }

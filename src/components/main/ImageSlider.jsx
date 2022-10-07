@@ -1,11 +1,9 @@
-import { SliderData } from "../helpers/data";
 import React from "react";
+import { SliderData } from "../helpers/data";
 import { useState, useEffect } from "react";
+import LeftArrow from "../images/left-arrow2.png";
+import RightArrow from "../images/right-arrow2.png";
 import "./ImageSlider.css";
-import LeftArrow from "../images/left-arrow.png";
-import RightArrow from "../images/right-arrow.png";
-
-console.log(window);
 
 const ImageSlider = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
@@ -32,7 +30,6 @@ const ImageSlider = ({ slides }) => {
 
 	return (
 		<section className="slider">
-			<img src={LeftArrow} alt="arrow" className="left-arrow" onClick={prevSlide} />
 			{SliderData.map((slide, index) => {
 				return (
 					<div className={index === current ? "slide.active" : "slide"} key={index}>
@@ -40,7 +37,10 @@ const ImageSlider = ({ slides }) => {
 					</div>
 				);
 			})}
-			<img src={RightArrow} alt="arrow" className="right-arrow" onClick={nextSlide} />
+			<div className="buttons">
+				<img src={LeftArrow} alt="arrow" className="left-arrow" onClick={prevSlide} />
+				<img src={RightArrow} alt="arrow" className="right-arrow" onClick={nextSlide} />
+			</div>
 		</section>
 	);
 };
