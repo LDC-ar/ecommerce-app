@@ -562,7 +562,7 @@
 
 .modal-ipad-cameraImg {
 	grid-area: cameraImg;
-	width: 60%;
+	width: 50%;
 	place-self: center;
 }
 
@@ -582,7 +582,7 @@
 
 .modal-ipad-connectorImg {
 	grid-area: connectorImg;
-	width: 60%;
+	width: 50%;
 	place-self: center;
 }
 
@@ -597,7 +597,7 @@
 
 .modal-ipad-chipsetImg {
 	grid-area: chipsetImg;
-	width: 60%;
+	width: 50%;
 	place-self: center;
 }
 
@@ -612,7 +612,7 @@
 
 .modal-ipad-networkImg {
 	grid-area: networkImg;
-	width: 60%;
+	width: 50%;
 	place-self: center;
 }
 
