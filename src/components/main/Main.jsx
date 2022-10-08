@@ -13,7 +13,7 @@ import ImageSliderMobile from "./ImageSliderMobile";
 import SectionCardMobile from "./SectionCardMobile";
 import SectionCard from "./SectionCard"
 
-function Main(props) {
+function Main() {
 	///////////////////////////////////////////////////////////////////////////////
 	////////////Este event listener es para saber el ancho de la pantalla//////////
 	///////////////////////////////////////////////////////////////////////////////

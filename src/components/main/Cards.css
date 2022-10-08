@@ -14,7 +14,7 @@
 	align-items: center;
 }
 
-.card-image img {
+.card-image > img {
 	max-width: 100%;
 }
 
@@ -38,7 +38,6 @@
 
 .card-caract {
 	margin-bottom: 2.2em;
-	font-size: 1rem;
 	font-weight: 400;
 	line-height: 20px;
 	text-align: center;
@@ -46,17 +45,12 @@
 
 .card-price {
 	margin-bottom: 0.9em;
-	font-size: 1rem;
 	text-align: center;
 }
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 1920px) {
-	.container-card {
-		height: 30em;
-	}
-
-	.card-image img {
-		max-width: 125%;
+	.card-image > img {
+		max-width: 135%;
 	}
 }

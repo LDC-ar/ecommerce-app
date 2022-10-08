@@ -1,8 +1,9 @@
 import React from "react";
+import ButtonBuy from "./ButtonBuy";
+import ButtonInfo from "./ButtonInfo";
+import { productsInfo } from "../helpers/data";
 import "./HeroProductIpad.css";
 import IpadProHero from "../images/ipad-pro-hero.png";
-import ButtonOrder from "./ButtonOrder";
-import ButtonInfo from "./ButtonInfo";
 
 const HeroProductIpad = () => {
 	return (
@@ -18,8 +19,8 @@ const HeroProductIpad = () => {
 					Surprisingly affordable.
 				</p>
 				<div className="btn-hero-ipad">
-					<ButtonOrder />
-					<ButtonInfo />
+					<ButtonBuy id={productsInfo[9].id} />
+					<ButtonInfo id={productsInfo[9].id} category={productsInfo[9].category} />
 				</div>
 			</div>
 			<div className="col-right-ipad">

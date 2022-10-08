@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.container-SectionCard h3 {
+.container-SectionCard > h3 {
 	margin-bottom: 2em;
 	font-size: 2rem;
 	text-align: center;
@@ -41,7 +41,7 @@
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 1366px) {
-	.container-SectionCard h3 {
+	.container-SectionCard > h3 {
 		margin-bottom: 1.2em;
 		font-size: 3rem;
 	}
@@ -56,10 +56,10 @@
 	.container-SectionCard {
 		height: 100vh;
 		padding-top: 11em;
-		margin-bottom: 1em;
+		margin-bottom: 3em;
 	}
 
-	.container-SectionCard h3 {
+	.container-SectionCard > h3 {
 		margin-bottom: 2.8em;
 	}
 }
