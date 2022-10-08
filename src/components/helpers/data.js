@@ -27,6 +27,7 @@ export const productsInfo = [
 		price: 999,
 		condition: "New",
 		img: "https://i.imgur.com/25ia4FG.png",
+		imgModal: "https://i.imgur.com/Xwo9Tv9.jpg",
 		cameraImg: "https://i.imgur.com/mXTnxtR.png",
 		batteryImg: "https://i.imgur.com/ZmEXuSY.png",
 		chipsetImg: "https://i.imgur.com/8wOOudM.png",
