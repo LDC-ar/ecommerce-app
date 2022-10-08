@@ -20,7 +20,7 @@ const HeroProductIpad = () => {
 				</p>
 				<div className="btn-hero-ipad">
 					<ButtonBuy id={productsInfo[9].id} />
-					<ButtonInfo id={productsInfo[9].id} />
+					<ButtonInfo id={productsInfo[9].id} category={productsInfo[9].category} />
 				</div>
 			</div>
 			<div className="col-right-ipad">

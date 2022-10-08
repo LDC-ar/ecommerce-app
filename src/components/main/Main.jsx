@@ -11,7 +11,7 @@ import SectionCardIpad from "./SectionCardIpad";
 import ImageSlider from "./ImageSlider";
 import ImageSliderMobile from "./ImageSliderMobile";
 
-function Main(props) {
+function Main() {
 	///////////////////////////////////////////////////////////////////////////////
 	////////////Este event listener es para saber el ancho de la pantalla//////////
 	///////////////////////////////////////////////////////////////////////////////
