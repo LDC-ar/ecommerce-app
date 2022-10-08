@@ -20,13 +20,13 @@
 	font-size: 1rem;
 }
 
-.col-left-ipad h2 {
+.col-left-ipad > h2 {
 	margin-bottom: 1em;
 	color: var(--second-color);
 	font-size: 2.6rem;
 }
 
-.col-left-ipad p {
+.col-left-ipad > p {
 	color: var(--third-color);
 	font-size: 1.2rem;
 	line-height: 1.8rem;
@@ -61,12 +61,12 @@
 		font-size: 1.2rem;
 	}
 
-	.col-left-ipad h2 {
+	.col-left-ipad > h2 {
 		margin-bottom: 0.8em;
 		font-size: 3rem;
 	}
 
-	.col-left-ipad p {
+	.col-left-ipad > p {
 		font-size: 1.3rem;
 		line-height: 2.1rem;
 	}
@@ -98,11 +98,11 @@
 		margin-bottom: -0.4rem;
 	}
 
-	.col-left-ipad h2 {
+	.col-left-ipad > h2 {
 		font-size: 2.5rem;
 	}
 
-	.col-left-ipad p {
+	.col-left-ipad > p {
 		font-size: 1.2rem;
 		line-height: 1.8rem;
 	}
@@ -127,11 +127,11 @@
 }
 
 @media screen and (min-width: 1366px) {
-	.col-left-ipad h2 {
+	.col-left-ipad > h2 {
 		font-size: 3rem;
 	}
 
-	.col-left-ipad p {
+	.col-left-ipad > p {
 		font-size: 1.3rem;
 		line-height: 2.1rem;
 	}
@@ -155,11 +155,11 @@
 		padding-left: 0;
 	}
 
-	.col-left-ipad h2 {
+	.col-left-ipad > h2 {
 		font-size: 3.8rem;
 	}
 
-	.col-left-ipad p {
+	.col-left-ipad > p {
 		font-size: 1.4rem;
 		line-height: 2.1rem;
 		letter-spacing: 0.06rem;

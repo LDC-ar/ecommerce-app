@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { textButton, productsInfo } from "../helpers/data";
-import Modal from "./Modal";
+import ModalBuy from "./ModalBuy";
 import "./Buttons.css";
 import "./Modal.css";
 
@@ -16,7 +16,7 @@ const ButtonBuy = ({ id }) => {
 	};
 
 	function checkId(id) {
-		return productsInfo.filter(product => product.id == id);
+		return productsInfo.filter(product => product.id === id);
 	}
 	// FIN Estado 2 //
 
@@ -26,7 +26,7 @@ const ButtonBuy = ({ id }) => {
 				<button className="btn btnCH btnBuy" onClick={() => handleClick(id)}>
 					{textButton.buy}
 				</button>
-				<Modal show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
+				<ModalBuy show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
 			</div>
 		</div>
 	);

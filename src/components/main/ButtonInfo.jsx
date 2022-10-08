@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { textButton, productsInfo } from "../helpers/data";
-import Modal from "./Modal";
+import ModalInfo from "./ModalInfo";
 import "./Buttons.css";
 import "./Modal.css";
 
-const ButtonInfo = ({ id }) => {
+const ButtonInfo = ({ id, category }) => {
 	// Estado 1: Muestra o no el modal
 	const [show, setShow] = useState(false);
 
@@ -16,7 +16,7 @@ const ButtonInfo = ({ id }) => {
 	};
 
 	function checkId(id) {
-		return productsInfo.filter(product => product.id == id);
+		return productsInfo.filter(product => product.id === id);
 	}
 	// FIN Estado 2 //
 
@@ -26,7 +26,7 @@ const ButtonInfo = ({ id }) => {
 				<button className="btn btnInfo btnCH" onClick={() => handleClick(id)}>
 					{textButton.learnMore}
 				</button>
-				<Modal show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
+				<ModalInfo category={category} show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
 			</div>
 		</div>
 	);

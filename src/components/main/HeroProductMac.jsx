@@ -15,7 +15,7 @@ const HeroProductMac = () => {
 			<p>Pro anywhere.</p>
 			<div className="btn-hero-mac">
 				<ButtonBuy id={productsInfo[6].id} />
-				<ButtonInfo id={productsInfo[6].id} />
+				<ButtonInfo id={productsInfo[6].id} category={productsInfo[6].category} />
 			</div>
 		</div>
 	);
