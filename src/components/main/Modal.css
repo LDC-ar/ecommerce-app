@@ -121,17 +121,6 @@
 		"recognitionImg recognition recognition recognition"
 		"networkImg	network network network";
 }
-/* grid-template-columns: 1fr 2fr 2fr;
-	grid-template-rows: repeat(6, auto);
-	grid-template-areas:
-		"header header header"
-		"display display display"
-		"cameraImg	camera camera"
-		"batteryImg battery battery"
-		"chipsetImg chipset chipset"
-		"recognitionImg recognition recognition"
-		"networkImg	network network";
-} */
 
 .modal-info-container-header {
 	grid-area: header;
@@ -188,7 +177,7 @@
 }
 
 .modal-info-displayType {
-	font-size: 0.85em;
+	margin-top: 0.3em;
 	letter-spacing: 0.04em;
 }
 
@@ -210,8 +199,11 @@
 }
 
 .modal-info-cameraType {
-	font-size: 0.85em;
-	letter-spacing: 0.04em;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
 }
 
 .modal-info-batteryImg {
@@ -223,6 +215,8 @@
 .modal-info-battery {
 	grid-area: battery;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -236,6 +230,8 @@
 .modal-info-chipset {
 	grid-area: chipset;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -249,6 +245,8 @@
 .modal-info-recognition {
 	grid-area: recognition;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -262,6 +260,8 @@
 .modal-info-network {
 	grid-area: network;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -339,7 +339,7 @@
 }
 
 .modal-computer-displayType {
-	font-size: 0.85em;
+	margin-top: 0.3em;
 	letter-spacing: 0.04em;
 }
 
@@ -347,16 +347,76 @@
 	grid-area: cpu;
 }
 
+.modal-computer-cpu > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-cpu > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
 .modal-computer-gpu {
 	grid-area: gpu;
+}
+
+.modal-computer-gpu > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-gpu > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
 }
 
 .modal-computer-ram {
 	grid-area: ram;
 }
 
+.modal-computer-ram > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-ram > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
 .modal-computer-storage {
 	grid-area: storage;
+}
+
+.modal-computer-storage > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-storage > p {
+	margin-top: 0.3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
 }
 
 .modal-computer-batteryImg {
@@ -368,6 +428,8 @@
 .modal-computer-battery {
 	grid-area: battery;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -381,6 +443,8 @@
 .modal-computer-chipset {
 	grid-area: chipset;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
@@ -394,8 +458,171 @@
 .modal-computer-recognition {
 	grid-area: recognition;
 	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
 	text-align: left;
 	align-self: center;
 }
 
 /*************** FIN MODAL "LEARN MORE" COMPUTER **************/
+
+/*************** MODAL "LEARN MORE" IPAD **************/
+.modal-ipad-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas:
+		"header header header header"
+		"display display display display"
+		"storage storage storage storage"
+		"cameraImg camera camera camera"
+		"connectorImg connector connector connector"
+		"chipsetImg chipset chipset chipset"
+		"networkImg network network network";
+}
+
+.modal-ipad-container-header {
+	grid-area: header;
+	height: 70px;
+}
+
+.modal-ipad-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.modal-ipad-description {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+}
+
+.modal-ipad-container-header > hr {
+	width: 70%;
+	margin: auto;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+	animation: grow 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes grow {
+	0% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: scaleX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+}
+
+.modal-ipad-display {
+	grid-area: display;
+	height: 60px;
+}
+
+.modal-ipad-displaySize {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.modal-ipad-displayType {
+	margin-top: 0.3em;
+	letter-spacing: 0.04em;
+}
+
+.modal-ipad-storage {
+	grid-area: storage;
+}
+
+.modal-ipad-storage > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-ipad-storage > p {
+	margin-top: 0.3em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-ipad-cameraImg {
+	grid-area: cameraImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-ipad-camera {
+	grid-area: camera;
+	align-self: center;
+	text-align: left;
+}
+
+.modal-ipad-cameraType {
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-connectorImg {
+	grid-area: connectorImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-ipad-connector {
+	grid-area: connector;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-chipsetImg {
+	grid-area: chipsetImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-ipad-chipset {
+	grid-area: chipset;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-networkImg {
+	grid-area: networkImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-ipad-network {
+	grid-area: network;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+/*************** FIN MODAL "LEARN MORE" IPAD **************/
