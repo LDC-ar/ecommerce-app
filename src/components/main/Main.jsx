@@ -10,6 +10,8 @@ import HeroProductIpad from "./HeroProductIpad";
 import SectionCardIpad from "./SectionCardIpad";
 import ImageSlider from "./ImageSlider";
 import ImageSliderMobile from "./ImageSliderMobile";
+import SectionCardMobile from "./SectionCardMobile";
+import SectionCard from "./SectionCard"
 
 function Main(props) {
 	///////////////////////////////////////////////////////////////////////////////
@@ -42,7 +44,8 @@ function Main(props) {
 			<HeroProductMac />
 			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
-			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
+      {windowWidth < breakPoint ? <SectionCardMobile /> : <SectionCard />}
+
 			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
 		</div>
 	);

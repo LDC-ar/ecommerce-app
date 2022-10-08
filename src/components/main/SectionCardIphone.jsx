@@ -20,7 +20,7 @@ const SectionCardIphone = ({ windowWidth, breakPoint }) => {
 			) : (
 				<div className="cards">
 					{productsInfo.map(card => {
-						if (card.category == "Phone") {
+						if (card.category === "Phone") {
 							return <Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />;
 						}
 					})}
