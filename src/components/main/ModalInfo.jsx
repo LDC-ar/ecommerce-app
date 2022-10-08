@@ -33,8 +33,3 @@ const ModalInfo = ({ category, show, onClose, productInfo }) => {
 };
 
 export default ModalInfo;
-
-/* <img src={img} alt={title} className="modal-info-img" />
-<h3 className="modal-info-title">{title}</h3>
-<h4 className="modal-info-description">{description}</h4>
-<h5 className="modal-info-price">${price}</h5> */

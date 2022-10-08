@@ -22,6 +22,7 @@
 	position: relative;
 	animation: scale 0.5s;
 	text-align: center;
+	box-shadow: 0 0 25px black;
 }
 
 .btn-close {
@@ -104,3 +105,136 @@
 	width: 60px;
 }
 /************* FIN MODAL BUY ************/
+
+/*************** MODAL "LEARN MORE" PHONE **************/
+.modal-info-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas:
+		"header header header"
+		"display display display"
+		"cameraImg	camera camera"
+		"batteryImg battery battery"
+		"chipsetImg chipset chipset"
+		"recognitionImg recognition recognition"
+		"networkImg	network network";
+}
+
+.modal-info-container-header {
+	grid-area: header;
+	height: 70px;
+}
+
+.modal-info-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.modal-info-description {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+}
+
+.modal-info-container-header > hr {
+	width: 70%;
+	margin: auto;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+}
+
+.modal-info-display {
+	grid-area: display;
+	height: 60px;
+}
+
+.modal-info-displaySize {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.modal-info-displayType {
+	font-size: 0.85em;
+	letter-spacing: 0.04em;
+}
+
+.modal-info-cameraImg {
+	grid-area: cameraImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-info-camera {
+	grid-area: camera;
+	align-self: center;
+	text-align: left;
+}
+
+.modal-info-cameraSystem {
+	font-size: 0.95em;
+	text-align: left;
+}
+
+.modal-info-cameraType {
+	font-size: 0.85em;
+	letter-spacing: 0.04em;
+}
+
+.modal-info-batteryImg {
+	grid-area: batteryImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-info-battery {
+	grid-area: battery;
+	font-size: 0.95em;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-chipsetImg {
+	grid-area: chipsetImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-info-chipset {
+	grid-area: chipset;
+	font-size: 0.95em;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-recognitionImg {
+	grid-area: recognitionImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-info-recognition {
+	grid-area: recognition;
+	font-size: 0.95em;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-networkImg {
+	grid-area: networkImg;
+	width: 60%;
+	place-self: center;
+}
+
+.modal-info-network {
+	grid-area: network;
+	font-size: 0.95em;
+	text-align: left;
+	align-self: center;
+}
+/*************** FIN MODAL "LEARN MORE" PHONE **************/
