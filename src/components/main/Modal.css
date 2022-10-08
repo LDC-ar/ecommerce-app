@@ -8,12 +8,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
+	z-index: 5;
 }
 
 .modal {
 	width: 450px;
-	height: 500px;
+	height: 550px;
 	background: var(--second-color);
 	border-radius: 10px;
 	display: flex;
@@ -626,3 +626,59 @@
 }
 
 /*************** FIN MODAL "LEARN MORE" IPAD **************/
+
+/*************** MODAL "ORDER" **************/
+.modal-order-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-order-image {
+	width: 40%;
+	margin-bottom: 1em;
+}
+
+.modal-order-title {
+	margin-bottom: 2em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 500;
+}
+
+.modal-order-text {
+	margin-bottom: 2em;
+	font-size: 1.1em;
+	letter-spacing: 0.03em;
+	line-height: 1.3em;
+	font-weight: 400;
+}
+
+.modal-order-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-order-form > input {
+	height: 2.2em;
+	width: 18em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: var(--second-font);
+	font-size: 1em;
+	border: 1px solid var(--first-color);
+	border-radius: 50px;
+}
+
+.modal-order-form > input:hover,
+.modal-order-form > input:focus {
+	border: 2px solid var(--new-color);
+}
+
+/*************** FIN MODAL "ORDER" **************/
