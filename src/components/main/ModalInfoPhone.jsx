@@ -20,16 +20,12 @@ function ModalInfoPhone({ productInfo }) {
 				<h5 className="modal-info-cameraSystem">{cameraSystem}</h5>
 				<p className="modal-info-cameraType">{cameraType}</p>
 			</div>
-
 			<img src={batteryImg} alt="Battery" className="modal-info-batteryImg" />
 			<h5 className="modal-info-battery">{battery}</h5>
-
 			<img src={chipsetImg} alt="Chipset" className="modal-info-chipsetImg" />
 			<h5 className="modal-info-chipset">{chipset}</h5>
-
 			<img src={recognitionImg} alt="Recognition" className="modal-info-recognitionImg" />
 			<h5 className="modal-info-recognition">{recognition}</h5>
-
 			<img src={networkImg} alt="Network" className="modal-info-networkImg" />
 			<h5 className="modal-info-network">{network}</h5>
 		</div>
