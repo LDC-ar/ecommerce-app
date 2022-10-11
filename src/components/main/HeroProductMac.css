@@ -75,7 +75,6 @@
 
 @media screen and (min-width: 1366px) {
 	.container-hero-mac {
-		height: 100vh;
 		padding: 8vw 5%;
 	}
 
@@ -93,6 +92,7 @@
 @media screen and (min-width: 1920px) {
 	.container-hero-mac {
 		padding-top: 8em;
+		/* padding-bottom: 10em; */
 	}
 
 	.container-hero-mac > h2 {
