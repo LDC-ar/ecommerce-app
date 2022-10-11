@@ -52,9 +52,12 @@ function Header() {
 					</ul>
 				</nav>
 				<div className="container-icons">
-					<a href="">
+          <div className="search">
+					<a href=" ">
 						<img src={search} alt="search" className="icon" />
 					</a>
+            <input type='text' placeholder='What are you looking for?' required></input>
+          </div>
 					<img
 						src={bag}
 						alt="cart"

@@ -1,8 +1,11 @@
-.container-footer {
+.container-footer-mobile {
 	background: var(--first-color);
 	padding-left: 5%;
 	padding-right: 5%;
 	color: var(--third-color);
+}
+.container-footer {
+  display: none;
 }
 
 .footer-grid {
@@ -63,6 +66,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container-footer-mobile{
+    display: none;
+  }
 	.footer-grid {
 		grid-template-columns: 1fr 1fr auto 1fr 1fr;
 		grid-template-rows: auto;
