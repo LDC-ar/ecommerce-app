@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { textButton, productsInfo } from "../helpers/data";
 import ModalBuy from "./ModalBuy";
 import "./Buttons.css";
 import "./Modal.css";
+import CartContext from "../../context/cart/CartContext";
 
-const ButtonBuy = ({ id }) => {
+const ButtonBuy = ({ id, product }) => {
+	const { addToCart } = useContext(CartContext);
+
 	// Estado 1: Muestra o no el modal
 	const [show, setShow] = useState(false);
 
@@ -12,7 +15,7 @@ const ButtonBuy = ({ id }) => {
 	const [modalInfo, setModalInfo] = useState({});
 
 	const handleClick = id => {
-		return setShow(true), setModalInfo(...checkId(id));
+		return setShow(true), setModalInfo(...checkId(id)), addToCart(product);
 	};
 
 	function checkId(id) {

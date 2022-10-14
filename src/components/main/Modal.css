@@ -47,20 +47,6 @@
 	}
 }
 
-/************* MODAL CARRITO ************/
-.modal-carrito {
-	width: 500px;
-	height: 500px;
-	background: var(--second-color);
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	animation: scale 0.5s;
-}
-/*********** FIN MODAL CARRITO **********/
-
 /*************** MODAL BUY **************/
 .modal-buy-container {
 	height: 90%;

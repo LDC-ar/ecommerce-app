@@ -19,7 +19,7 @@ const HeroProductIpad = () => {
 					Surprisingly affordable.
 				</p>
 				<div className="btn-hero-ipad">
-					<ButtonBuy id={productsInfo[9].id} />
+					<ButtonBuy product={productsInfo[9]} id={productsInfo[9].id} />
 					<ButtonInfo id={productsInfo[9].id} category={productsInfo[9].category} />
 				</div>
 			</div>

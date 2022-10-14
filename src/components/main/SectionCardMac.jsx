@@ -36,7 +36,17 @@ const SectionCardMac = ({ windowWidth, breakPoint }) => {
 					{computerArray.map(
 						(card, index) =>
 							index === current && (
-								<Cards key={card.id} id={card.id} category={card.category} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />
+								<Cards
+									key={card.id}
+									product={card}
+									id={card.id}
+									category={card.category}
+									src={card.img}
+									title={card.title}
+									condition={card.condition}
+									description={card.description}
+									price={card.price}
+								/>
 							)
 					)}
 					<div className="product-carrousel-arrows">
@@ -47,7 +57,7 @@ const SectionCardMac = ({ windowWidth, breakPoint }) => {
 			) : (
 				<div className="cards">
 					{computerArray.map(card => (
-						<Cards key={card.id} id={card.id} category={card.category} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />
+						<Cards key={card.id} product={card} id={card.id} category={card.category} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />
 					))}
 				</div>
 			)}

@@ -1,14 +1,17 @@
 import React from "react";
-import { useState } from "react";
-import ModalCarrito from "../main/ModalCarrito";
+import { useState, useContext } from "react";
+import ModalCart from "./ModalCart";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
 import "./Header.css";
 import "../main/Buttons.css";
 import "../main/Modal.css";
+import CartContext from "../../context/cart/CartContext";
 
 function Header() {
+	const { cartItems } = useContext(CartContext);
+
 	// Modal de botones ///////////
 	const [show, setShow] = useState(false);
 	////// Fin Modal de botones ///////////
@@ -63,9 +66,12 @@ function Header() {
 							setShow(true);
 						}}
 					/>
-					<ModalCarrito show={show} onClose={() => setShow(false)}>
-						<h1>Carrito de compra</h1>
-					</ModalCarrito>
+					{cartItems.length > 0 && (
+						<div className="item-count">
+							<span>{cartItems.length}</span>
+						</div>
+					)}
+					<ModalCart show={show} onClose={() => setShow(false)} />
 				</div>
 			</div>
 		</header>

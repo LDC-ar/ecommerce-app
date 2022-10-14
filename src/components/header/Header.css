@@ -29,6 +29,7 @@ header {
 }
 
 .container-icons {
+	position: relative;
 	width: 90px;
 	padding-top: 4px;
 	display: flex;
@@ -38,6 +39,21 @@ header {
 .icon {
 	height: 33px;
 	cursor: pointer;
+}
+/* Numerito sobre el carrito */
+.item-count {
+	position: absolute;
+	display: grid;
+	place-items: center;
+	background-color: var(--link-color);
+	color: var(--second-color);
+	z-index: 10;
+	border-radius: 50%;
+	font-size: 12px;
+	height: 17px;
+	width: 17px;
+	bottom: 0;
+	left: 48px;
 }
 
 .container-nav {
