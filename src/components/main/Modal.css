@@ -1,6 +1,6 @@
 .Wrapper {
 	position: fixed;
-	top: 0;
+	top: 4rem;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -682,3 +682,84 @@
 }
 
 /*************** FIN MODAL "ORDER" **************/
+
+/*************** MODAL SEARCH **************/
+.Wrapper-src {
+	position: fixed;
+	top: 4rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #5050507e;
+	display: flex;
+	justify-content:center;
+	align-items:flex-start;
+	z-index: 5;
+}
+
+.modal-src {
+  background-color: var(--black-alpha-color);
+  width: 400px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 25px black;
+  position: relative;
+  animation: scale 0.5s;
+}
+
+input {
+  height: 2.2em;
+	width: 18em;
+	text-align: center;
+	font-family: var(--second-font);
+	font-size: 1em;
+	border: 1px solid var(--third-color);
+	border-radius: 50px;
+  background-color: transparent;
+  color:var(--second-color);
+}
+
+input:hover,
+input:focus {
+	border: 2px solid var(--new-color);
+}
+
+.btn-close-src {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	font-size: 15px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--third-color);
+}
+/*************** FIN MODAL SEARCH **************/
+
+/*************** MODAL ABOUT US **************/
+
+.modal-us {
+	width: 720px;
+	height: 510px;
+	background: var(--second-color);
+	border-radius: 10px;
+	position: relative;
+	animation: scale 0.5s;
+	box-shadow: 0 0 25px black;
+}
+
+.content-us {
+  width: 670px;
+  height: 460px;
+  margin: 25px 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+

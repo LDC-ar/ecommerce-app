@@ -1,5 +1,4 @@
 import React from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
 import "./Modal.css";
 
 const ModalBuy = ({ show, onClose, productInfo }) => {
@@ -21,7 +20,7 @@ const ModalBuy = ({ show, onClose, productInfo }) => {
 					<h4 className="modal-buy-description">{description}</h4>
 					<h5 className="modal-buy-price">${price}</h5>
 					<p className="modal-buy-added">Product added to your cart</p>
-					<Player autoplay loop src="https://lottie.host/1b4a93c6-69db-494d-9b8f-43ebe0ed653f/m8vhI4CCQA.json" className="ItemAddedAnimation" />
+					
 				</div>
 			</div>
 		</div>

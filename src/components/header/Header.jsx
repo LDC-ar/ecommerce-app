@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import ModalCarrito from "../main/ModalCarrito";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
+import ModalUs from "../main/ModalUs";
+import ModalSearch from "../main/ModalSearch";
+import ModalCarrito from "../main/ModalCarrito";
 import "./Header.css";
 import "../main/Buttons.css";
 import "../main/Modal.css";
@@ -11,6 +13,8 @@ import "../main/Modal.css";
 function Header() {
 	// Modal de botones ///////////
 	const [show, setShow] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const [showUs, setShowUs] = useState(false);
 	////// Fin Modal de botones ///////////
 
 	// Estado del menu responsive //
@@ -49,12 +53,23 @@ function Header() {
 								IPad
 							</a>
 						</li>
+            <li>
+							<a href="#about-us" onClick={()=> {setShowUs(true)}}>
+								About Us
+							</a>
+						</li>
 					</ul>
+          <ModalUs showUs={showUs} onClose={() => setShowUs(false)}/>
 				</nav>
 				<div className="container-icons">
-					<a href="">
-						<img src={search} alt="search" className="icon" />
-					</a>
+          <img src={search}
+              alt="search"
+              className="icon"
+              onClick={() => {
+                setShowSearch(true);
+              }}
+              />
+              <ModalSearch showSearch={showSearch} onClose={() => setShowSearch(false)}/>
 					<img
 						src={bag}
 						alt="cart"
