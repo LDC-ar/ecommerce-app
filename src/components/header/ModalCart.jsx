@@ -30,7 +30,7 @@ const ModalCart = ({ show, onClose }) => {
 				<div className="Cart_cartTotal">
 					<div>Cart Total</div>
 					<div></div>
-					<div style={{ marginLeft: 5 }}>{"$" + cartItems.reduce((amount, item) => item.price + amount, 0)}</div>
+					<div>{"$" + cartItems.reduce((amount, item) => item.price * item.quantity + amount, 0)}</div>
 				</div>
 				<button onClick={() => clearCart()}>Clear Cart</button>
 			</div>
