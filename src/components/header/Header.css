@@ -89,7 +89,6 @@ header {
 
 .container-nav > ul > li > a {
 	color: var(--second-color);
-	font-size: 1.1rem;
 }
 
 .container-nav > ul > li > a:hover,

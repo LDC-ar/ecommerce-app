@@ -7,10 +7,10 @@ import SectionCardIphone from "./SectionCardIphone";
 import HeroProductMac from "./HeroProductMac";
 import SectionCardMac from "./SectionCardMac";
 import HeroProductIpad from "./HeroProductIpad";
-import SectionCardIpad from "./SectionCardIpad";
+
 import ImageSlider from "./ImageSlider";
 import ImageSliderMobile from "./ImageSliderMobile";
-// import ShoppingCart from "../cart/ShoppingCart";
+
 
 function Main() {
 	///////////////////////////////////////////////////////////////////////////////
@@ -44,7 +44,8 @@ function Main() {
 			<HeroProductMac />
 			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
-			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
+      {windowWidth < breakPoint ? <SectionCardMobile /> : <SectionCard />}
+
 			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
 		</div>
 	);

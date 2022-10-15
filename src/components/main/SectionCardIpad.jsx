@@ -66,3 +66,24 @@ const SectionCardIpad = ({ windowWidth, breakPoint }) => {
 };
 
 export default SectionCardIpad;
+
+
+
+/*
+
+{productsInfo.map((card, index) => {
+	if (card.category == "Ipad") {
+		return (
+			index === card && 
+			<>
+			<Cards key={card.id} id={card.id} src={card.img} title={card.title} condition={card.condition} description={card.description} price={card.price} />
+			<div className="buttons">
+				<img src={LeftArrow} alt="arrow" className="left-arrow" onClick={prevCard} />
+				<img src={RightArrow} alt="arrow" className="right-arrow" onClick={nextCard} />
+			</div>
+			</>
+			)
+		}
+	})}
+	
+	*/

@@ -4,6 +4,9 @@ import ModalCart from "./ModalCart";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
+import ModalUs from "../main/ModalUs";
+import ModalSearch from "../main/ModalSearch";
+import ModalCarrito from "../main/ModalCarrito";
 import "./Header.css";
 import "../main/Buttons.css";
 import "../main/Modal.css";
@@ -19,6 +22,8 @@ function Header() {
 
 	// Modal de botones ///////////
 	const [show, setShow] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+  const [showUs, setShowUs] = useState(false);
 	////// Fin Modal de botones ///////////
 
 	// Estado del menu responsive //
@@ -57,6 +62,7 @@ function Header() {
 								IPad
 							</a>
 						</li>
+
 						<li>
 							<a
 								href="#about-us"
