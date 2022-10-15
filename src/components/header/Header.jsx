@@ -8,8 +8,13 @@ import "./Header.css";
 import "../main/Buttons.css";
 import "../main/Modal.css";
 import CartContext from "../../context/cart/CartContext";
+import ModalUs from "./ModalUs";
+import ModalSearch from "./ModalSearch";
 
 function Header() {
+	const [showSearch, setShowSearch] = useState(false);
+	const [showUs, setShowUs] = useState(false);
+
 	const { cartItems } = useContext(CartContext);
 
 	// Modal de botones ///////////
@@ -52,12 +57,29 @@ function Header() {
 								IPad
 							</a>
 						</li>
+						<li>
+							<a
+								href="#about-us"
+								onClick={() => {
+									setShowUs(true);
+								}}
+							>
+								About Us
+							</a>
+						</li>
 					</ul>
+					<ModalUs showUs={showUs} onClose={() => setShowUs(false)} />
 				</nav>
 				<div className="container-icons">
-					<a href="">
-						<img src={search} alt="search" className="icon" />
-					</a>
+					<img
+						src={search}
+						alt="search"
+						className="icon"
+						onClick={() => {
+							setShowSearch(true);
+						}}
+					/>
+					<ModalSearch showSearch={showSearch} onClose={() => setShowSearch(false)} />
 					<img
 						src={bag}
 						alt="cart"

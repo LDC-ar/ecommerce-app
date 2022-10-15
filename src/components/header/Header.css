@@ -23,7 +23,7 @@ header {
 	align-items: center;
 }
 
-.container-logo img {
+.container-logo > img {
 	height: 80%;
 	margin-left: 0.3rem;
 }
@@ -60,7 +60,7 @@ header {
 	position: fixed;
 	left: 0;
 	top: 4rem;
-	width: 40%;
+	width: 50vw;
 	background-color: var(--black-alpha-color);
 	opacity: 0;
 	pointer-events: none;
@@ -72,7 +72,7 @@ header {
 	pointer-events: auto;
 }
 
-.container-nav ul {
+.container-nav > ul {
 	width: 100%;
 	padding-block: 1rem;
 	display: flex;
@@ -82,14 +82,19 @@ header {
 	gap: 1rem;
 }
 
-.container-nav ul li {
+.container-nav > ul > li {
 	padding: 0.5rem;
 	list-style: none;
 }
 
-.container-nav a {
+.container-nav > ul > li > a {
 	color: var(--second-color);
 	font-size: 1.1rem;
+}
+
+.container-nav > ul > li > a:hover,
+.container-nav > ul > li > a:focus {
+	color: var(--second-color);
 }
 
 /*########### MENU SANDWICHITO #########  */
@@ -108,7 +113,7 @@ header {
 	display: inline-block;
 }
 
-.nav-icon-5 span {
+.nav-icon-5 > span {
 	background-color: #fff;
 	position: absolute;
 	border-radius: 2px;
@@ -177,7 +182,7 @@ header {
 		pointer-events: auto;
 	}
 
-	.container-nav ul {
+	.container-nav > ul {
 		padding-block: 1rem;
 		display: flex;
 		flex-direction: row;
