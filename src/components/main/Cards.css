@@ -54,3 +54,59 @@
 		max-width: 135%;
 	}
 }
+
+/*************** CARDS ABOUT US **************/
+
+.content-card-us {
+	width: 150px;
+	height: 200px;
+	border-radius: 5px;
+	background-color: var(--second-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--second-color);
+	box-shadow: 1px 1px 7px var(--first-color);
+}
+.image-us {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid var(--first-color);
+	margin-top: 5px;
+}
+
+.img-us {
+	width: 58px;
+	height: 58px;
+	border: 2px solid var(--second-color);
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.info-us {
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.info-us > h3 {
+	padding: 0.8rem;
+	color: var(--first-color);
+	text-shadow: 1px 1px 3px var(--first-color);
+}
+
+.icons-us {
+	display: flex;
+	flex-direction: row;
+}
+
+.links-us > img {
+	width: 24px;
+	height: 24px;
+	margin: 0.5rem 0.5rem;
+}

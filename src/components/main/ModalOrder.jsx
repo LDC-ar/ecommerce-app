@@ -1,5 +1,6 @@
 import React from "react";
 import "./Modal.css";
+import { RiCloseFill } from "react-icons/ri";
 
 const ModalOrder = ({ show, onClose, productInfo }) => {
 	if (!show) {
@@ -12,7 +13,9 @@ const ModalOrder = ({ show, onClose, productInfo }) => {
 		<div className="Wrapper">
 			<div className="modal">
 				<button onClick={onClose} className="btn-close">
-					<span>X</span>
+					<span>
+						<RiCloseFill />
+					</span>
 				</button>
 				<div className="modal-order-container">
 					<img src={imgModal} alt={title} className="modal-order-image" />

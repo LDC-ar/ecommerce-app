@@ -1,14 +1,22 @@
 import React from "react";
-import { useState } from "react";
-import ModalCarrito from "../main/ModalCarrito";
+import { useState, useContext } from "react";
+import ModalCart from "./ModalCart";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
 import "./Header.css";
 import "../main/Buttons.css";
 import "../main/Modal.css";
+import CartContext from "../../context/cart/CartContext";
+import ModalUs from "./ModalUs";
+import ModalSearch from "./ModalSearch";
 
 function Header() {
+	const [showSearch, setShowSearch] = useState(false);
+	const [showUs, setShowUs] = useState(false);
+
+	const { cartItems } = useContext(CartContext);
+
 	// Modal de botones ///////////
 	const [show, setShow] = useState(false);
 	////// Fin Modal de botones ///////////
@@ -49,23 +57,45 @@ function Header() {
 								IPad
 							</a>
 						</li>
+
+						<li>
+							<a
+								href="#about-us"
+								onClick={() => {
+									setShowUs(true);
+								}}
+							>
+								About Us
+							</a>
+						</li>
 					</ul>
+					<ModalUs showUs={showUs} onClose={() => setShowUs(false)} />
 				</nav>
 				<div className="container-icons">
-					<a href="">
-						<img src={search} alt="search" className="icon" />
-					</a>
+					<img
+						src={search}
+						alt="search"
+						className="icon"
+						onClick={() => {
+							setShowSearch(true);
+						}}
+					/>
+					<ModalSearch showSearch={showSearch} onClose={() => setShowSearch(false)} />
 					<img
 						src={bag}
 						alt="cart"
 						className="icon"
 						onClick={() => {
-							setShow(true);
+							setShow(!show);
 						}}
 					/>
-					<ModalCarrito show={show} onClose={() => setShow(false)}>
-						<h1>Carrito de compra</h1>
-					</ModalCarrito>
+					{cartItems.length > 0 && (
+						<div className="item-count">
+							{/* Este Span lleva el numero total de las cantidades de productos en el carrito "product.quantity" */}
+							<span>{cartItems.reduce((amount, item) => item.quantity + amount, 0)}</span>
+						</div>
+					)}
+					<ModalCart show={show} />
 				</div>
 			</div>
 		</header>
@@ -73,10 +103,3 @@ function Header() {
 }
 
 export default Header;
-
-// onClick={() => {
-// 	const fun1 = setShow(true);
-// 	const fun2 = setIsModalCarrito(true);
-// 	fun1();
-// 	fun2();
-// }}

@@ -3,6 +3,7 @@ import ModalInfoPhone from "./ModalInfoPhone";
 import ModalInfoComputer from "./ModalInfoComputer";
 import ModalInfoIpad from "./ModalInfoIpad";
 import "./Modal.css";
+import { RiCloseFill } from "react-icons/ri";
 
 const ModalInfo = ({ category, show, onClose, productInfo }) => {
 	if (!show) {
@@ -13,7 +14,9 @@ const ModalInfo = ({ category, show, onClose, productInfo }) => {
 		<div className="Wrapper">
 			<div className="modal">
 				<button onClick={onClose} className="btn-close">
-					<span>X</span>
+					<span>
+						<RiCloseFill />
+					</span>
 				</button>
 				{(() => {
 					switch (category) {
