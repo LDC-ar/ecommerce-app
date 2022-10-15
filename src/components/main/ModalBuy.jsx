@@ -1,4 +1,6 @@
 import React from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
+import { RiCloseFill } from "react-icons/ri";
 import "./Modal.css";
 
 const ModalBuy = ({ show, onClose, productInfo }) => {
@@ -12,7 +14,9 @@ const ModalBuy = ({ show, onClose, productInfo }) => {
 		<div className="Wrapper">
 			<div className="modal">
 				<button onClick={onClose} className="btn-close">
-					<span>X</span>
+					<span>
+						<RiCloseFill />
+					</span>
 				</button>
 				<div className="modal-buy-container">
 					<img src={img} alt={title} className="modal-buy-img" />

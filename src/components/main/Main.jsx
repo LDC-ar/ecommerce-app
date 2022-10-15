@@ -10,8 +10,7 @@ import HeroProductIpad from "./HeroProductIpad";
 
 import ImageSlider from "./ImageSlider";
 import ImageSliderMobile from "./ImageSliderMobile";
-import SectionCardMobile from "./SectionCardMobile";
-import SectionCard from "./SectionCard"
+
 
 function Main() {
 	///////////////////////////////////////////////////////////////////////////////
@@ -38,6 +37,7 @@ function Main() {
 
 	return (
 		<div className="container-main">
+			{/* <ShoppingCart /> */}
 			<HeroHome />
 			<HeroProductIphone />
 			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />

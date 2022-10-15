@@ -4,11 +4,11 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #5050507e;
+	background: #50505075;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 5;
+	z-index: 15;
 }
 
 .modal {
@@ -29,11 +29,29 @@
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	font-size: 20px;
+	font-size: 25px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	color: var(--first-color);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+	/* transform: rotate(90deg); */
+	animation-name: scaleCloseButton;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear ease-out;
+}
+
+@keyframes scaleCloseButton {
+	from {
+		transform: scale(100%);
+	}
+	to {
+		transform: scale(150%);
+	}
 }
 
 @keyframes scale {
@@ -46,20 +64,6 @@
 		transform: scaleY(100%) scaleX(100%);
 	}
 }
-
-/************* MODAL CARRITO ************/
-.modal-carrito {
-	width: 500px;
-	height: 500px;
-	background: var(--second-color);
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	animation: scale 0.5s;
-}
-/*********** FIN MODAL CARRITO **********/
 
 /*************** MODAL BUY **************/
 .modal-buy-container {
@@ -183,7 +187,7 @@
 
 .modal-info-cameraImg {
 	grid-area: cameraImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -208,7 +212,7 @@
 
 .modal-info-batteryImg {
 	grid-area: batteryImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -223,7 +227,7 @@
 
 .modal-info-chipsetImg {
 	grid-area: chipsetImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -238,7 +242,7 @@
 
 .modal-info-recognitionImg {
 	grid-area: recognitionImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -253,7 +257,7 @@
 
 .modal-info-networkImg {
 	grid-area: networkImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -421,7 +425,7 @@
 
 .modal-computer-batteryImg {
 	grid-area: batteryImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -436,7 +440,7 @@
 
 .modal-computer-chipsetImg {
 	grid-area: chipsetImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -451,7 +455,7 @@
 
 .modal-computer-recognitionImg {
 	grid-area: recognitionImg;
-	width: 60%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -562,7 +566,7 @@
 
 .modal-ipad-cameraImg {
 	grid-area: cameraImg;
-	width: 50%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -582,7 +586,7 @@
 
 .modal-ipad-connectorImg {
 	grid-area: connectorImg;
-	width: 50%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -597,7 +601,7 @@
 
 .modal-ipad-chipsetImg {
 	grid-area: chipsetImg;
-	width: 50%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -612,7 +616,7 @@
 
 .modal-ipad-networkImg {
 	grid-area: networkImg;
-	width: 50%;
+	width: 40%;
 	place-self: center;
 }
 
@@ -692,38 +696,38 @@
 	right: 0;
 	background: #5050507e;
 	display: flex;
-	justify-content:center;
-	align-items:flex-start;
+	justify-content: center;
+	align-items: flex-start;
 	z-index: 5;
 }
 
 .modal-src {
-  background-color: var(--black-alpha-color);
-  width: 400px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 0 25px black;
-  position: relative;
-  animation: scale 0.5s;
+	background-color: var(--black-alpha-color);
+	width: 400px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 0 25px black;
+	position: relative;
+	animation: scale 0.5s;
 }
 
-input {
-  height: 2.2em;
+.search > input {
+	height: 2.2em;
 	width: 18em;
 	text-align: center;
 	font-family: var(--second-font);
 	font-size: 1em;
 	border: 1px solid var(--third-color);
 	border-radius: 50px;
-  background-color: transparent;
-  color:var(--second-color);
+	background-color: transparent;
+	color: var(--second-color);
 }
 
-input:hover,
-input:focus {
+.search > input:hover,
+.search > input:focus {
 	border: 2px solid var(--new-color);
 }
 
@@ -752,14 +756,12 @@ input:focus {
 }
 
 .content-us {
-  width: 670px;
-  height: 460px;
-  margin: 25px 25px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
+	width: 670px;
+	height: 460px;
+	margin: 25px 25px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
 }
-
-

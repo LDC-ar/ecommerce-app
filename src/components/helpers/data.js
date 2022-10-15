@@ -300,6 +300,65 @@ export const productsInfo = [
 	},
 ];
 
+export const aboutUs = [
+	{
+		id: 1,
+		image: "",
+		nombre: "Alejandro Di Tullio",
+		linkedIn: " ",
+		github: "https://github.com/ditullioale",
+	},
+	{
+		id: 2,
+		image: "",
+		nombre: "Bruno Ghiotti",
+		linkedIn: " ",
+		github: "https://github.com/BrunoGhi",
+	},
+	{
+		id: 3,
+		image: "",
+		nombre: "Cristian Gili",
+		linkedIn: " ",
+		github: "https://github.com/cristiangili",
+	},
+	{
+		id: 4,
+		image: "../us/lc.jpg",
+		nombre: "Leandro Castagno",
+		linkedIn: "https://www.linkedin.com/in/leandro-castagno-03b563218",
+		github: "https://github.com/LDC-ar",
+	},
+	{
+		id: 5,
+		image: "../us/gh.jpg",
+		nombre: "Lucas Cardellino",
+		linkedIn: "https://www.linkedin.com/in/lcardellino",
+		github: "https://github.com/lcardellino",
+	},
+	{
+		id: 6,
+		image: "",
+		nombre: "Martin Torres",
+		linkedIn: " ",
+		github: "https://github.com/Martinto88",
+	},
+	{
+		id: 7,
+		image: "",
+		nombre: "Natalia Pogonza",
+		linkedIn: "https://www.linkedin.com/in/natalia-pogonza-31b90018a",
+		github: "https://github.com/Naty5585",
+	},
+	{
+		id: 8,
+		image: "../us/sc.jpg",
+		nombre: "Sergio Cardozo",
+		linkedIn: "https://www.linkedin.com/in/sergio-ezequiel-cardozo-a71054235",
+		github: "https://github.com/sergiocardozofs",
+	},
+];
+
 export const cardsInfoIphone = [
 	{
 		id: 1,

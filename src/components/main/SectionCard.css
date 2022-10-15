@@ -9,7 +9,7 @@
 }
 
 .container-SectionCard > h3 {
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	font-size: 2rem;
 	text-align: center;
 }
@@ -22,21 +22,12 @@
 	gap: 4em 0;
 }
 
-.buttons {
-	width: 20%;
-	position: absolute;
+.product-carrousel-arrows {
+	width: 18em;
+	margin-top: 2em;
 	display: flex;
-	justify-content: space-between;
-	z-index: 3;
-	bottom: 2%;
-  margin-bottom: 4rem;
-}
-
-.right-arrow,
-.left-arrow {
-	width: 25px;
-	cursor: pointer;
-	user-select: none;
+	justify-content: center;
+	gap: 2em;
 }
 
 /*########### MEDIA QUERIES #########  */
