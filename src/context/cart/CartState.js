@@ -5,7 +5,7 @@ import { TYPES } from "../cartTypes";
 import { productsInfo } from "../../components/helpers/data";
 
 const CartState = ({ children }) => {
-	const { ADD_TO_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
+	const { ADD_TO_CART, ADD_ONE_FROM_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
 	const initialState = {
 		products: [...productsInfo],
@@ -16,6 +16,10 @@ const CartState = ({ children }) => {
 
 	const addToCart = item => {
 		dispatch({ type: ADD_TO_CART, payload: item });
+	};
+
+	const addItem = item => {
+		dispatch({ type: ADD_ONE_FROM_CART, payload: item });
 	};
 
 	const removeItem = item => {
@@ -35,6 +39,7 @@ const CartState = ({ children }) => {
 			value={{
 				cartItems: state.cartItems,
 				addToCart,
+				addItem,
 				removeItem,
 				removeAllItems,
 				clearCart,

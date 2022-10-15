@@ -75,9 +75,9 @@
 
 @media screen and (min-width: 1024px) {
 	.container-hero-iphone {
-		height: 100vh;
+		height: fit-content;
 		margin-top: 6rem;
-		padding-top: 0rem;
+		padding-top: 12rem;
 		position: relative;
 		z-index: 1;
 		flex-direction: row;
@@ -88,6 +88,7 @@
 		height: 100%;
 		margin-top: 0%;
 		margin-left: 5%;
+		margin-bottom: 10rem;
 		padding-left: 3em;
 		justify-content: center;
 		align-items: flex-start;
@@ -114,7 +115,6 @@
 	.col-right-iphone {
 		height: 100%;
 		width: 50%;
-		margin-top: 0;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
@@ -138,7 +138,7 @@
 
 @media screen and (min-width: 1920px) {
 	.container-hero-iphone {
-		height: 100vh;
+		/* height: 1080px; */
 		margin-top: 0;
 		padding-top: 7rem;
 	}

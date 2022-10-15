@@ -1,14 +1,14 @@
 .Wrapper {
 	position: fixed;
-	top: 0;
+	top: 4rem;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #5050507e;
+	background: #50505075;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 5;
+	z-index: 15;
 }
 
 .modal {

@@ -1,6 +1,6 @@
 import { TYPES } from "../cartTypes";
 
-const { ADD_TO_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
+const { ADD_TO_CART, ADD_ONE_FROM_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
 const CartReducer = (state, action) => {
 	switch (action.type) {
@@ -17,21 +17,28 @@ const CartReducer = (state, action) => {
 				: { ...state, cartItems: [...state.cartItems, { ...newItem, quantity: 1 }] };
 		}
 
+		case ADD_ONE_FROM_CART: {
+			return {
+				...state,
+				cartItems: state.cartItems.map(item => (item.id === action.payload.id ? { ...item, quantity: item.quantity + 1 } : item)),
+			};
+		}
+
 		case REMOVE_ONE_FROM_CART: {
-			let itemToDelete = state.cartItems.find(item => item.id === action.payload);
+			let itemToDelete = state.cartItems.find(item => item.id === action.payload.id);
 
 			return itemToDelete.quantity > 1
 				? {
 						...state,
-						cartItems: state.cartItems.map(item => (item.id === action.payload ? { ...item, quantity: item.quantity - 1 } : item)),
+						cartItems: state.cartItems.map(item => (item.id === action.payload.id ? { ...item, quantity: item.quantity - 1 } : item)),
 				  }
-				: { ...state, cartItems: state.cartItems.filter(item => item.id !== action.payload) };
+				: { ...state, cartItems: state.cartItems.filter(item => item.id !== action.payload.id) };
 		}
 
 		case REMOVE_ALL_FROM_CART: {
 			return {
 				...state,
-				cartItems: state.cartItems.filter(item => item.id !== action.payload),
+				cartItems: state.cartItems.filter(item => item.id !== action.payload.id),
 			};
 		}
 

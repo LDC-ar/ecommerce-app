@@ -1,6 +1,6 @@
 .cart-wrapper {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: fit-content;
 	position: fixed;
 	top: 4rem;
 	right: 0px;
@@ -8,7 +8,7 @@
 	border-radius: 0px 0px 0px 12px;
 	background: var(--second-color);
 	box-shadow: 0 0 25px black;
-	z-index: 3;
+	z-index: 2;
 	animation: slide 0.5s ease-out;
 }
 
@@ -34,29 +34,18 @@
 }
 
 .modal-cart-grid {
-	height: 400px;
+	min-height: 40px;
+	height: fit-content;
+	max-height: 50vh;
 	overflow-y: auto;
+}
+
+.modal-cart-grid > h4 {
+	margin-top: 10px;
 }
 
 .modal-cart-total {
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-between;
-}
-
-/*************** El Modal del chabon del tuto **************/
-
-.cart__innerWrapper {
-	height: max-content;
-	max-height: 50vh;
-	overflow-x: auto;
-}
-
-.fa-times-circle {
-	color: gray;
-	transition: transform 0.2s linear;
-}
-
-.fa-times-circle:hover {
-	transform: rotate(90deg);
 }

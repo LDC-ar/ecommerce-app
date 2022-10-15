@@ -1,17 +1,23 @@
 import { useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
 import "./CartItem.css";
+import { IoTrashBin } from "react-icons/io5";
 
 const CartItem = ({ item }) => {
-	const { removeItem, removeAllItems } = useContext(CartContext);
+	const { removeItem, removeAllItems, addItem } = useContext(CartContext);
 	return (
 		<li className="CartItem">
 			<img src={item.img} alt={item.title} className="CartItem-img" />
 
 			<h5 className="CartItem-title">{item.title}</h5>
-			<div style={{ fontSize: "30px", fontWeight: "bold" }}>{item.quantity}</div>
-			<button onClick={() => removeItem(item.id)}>Remove 1</button>
-			<button onClick={() => removeAllItems(item.id)}>Remove All</button>
+			<div className="CartItem-quantity">
+				<button onClick={() => removeItem(item)}>-</button>
+				<div className="CartItem-quantity__num">{item.quantity}</div>
+				<button onClick={() => addItem(item)}>+</button>
+			</div>
+			<button onClick={() => removeAllItems(item)} className="CartItem-RemoveAll">
+				<IoTrashBin />
+			</button>
 		</li>
 	);
 };

@@ -32,6 +32,10 @@
 	border: 2px solid var(--link-color);
 }
 
+.displayNone {
+	display: none;
+}
+
 .btnBuy:hover,
 .btnBuy:focus {
 	background-color: transparent;
