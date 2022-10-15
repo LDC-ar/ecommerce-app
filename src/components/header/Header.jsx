@@ -63,7 +63,7 @@ function Header() {
 						alt="cart"
 						className="icon"
 						onClick={() => {
-							setShow(true);
+							setShow(!show);
 						}}
 					/>
 					{cartItems.length > 0 && (
@@ -72,7 +72,7 @@ function Header() {
 							<span>{cartItems.reduce((amount, item) => item.quantity + amount, 0)}</span>
 						</div>
 					)}
-					<ModalCart show={show} onClose={() => setShow(false)} />
+					<ModalCart show={show} />
 				</div>
 			</div>
 		</header>

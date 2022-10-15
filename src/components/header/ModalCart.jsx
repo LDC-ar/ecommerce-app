@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
 import CartItem from "./CartItem";
 import "./ModalCart.css";
+import { RiCloseFill } from "react-icons/ri";
 
-const ModalCart = ({ show, onClose }) => {
+const ModalCart = ({ show }) => {
 	const { cartItems, clearCart } = useContext(CartContext);
 
 	if (!show) {
@@ -11,11 +12,8 @@ const ModalCart = ({ show, onClose }) => {
 	}
 
 	return (
-		<div className="Wrapper">
+		<div className="cart-wrapper">
 			<div className="modal-cart">
-				<button onClick={onClose} className="btn-close">
-					<span>X</span>
-				</button>
 				<div className="modal-cart-grid">
 					{cartItems.length === 0 ? (
 						<h4>Cart is empty</h4>
@@ -27,7 +25,7 @@ const ModalCart = ({ show, onClose }) => {
 						</ul>
 					)}
 				</div>
-				<div className="Cart_cartTotal">
+				<div className="modal-cart-total">
 					<div>Cart Total</div>
 					<div></div>
 					<div>{"$" + cartItems.reduce((amount, item) => item.price * item.quantity + amount, 0)}</div>

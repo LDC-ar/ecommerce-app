@@ -1,36 +1,55 @@
-.modal-cart {
+.cart-wrapper {
 	width: 500px;
 	height: 500px;
+	position: fixed;
+	top: 4rem;
+	right: 0px;
+	padding: 10px;
+	border-radius: 0px 0px 0px 12px;
+	background: var(--second-color);
+	box-shadow: 0 0 25px black;
+	z-index: 3;
+	animation: slide 0.5s ease-out;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		/* transform: translate(0px, -100%); */
+	}
+	100% {
+		opacity: 1;
+		/* transform: translate(0, 0%); */
+	}
+}
+
+.modal-cart {
 	background: var(--second-color);
 	border-radius: 5px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	animation: scale 0.5s;
 }
+
+.modal-cart-grid {
+	height: 400px;
+	overflow-y: auto;
+}
+
+.modal-cart-total {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
 /*************** El Modal del chabon del tuto **************/
-.cart__wrapper {
-	position: fixed;
-	top: 60px;
-	right: 20px;
-	border-radius: 12px;
-	background-color: white;
-	border: 1px solid gray;
-	padding: 10px;
-	z-index: 10;
-}
 
 .cart__innerWrapper {
 	height: max-content;
 	max-height: 50vh;
-	overflow-y: auto;
-}
-
-.Cart__cartTotal {
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
+	overflow-x: auto;
 }
 
 .fa-times-circle {

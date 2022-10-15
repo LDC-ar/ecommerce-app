@@ -29,11 +29,29 @@
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	font-size: 20px;
+	font-size: 25px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	color: var(--first-color);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+	/* transform: rotate(90deg); */
+	animation-name: scaleCloseButton;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear ease-out;
+}
+
+@keyframes scaleCloseButton {
+	from {
+		transform: scale(100%);
+	}
+	to {
+		transform: scale(150%);
+	}
 }
 
 @keyframes scale {
