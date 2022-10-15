@@ -1,14 +1,11 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import FooterDesktop from "./components/footer/FooterDesktop";
 import FooterMobile from "./components/footer/FooterMobile";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 
-
 function App() {
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
 	const breakPoint = 768;
 
@@ -26,8 +23,7 @@ function App() {
 		<div>
 			<Header />
 			<Main />
-      {windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
-      
+			{windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
 		</div>
 	);
 }
