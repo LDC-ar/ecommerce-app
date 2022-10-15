@@ -1,3 +1,4 @@
+
 .container-footer-mobile {
 	background: var(--first-color);
 	padding-left: 5%;
@@ -69,6 +70,15 @@
   .container-footer-mobile{
     display: none;
   }
+
+  .container-footer {
+    display:block;
+    background: var(--first-color);
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--third-color);
+  }
+  
 	.footer-grid {
 		grid-template-columns: 1fr 1fr auto 1fr 1fr;
 		grid-template-rows: auto;
@@ -81,7 +91,7 @@
 	.footer-logo img {
 		width: 35%;
 		max-width: 100px;
-	}
+	}  
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,9 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import FooterDesktop from "./components/footer/FooterDesktop";
+import FooterMobile from "./components/footer/FooterMobile";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
-import FooterDesktop from "./components/footer/FooterDesktop";
+
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
 		<div>
 			<Header />
 			<Main />
-			{windowWidth < breakPoint ? <Footer/> : <FooterDesktop />}
+      {windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
+      
 		</div>
 	);
 }
