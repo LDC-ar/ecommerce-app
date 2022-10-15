@@ -68,7 +68,8 @@ function Header() {
 					/>
 					{cartItems.length > 0 && (
 						<div className="item-count">
-							<span>{cartItems.length}</span>
+							{/* Este Span lleva el numero total de las cantidades de productos en el carrito "product.quantity" */}
+							<span>{cartItems.reduce((amount, item) => item.quantity + amount, 0)}</span>
 						</div>
 					)}
 					<ModalCart show={show} onClose={() => setShow(false)} />
@@ -79,10 +80,3 @@ function Header() {
 }
 
 export default Header;
-
-// onClick={() => {
-// 	const fun1 = setShow(true);
-// 	const fun2 = setIsModalCarrito(true);
-// 	fun1();
-// 	fun2();
-// }}

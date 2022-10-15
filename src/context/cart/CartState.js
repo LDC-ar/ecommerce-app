@@ -5,7 +5,7 @@ import { TYPES } from "../cartTypes";
 import { productsInfo } from "../../components/helpers/data";
 
 const CartState = ({ children }) => {
-	const { ADD_TO_CART, REMOVE_ONE_FROM_CART } = TYPES;
+	const { ADD_TO_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
 	const initialState = {
 		products: [...productsInfo],
@@ -22,13 +22,13 @@ const CartState = ({ children }) => {
 		dispatch({ type: REMOVE_ONE_FROM_CART, payload: item });
 	};
 
-	// const removeAllItems = () => {
-	// 	dispatch({ type: REMOVE_ALL_FROM_CART });
-	// };
+	const removeAllItems = item => {
+		dispatch({ type: REMOVE_ALL_FROM_CART, payload: item });
+	};
 
-	// const clearCart = () => {
-	// 	dispatch({ type: CLEAR_CART });
-	// };
+	const clearCart = () => {
+		dispatch({ type: CLEAR_CART });
+	};
 
 	return (
 		<CartContext.Provider
@@ -36,8 +36,8 @@ const CartState = ({ children }) => {
 				cartItems: state.cartItems,
 				addToCart,
 				removeItem,
-				// removeAllItems,
-				// clearCart,
+				removeAllItems,
+				clearCart,
 			}}
 		>
 			{children}

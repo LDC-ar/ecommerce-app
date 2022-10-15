@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 import "./ModalCart.css";
 
 const ModalCart = ({ show, onClose }) => {
-	const { cartItems } = useContext(CartContext);
+	const { cartItems, clearCart } = useContext(CartContext);
 
 	if (!show) {
 		return null;
@@ -27,11 +27,12 @@ const ModalCart = ({ show, onClose }) => {
 						</ul>
 					)}
 				</div>
-				{/* <div className="Cart_cartTotal">
+				<div className="Cart_cartTotal">
 					<div>Cart Total</div>
 					<div></div>
 					<div style={{ marginLeft: 5 }}>{"$" + cartItems.reduce((amount, item) => item.price + amount, 0)}</div>
-				</div> */}
+				</div>
+				<button onClick={() => clearCart()}>Clear Cart</button>
 			</div>
 		</div>
 	);

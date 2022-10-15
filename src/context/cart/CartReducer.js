@@ -1,6 +1,6 @@
 import { TYPES } from "../cartTypes";
 
-const { ADD_TO_CART, REMOVE_ONE_FROM_CART } = TYPES;
+const { ADD_TO_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
 const CartReducer = (state, action) => {
 	switch (action.type) {
@@ -27,8 +27,20 @@ const CartReducer = (state, action) => {
 				  }
 				: { ...state, cartItems: state.cartItems.filter(item => item.id !== action.payload) };
 		}
-		// case CLEAR_CART:
-		// 	return initialState;
+
+		case REMOVE_ALL_FROM_CART: {
+			return {
+				...state,
+				cartItems: state.cartItems.filter(item => item.id !== action.payload),
+			};
+		}
+
+		case CLEAR_CART:
+			return {
+				...state,
+				cartItems: [],
+			};
+
 		default:
 			return state;
 	}
