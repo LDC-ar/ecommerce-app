@@ -19,10 +19,6 @@ function Main() {
 
 	const breakPoint = 768;
 
-	// setTimeout(() => {
-	// 	window.removeEventListener("resize", watchWidth);
-	// }, "5000");
-
 	useEffect(() => {
 		function watchWidth() {
 			console.log("Cambiando el ancho");
@@ -36,7 +32,6 @@ function Main() {
 
 	return (
 		<div className="container-main">
-			{/* <ShoppingCart /> */}
 			<HeroHome />
 			<HeroProductIphone />
 			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />
@@ -44,7 +39,6 @@ function Main() {
 			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
 			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
-
 			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
 		</div>
 	);

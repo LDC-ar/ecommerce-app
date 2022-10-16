@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useState, useEffect, useReducer } from "react";
 import CartContext from "./CartContext";
 import CartReducer from "./CartReducer";
 import { TYPES } from "../cartTypes";
@@ -7,12 +7,27 @@ import { productsInfo } from "../../components/helpers/data";
 const CartState = ({ children }) => {
 	const { ADD_TO_CART, ADD_ONE_FROM_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
-	const initialState = {
+	let initialState = {
 		products: [...productsInfo],
 		cartItems: [],
 	};
 
 	const [state, dispatch] = useReducer(CartReducer, initialState);
+
+	//////////////////////// PROBANDO LOCAL STORAGE
+
+	// const [stateStorage, setStateStorage] = useState(() => JSON.parse(localStorage.getItem("carritoGuardado")) || []);
+
+	// useEffect(() => {
+	// 	setStateStorage(state);
+	// 	localStorage.setItem("carritoGuardado", JSON.stringify(stateStorage));
+	// }, [state]);
+
+	// initialState = {
+	// 	...initialState,
+	// 	...stateStorage,
+	// };
+	////////////////////////////////////////////////
 
 	const addToCart = item => {
 		dispatch({ type: ADD_TO_CART, payload: item });

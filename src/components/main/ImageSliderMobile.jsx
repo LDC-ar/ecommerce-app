@@ -22,7 +22,7 @@ const ImageSliderMobile = ({ slides }) => {
 			nextSlide();
 		}, 3000);
 		return () => clearInterval(slideInterval);
-	});
+	}, [current]);
 
 	if (!Array.isArray(slides) || slides.length <= 0) {
 		return null;
@@ -37,7 +37,7 @@ const ImageSliderMobile = ({ slides }) => {
 					</div>
 				);
 			})}
-			<div className="buttons">
+			<div className="tv-carrousel-arrows">
 				<img src={LeftArrow} alt="arrow" className="left-arrow" onClick={prevSlide} />
 				<img src={RightArrow} alt="arrow" className="right-arrow" onClick={nextSlide} />
 			</div>
