@@ -1,4 +1,4 @@
-import { useState, useEffect, useReducer } from "react";
+import { useReducer } from "react";
 import CartContext from "./CartContext";
 import CartReducer from "./CartReducer";
 import { TYPES } from "../cartTypes";
