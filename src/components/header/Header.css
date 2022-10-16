@@ -3,7 +3,7 @@ header {
 	width: 100vw;
 	height: 4rem;
 	position: fixed;
-	z-index: 10;
+	z-index: 75;
 	background: var(--first-color);
 }
 
