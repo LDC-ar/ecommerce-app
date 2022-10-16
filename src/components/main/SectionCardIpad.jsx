@@ -25,7 +25,6 @@ const SectionCardIpad = ({ windowWidth, breakPoint }) => {
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
 	};
-	console.log(ipadArray);
 
 	return (
 		<div className="container-SectionCard">

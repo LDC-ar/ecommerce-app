@@ -29,7 +29,7 @@ const SectionCardMac = ({ windowWidth, breakPoint }) => {
 
 	return (
 		<div className="container-SectionCard">
-			<h3>{sectionTitle.title1}</h3>
+			<h3>{sectionTitle.title2}</h3>
 			{/* Asi chequeas la condicion y renderiza un componente u otro*/}
 			{windowWidth < breakPoint ? (
 				<div>
