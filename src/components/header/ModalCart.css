@@ -1,14 +1,15 @@
 .cart-wrapper {
-	width: 400px;
+	min-width: 378px;
+	width: 25%;
 	height: fit-content;
 	position: fixed;
 	top: 4rem;
-	right: 0px;
+	right: 0;
 	padding: 10px;
-	border-radius: 0px 0px 0px 12px;
+	border-radius: 0px 0px 0px 30px;
 	background: var(--second-color);
 	box-shadow: 0 0 25px black;
-	z-index: 2;
+	z-index: 50;
 	animation: slide 0.5s ease-out;
 }
 

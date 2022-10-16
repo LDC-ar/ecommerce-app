@@ -27,8 +27,15 @@
 }
 
 .CartItem-quantity > button {
-	height: 100%;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	font-size: 1em;
+	font-weight: 400;
 	align-self: center;
+	cursor: pointer;
+	display: grid;
+	place-content: center;
 }
 
 .CartItem-quantity__num {
@@ -41,4 +48,5 @@
 	margin-left: 1em;
 	font-size: 1.2rem;
 	border: 0;
+	cursor: pointer;
 }

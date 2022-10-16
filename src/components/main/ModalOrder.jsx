@@ -1,6 +1,6 @@
 import React from "react";
-import "./Modal.css";
 import { RiCloseFill } from "react-icons/ri";
+import "./Modal.css";
 
 const ModalOrder = ({ show, onClose, productInfo }) => {
 	if (!show) {

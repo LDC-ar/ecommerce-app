@@ -29,7 +29,7 @@ const ModalCart = ({ show }) => {
 					<div></div>
 					<div>{"$" + cartItems.reduce((amount, item) => item.price * item.quantity + amount, 0)}</div>
 				</div>
-				<button onClick={() => clearCart()} className={`btn btnSubmit ${cartItems.length === 0 && "displayNone"}`}>
+				<button onClick={() => clearCart()} className={`btn btnBuy ${cartItems.length === 0 && "displayNone"}`}>
 					Clear Cart
 				</button>
 			</div>
