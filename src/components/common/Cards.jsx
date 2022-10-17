@@ -1,8 +1,8 @@
 import React from "react";
-import "./Cards.css";
-import ButtonBuy from "./ButtonBuy";
 import { textButton } from "../helpers/data";
+import ButtonBuy from "./ButtonBuy";
 import ButtonInfo from "./ButtonInfo";
+import "./Cards.css";
 
 function Cards({ src, title, condition, description, price, id, category, product }) {
 	return (
@@ -15,7 +15,6 @@ function Cards({ src, title, condition, description, price, id, category, produc
 				<p className="card-name">{title}</p>
 				<p className="card-caract">{description}</p>
 				<p className="card-price">${price}</p>
-				{/* El ID se lo tenes que pasar a los botones para los modales*/}
 				<ButtonBuy product={product} id={id}>
 					{textButton.textoDos}
 				</ButtonBuy>
@@ -24,18 +23,5 @@ function Cards({ src, title, condition, description, price, id, category, produc
 		</div>
 	);
 }
-
-// const cards = () => {
-//   return (
-//     <div className='card'>
-//         <figure>
-//           <img src={celus.img} alt="150" width="150"/>
-//           <h3></h3>
-//         <button></button>
-//         </figure>
-//     </div>
-
-//   )
-// }
 
 export default Cards;

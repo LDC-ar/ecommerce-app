@@ -1,8 +1,9 @@
 .CartItem {
 	padding: 15px 0;
-	display: flex;
-	align-items: center;
-	gap: 5px;
+	display: grid;
+	grid-template-columns: 3fr 4fr 2fr 1fr 1fr;
+	grid-template-rows: auto;
+	place-items: center;
 	list-style-type: none;
 	border-bottom: 1px solid gray;
 }
@@ -12,25 +13,32 @@
 }
 
 .CartItem-img {
-	width: 25%;
+	width: 100%;
 }
 
 .CartItem-title {
-	flex-grow: 1;
+	margin-left: 0.5em;
+	font-size: 1em;
+	justify-self: flex-start;
+}
+
+.CartItem-total {
+	justify-self: flex-start;
 }
 
 .CartItem-quantity {
 	font-weight: 500;
 	font-size: 1.5em;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
 .CartItem-quantity > button {
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	padding: 0;
-	font-size: 1em;
+	font-size: 0.8em;
 	font-weight: 400;
 	align-self: center;
 	cursor: pointer;
@@ -40,12 +48,11 @@
 
 .CartItem-quantity__num {
 	padding: 10px;
-	background-color: var(--second-color);
 }
 
 .CartItem-RemoveAll {
 	margin-top: 4px;
-	margin-left: 1em;
+	margin-left: 0.5em;
 	font-size: 1.2rem;
 	border: 0;
 	cursor: pointer;

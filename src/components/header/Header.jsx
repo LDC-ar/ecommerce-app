@@ -1,15 +1,14 @@
-import React from "react";
-import { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
+import CartContext from "../../context/cart/CartContext";
 import ModalCart from "./ModalCart";
+import ModalUs from "./ModalUs";
+import ModalSearch from "./ModalSearch";
 import logo from "../images/logo-apple.png";
 import bag from "../images/icono-bag.png";
 import search from "../images/icono-search.png";
 import "./Header.css";
-import "../main/Buttons.css";
-import "../main/Modal.css";
-import CartContext from "../../context/cart/CartContext";
-import ModalUs from "./ModalUs";
-import ModalSearch from "./ModalSearch";
+import "../common/Buttons.css";
+import "../common/Modal.css";
 
 function Header() {
 	const [showSearch, setShowSearch] = useState(false);

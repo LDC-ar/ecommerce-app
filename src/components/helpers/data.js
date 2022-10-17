@@ -345,7 +345,7 @@ export const aboutUs = [
 	},
 	{
 		id: 7,
-		image: "",
+		image: "../us/np.jpg",
 		nombre: "Natalia Pogonza",
 		linkedIn: "https://www.linkedin.com/in/natalia-pogonza-31b90018a",
 		github: "https://github.com/Naty5585",

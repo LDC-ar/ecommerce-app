@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonBuy from "./ButtonBuy";
-import ButtonInfo from "./ButtonInfo";
 import { productsInfo } from "../helpers/data";
+import ButtonBuy from "../common/ButtonBuy";
+import ButtonInfo from "../common/ButtonInfo";
 import "./HeroProductMac.css";
 import ImacHero from "../images/imac-hero.jpg";
 import ImacHero2 from "../images/imac-hero2.png";

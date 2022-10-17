@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
 import CartItem from "./CartItem";
 import "./ModalCart.css";
+import "../common/Buttons.css";
 
 const ModalCart = ({ show }) => {
 	const { cartItems, clearCart } = useContext(CartContext);
@@ -24,14 +25,14 @@ const ModalCart = ({ show }) => {
 						</ul>
 					)}
 				</div>
-				<div className={`modal-cart-total ${cartItems.length === 0 && "displayNone"}`}>
-					<div>Cart Total</div>
-					<div></div>
-					<div>{"$" + cartItems.reduce((amount, item) => item.price * item.quantity + amount, 0)}</div>
+				<div className={`modal-cart-bottom ${cartItems.length === 0 && "displayNone"}`}>
+					<button className="modal-cart-bottom-checkout btnCheckout">Checkout</button>
+					<div className="modal-cart-bottom-total">Total:</div>
+					<div className="modal-cart-bottom-totalNumber">{"$ " + cartItems.reduce((amount, item) => item.price * item.quantity + amount, 0)}</div>
+					<button onClick={() => clearCart()} className="modal-cart-bottom-clearCart btnClear">
+						Clear Cart
+					</button>
 				</div>
-				<button onClick={() => clearCart()} className={`btn btnBuy ${cartItems.length === 0 && "displayNone"}`}>
-					Clear Cart
-				</button>
 			</div>
 		</div>
 	);

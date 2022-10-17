@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonOrder from "./ButtonOrder";
-import ButtonInfo from "./ButtonInfo";
 import { productsInfo } from "../helpers/data";
+import ButtonOrder from "../common/ButtonOrder";
+import ButtonInfo from "../common/ButtonInfo";
 import "./HeroProductIphone.css";
 import IphoneProHero from "../images/iphone-pro-hero2.png";
 

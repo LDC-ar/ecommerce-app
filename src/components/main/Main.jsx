@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { SliderData } from "../helpers/data";
+import { SliderData, sectionTitle, productsInfo } from "../helpers/data";
 import "./Main.css";
 import HeroHome from "./HeroHome";
 import HeroProductIphone from "./HeroProductIphone";
-import SectionCardIphone from "./SectionCardIphone";
 import HeroProductMac from "./HeroProductMac";
-import SectionCardMac from "./SectionCardMac";
 import HeroProductIpad from "./HeroProductIpad";
-import SectionCardIpad from "./SectionCardIpad";
+import SectionCard from "./SectionCard";
 import ImageSlider from "./ImageSlider";
 import ImageSliderMobile from "./ImageSliderMobile";
 
 function Main() {
+	const phoneArray = productsInfo.filter(product => product.category === "Phone");
+	const computerArray = productsInfo.filter(product => product.category === "Computer");
+	const ipadArray = productsInfo.filter(product => product.category === "Ipad");
+
 	///////////////////////////////////////////////////////////////////////////////
 	////////////Este event listener es para saber el ancho de la pantalla//////////
 	///////////////////////////////////////////////////////////////////////////////
@@ -21,7 +23,6 @@ function Main() {
 
 	useEffect(() => {
 		function watchWidth() {
-			console.log("Cambiando el ancho");
 			setWindowWidth(window.innerWidth);
 		}
 		window.addEventListener("resize", watchWidth);
@@ -34,11 +35,11 @@ function Main() {
 		<div className="container-main">
 			<HeroHome />
 			<HeroProductIphone />
-			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />
+			<SectionCard productArray={phoneArray} title={sectionTitle.title1} windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductMac />
-			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
+			<SectionCard productArray={computerArray} title={sectionTitle.title2} windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
-			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
+			<SectionCard productArray={ipadArray} title={sectionTitle.title3} windowWidth={windowWidth} breakPoint={breakPoint} />
 			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
 		</div>
 	);

@@ -1,7 +1,7 @@
 import React from "react";
-import ButtonBuy from "./ButtonBuy";
-import ButtonInfo from "./ButtonInfo";
 import { productsInfo } from "../helpers/data";
+import ButtonBuy from "../common/ButtonBuy";
+import ButtonInfo from "../common/ButtonInfo";
 import "./HeroProductIpad.css";
 import IpadProHero from "../images/ipad-pro-hero.png";
 

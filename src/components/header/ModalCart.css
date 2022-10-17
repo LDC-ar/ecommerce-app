@@ -41,12 +41,42 @@
 	overflow-y: auto;
 }
 
+.modal-cart-grid > ul {
+	padding: 0;
+}
+
 .modal-cart-grid > h4 {
 	margin-top: 10px;
 }
 
-.modal-cart-total {
+.modal-cart-bottom {
+	width: 100%;
 	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
+	padding-block: 1em;
+	display: grid;
+	grid-template-columns: 4fr 2fr 2fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: "checkout total totalNumber clearCart";
+	place-items: center;
+}
+
+.modal-cart-bottom-checkout {
+	grid-area: "checkout";
+}
+
+.modal-cart-bottom-total {
+	grid-area: "total";
+	justify-self: flex-end;
+	font-weight: bold;
+}
+
+.modal-cart-bottom-totalNumber {
+	grid-area: "totalNumber";
+	padding-left: 0.2em;
+	font-size: 1.1em;
+	justify-self: flex-start;
+}
+
+.modal-cart-bottom-clearCart {
+	grid-area: "clearCart";
 }
