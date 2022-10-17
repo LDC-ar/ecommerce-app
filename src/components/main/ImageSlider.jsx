@@ -1,11 +1,10 @@
-import React from "react";
-import { SliderData } from "../helpers/data";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import { SliderData, SliderDataMobile } from "../helpers/data";
+import "./ImageSlider.css";
 import LeftArrow from "../images/left-arrow2.png";
 import RightArrow from "../images/right-arrow2.png";
-import "./ImageSlider.css";
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = ({ slides, windowWidth, breakPoint }) => {
 	const [current, setCurrent] = useState(0);
 	const length = slides.length;
 
@@ -34,13 +33,27 @@ const ImageSlider = ({ slides }) => {
 
 	return (
 		<section className="slider">
-			{SliderData.map((slide, index) => {
-				return (
-					<div className={index === current ? "slide.active" : "slide"} key={index}>
-						{index === current && <img src={slide.image} alt="apple TV" className="image" />}
-					</div>
-				);
-			})}
+			{windowWidth < breakPoint ? (
+				<div>
+					{SliderDataMobile.map((slide, index) => {
+						return (
+							<div className={index === current ? "slide.active" : "slide"} key={index}>
+								{index === current && <img src={slide.image} alt="apple TV" className="image" />}
+							</div>
+						);
+					})}
+				</div>
+			) : (
+				<div>
+					{SliderData.map((slide, index) => {
+						return (
+							<div className={index === current ? "slide.active" : "slide"} key={index}>
+								{index === current && <img src={slide.image} alt="apple TV" className="image" />}
+							</div>
+						);
+					})}
+				</div>
+			)}
 			<div className="tv-carrousel-arrows">
 				<img src={LeftArrow} alt="Switch to left arrow" className="left-arrow" onClick={prevSlide} />
 				<img src={RightArrow} alt="Switch to right arrow" className="right-arrow" onClick={nextSlide} />

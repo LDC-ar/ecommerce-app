@@ -324,14 +324,14 @@ export const aboutUs = [
 	},
 	{
 		id: 4,
-		image: "../us/lc.jpg",
+		image: "../images/us/lc.jpg",
 		nombre: "Leandro Castagno",
 		linkedIn: "https://www.linkedin.com/in/leandro-castagno-03b563218",
 		github: "https://github.com/LDC-ar",
 	},
 	{
 		id: 5,
-		image: "../us/gh.jpg",
+		image: "../images/us/gh.jpg",
 		nombre: "Lucas Cardellino",
 		linkedIn: "https://www.linkedin.com/in/lcardellino",
 		github: "https://github.com/lcardellino",
@@ -345,14 +345,14 @@ export const aboutUs = [
 	},
 	{
 		id: 7,
-		image: "../us/np.jpg",
+		image: "../images/us/np.jpg",
 		nombre: "Natalia Pogonza",
 		linkedIn: "https://www.linkedin.com/in/natalia-pogonza-31b90018a",
 		github: "https://github.com/Naty5585",
 	},
 	{
 		id: 8,
-		image: "../us/sc.jpg",
+		image: "../images/us/sc.jpg",
 		nombre: "Sergio Cardozo",
 		linkedIn: "https://www.linkedin.com/in/sergio-ezequiel-cardozo-a71054235",
 		github: "https://github.com/sergiocardozofs",

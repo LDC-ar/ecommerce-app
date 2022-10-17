@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
-import CartItem from "./CartItem";
+import CartItem from "../header/CartItem";
 import "./ModalCart.css";
-import "../common/Buttons.css";
+import "./Buttons.css";
 
 const ModalCart = ({ show }) => {
 	const { cartItems, clearCart } = useContext(CartContext);
