@@ -8,7 +8,6 @@ import "./SectionCard.css";
 const SectionCardIpad = ({ windowWidth, breakPoint }) => {
 	// Estado que guarda el array de productos con la categoria "Phone"
 	const [ipadArray, setIpadArray] = useState([]);
-
 	// Este efecto filtra y guarda todos los productos del array general de productos que pertenezcan a la categoria "Phone"
 	useEffect(() => {
 		setIpadArray(productsInfo.filter(product => product.category === "Ipad"));
@@ -29,7 +28,7 @@ const SectionCardIpad = ({ windowWidth, breakPoint }) => {
 
 	return (
 		<div className="container-SectionCard">
-			<h3>{sectionTitle.title1}</h3>
+			<h3>{sectionTitle.title3}</h3>
 			{/* Asi chequeas la condicion y renderiza un componente u otro*/}
 			{windowWidth < breakPoint ? (
 				<div>
@@ -66,8 +65,6 @@ const SectionCardIpad = ({ windowWidth, breakPoint }) => {
 };
 
 export default SectionCardIpad;
-
-
 
 /*
 
