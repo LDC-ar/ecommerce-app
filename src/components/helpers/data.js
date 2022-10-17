@@ -173,8 +173,8 @@ export const productsInfo = [
 	{
 		id: 8,
 		title: "MacBook Air",
-		description: "M2 Chip.",
 		category: "Computer",
+		description: "M2 Chip.",
 		displaySize: '13.6""',
 		displayType: "Liquid Retina display",
 		chipset: "Apple M2 chip",
