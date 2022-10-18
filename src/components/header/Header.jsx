@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import CartContext from "../../context/cart/CartContext";
-import ModalCart from "../common/ModalCart";
+import ModalCart from "./ModalCart";
 import ModalUs from "../common/ModalUs";
 import ModalSearch from "../common/ModalSearch";
 import logo from "../images/logo-apple.png";

@@ -1,9 +1,10 @@
 .CartItem {
-	padding: 15px 0;
+	padding: 15px 10px;
 	display: grid;
 	grid-template-columns: 3fr 4fr 2fr 1fr 1fr;
 	grid-template-rows: auto;
 	place-items: center;
+	position: relative;
 	list-style-type: none;
 	border-bottom: 1px solid gray;
 }
@@ -28,7 +29,7 @@
 
 .CartItem-quantity {
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

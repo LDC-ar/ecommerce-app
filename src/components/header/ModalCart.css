@@ -5,9 +5,8 @@
 	position: fixed;
 	top: 4rem;
 	right: 0;
-	padding: 10px;
-	border-radius: 0px 0px 0px 30px;
-	background: var(--second-color);
+	border-radius: 0px 0px 0px 20px;
+	background: var(--white-color);
 	box-shadow: 0 0 25px black;
 	z-index: 50;
 	animation: slide 0.5s ease-out;
@@ -16,29 +15,34 @@
 @keyframes slide {
 	0% {
 		opacity: 0;
-		/* transform: translate(0px, -100%); */
 	}
 	100% {
 		opacity: 1;
-		/* transform: translate(0, 0%); */
 	}
 }
 
 .modal-cart {
-	background: var(--second-color);
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 .modal-cart-grid {
+	padding-top: 1em;
 	min-height: 40px;
 	height: fit-content;
 	max-height: 50vh;
 	overflow-y: auto;
+	position: relative;
+}
+
+.modal-cart-grid::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(180deg, rgb(143, 143, 143) 0%, rgba(255, 255, 255, 1) 5%);
 }
 
 .modal-cart-grid > ul {
@@ -51,13 +55,14 @@
 
 .modal-cart-bottom {
 	width: 100%;
-	margin-top: 10px;
 	padding-block: 1em;
 	display: grid;
 	grid-template-columns: 4fr 2fr 2fr 2fr;
 	grid-template-rows: auto;
 	grid-template-areas: "checkout total totalNumber clearCart";
 	place-items: center;
+	border-top: 2px solid var(--third-color);
+	/* gap: 5px; */
 }
 
 .modal-cart-bottom-checkout {
@@ -65,6 +70,7 @@
 }
 
 .modal-cart-bottom-total {
+	font-family: var(--second-font);
 	grid-area: "total";
 	justify-self: flex-end;
 	font-weight: bold;
