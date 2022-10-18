@@ -1,78 +1,768 @@
 .Wrapper {
+	width: 100vw;
 	position: fixed;
-	top: 0;
+	top: 4rem;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: #5050507e;
+	background: #50505075;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 2;
+	z-index: 100;
 }
 
 .modal {
 	width: 450px;
-	height: 300px;
+	height: 550px;
 	background: var(--second-color);
-	border-radius: 5px;
+	border-radius: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	animation: fadeInDown 0.3s;
+	animation: scale 0.5s;
 	text-align: center;
-}
-
-.modal-carrito {
-	width: 450px;
-	height: 300px;
-	background: var(--second-color);
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	animation: fadeInDown 0.3s;
+	box-shadow: 0 0 25px black;
 }
 
 .btn-close {
 	position: absolute;
 	top: 15px;
 	right: 15px;
-	background-color: blue;
-	font-size: 20px;
+	font-size: 25px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
 	color: var(--first-color);
 }
 
-/* .btn-close span {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	background-color: rgb(29, 218, 23);
-	font-size: 20px;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	color: var(--first-color);
-} */
+.btn-close:hover,
+.btn-close:focus {
+	/* transform: rotate(90deg); */
+	animation-name: scaleCloseButton;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear ease-out;
+}
 
-@keyframes fadeInDown {
+@keyframes scaleCloseButton {
+	from {
+		transform: scale(100%);
+	}
+	to {
+		transform: scale(150%);
+	}
+}
+
+@keyframes scale {
 	0% {
 		opacity: 0;
-		transform: translateY(-50px);
+		transform: scaleY(0%) scaleX(0%);
 	}
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		transform: scaleY(100%) scaleX(100%);
 	}
 }
 
-@media (max-width: 385px) {
-	.modal {
-		width: 340px;
+/*************** MODAL BUY **************/
+.modal-buy-container {
+	height: 90%;
+	width: 90%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.modal-buy-img {
+	width: 60%;
+	margin-bottom: 0.7em;
+}
+
+.modal-buy-title {
+	font-size: 1.7rem;
+	font-weight: 500;
+	margin-bottom: 0.1em;
+}
+
+.modal-buy-description {
+	margin-bottom: 1.2em;
+	font-weight: 400;
+}
+
+.modal-buy-price {
+	margin-bottom: 1em;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.modal-buy-added {
+	margin-bottom: 1em;
+	font-size: 1.4rem;
+}
+
+.ItemAddedAnimation {
+	width: 60px;
+}
+/************* FIN MODAL BUY ************/
+
+/*************** MODAL "LEARN MORE" PHONE **************/
+.modal-info-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas:
+		"header header header header"
+		"display display display display"
+		"cameraImg	camera camera camera"
+		"batteryImg battery battery battery"
+		"chipsetImg chipset chipset chipset"
+		"recognitionImg recognition recognition recognition"
+		"networkImg	network network network";
+}
+
+.modal-info-container-header {
+	grid-area: header;
+	height: 70px;
+}
+
+.modal-info-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.modal-info-description {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+}
+
+.modal-info-container-header > hr {
+	width: 70%;
+	margin: auto;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+	animation: grow 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes grow {
+	0% {
+		opacity: 1;
+		transform: scaleX(100%);
 	}
+	50% {
+		opacity: 0;
+		transform: scaleX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+}
+
+.modal-info-display {
+	grid-area: display;
+	height: 60px;
+}
+
+.modal-info-displaySize {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.modal-info-displayType {
+	margin-top: 0.3em;
+	letter-spacing: 0.04em;
+}
+
+.modal-info-cameraImg {
+	grid-area: cameraImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-info-camera {
+	grid-area: camera;
+	align-self: center;
+	text-align: left;
+}
+
+.modal-info-cameraSystem {
+	font-size: 0.95em;
+	text-align: left;
+}
+
+.modal-info-cameraType {
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-batteryImg {
+	grid-area: batteryImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-info-battery {
+	grid-area: battery;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-chipsetImg {
+	grid-area: chipsetImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-info-chipset {
+	grid-area: chipset;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-recognitionImg {
+	grid-area: recognitionImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-info-recognition {
+	grid-area: recognition;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-info-networkImg {
+	grid-area: networkImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-info-network {
+	grid-area: network;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+/*************** FIN MODAL "LEARN MORE" PHONE **************/
+
+/*************** MODAL "LEARN MORE" COMPUTER **************/
+.modal-computer-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas:
+		"header header header header"
+		"display display display display"
+		"cpu gpu ram storage"
+		"batteryImg battery battery battery"
+		"chipsetImg chipset chipset chipset"
+		"recognitionImg recognition recognition recognition";
+}
+
+.modal-computer-container-header {
+	grid-area: header;
+	height: 70px;
+}
+
+.modal-computer-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.modal-computer-description {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+}
+
+.modal-computer-container-header > hr {
+	width: 70%;
+	margin: auto;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+	animation: grow 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes grow {
+	0% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: scaleX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+}
+
+.modal-computer-display {
+	grid-area: display;
+	height: 60px;
+}
+
+.modal-computer-displaySize {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.modal-computer-displayType {
+	margin-top: 0.3em;
+	letter-spacing: 0.04em;
+}
+
+.modal-computer-cpu {
+	grid-area: cpu;
+}
+
+.modal-computer-cpu > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-cpu > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-computer-gpu {
+	grid-area: gpu;
+}
+
+.modal-computer-gpu > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-gpu > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-computer-ram {
+	grid-area: ram;
+}
+
+.modal-computer-ram > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-ram > p {
+	margin-top: 0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-computer-storage {
+	grid-area: storage;
+}
+
+.modal-computer-storage > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-computer-storage > p {
+	margin-top: 0.3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-computer-batteryImg {
+	grid-area: batteryImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-computer-battery {
+	grid-area: battery;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-computer-chipsetImg {
+	grid-area: chipsetImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-computer-chipset {
+	grid-area: chipset;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-computer-recognitionImg {
+	grid-area: recognitionImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-computer-recognition {
+	grid-area: recognition;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+/*************** FIN MODAL "LEARN MORE" COMPUTER **************/
+
+/*************** MODAL "LEARN MORE" IPAD **************/
+.modal-ipad-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(7, auto);
+	grid-template-areas:
+		"header header header header"
+		"display display display display"
+		"storage storage storage storage"
+		"cameraImg camera camera camera"
+		"connectorImg connector connector connector"
+		"chipsetImg chipset chipset chipset"
+		"networkImg network network network";
+}
+
+.modal-ipad-container-header {
+	grid-area: header;
+	height: 70px;
+}
+
+.modal-ipad-title {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.modal-ipad-description {
+	font-weight: 400;
+	margin-bottom: 0.5em;
+	font-size: 1.1rem;
+	letter-spacing: 0.04em;
+}
+
+.modal-ipad-container-header > hr {
+	width: 70%;
+	margin: auto;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 0;
+	animation: grow 2s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+}
+
+@keyframes grow {
+	0% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: scaleX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(100%);
+	}
+}
+
+.modal-ipad-display {
+	grid-area: display;
+	height: 60px;
+}
+
+.modal-ipad-displaySize {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+.modal-ipad-displayType {
+	margin-top: 0.3em;
+	letter-spacing: 0.04em;
+}
+
+.modal-ipad-storage {
+	grid-area: storage;
+}
+
+.modal-ipad-storage > h5 {
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.modal-ipad-storage > p {
+	margin-top: 0.3em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 700;
+	align-self: center;
+}
+
+.modal-ipad-cameraImg {
+	grid-area: cameraImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-ipad-camera {
+	grid-area: camera;
+	align-self: center;
+	text-align: left;
+}
+
+.modal-ipad-cameraType {
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-connectorImg {
+	grid-area: connectorImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-ipad-connector {
+	grid-area: connector;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-chipsetImg {
+	grid-area: chipsetImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-ipad-chipset {
+	grid-area: chipset;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+.modal-ipad-networkImg {
+	grid-area: networkImg;
+	width: 40%;
+	place-self: center;
+}
+
+.modal-ipad-network {
+	grid-area: network;
+	font-size: 0.95em;
+	letter-spacing: 0.03em;
+	font-weight: 400;
+	text-align: left;
+	align-self: center;
+}
+
+/*************** FIN MODAL "LEARN MORE" IPAD **************/
+
+/*************** MODAL "ORDER" **************/
+.modal-order-container {
+	/* background-color: darkgray; */
+	height: 90%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-order-image {
+	width: 30%;
+	margin-bottom: 1em;
+}
+
+.modal-order-title {
+	margin-bottom: 2em;
+	font-size: 1.5em;
+	letter-spacing: 0.03em;
+	font-weight: 500;
+}
+
+.modal-order-text {
+	margin-bottom: 2em;
+	font-size: 1.1em;
+	letter-spacing: 0.03em;
+	line-height: 1.3em;
+	font-weight: 400;
+}
+
+.modal-order-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-order-form > input {
+	height: 2.2em;
+	width: 18em;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: var(--second-font);
+	font-size: 1em;
+	border: 1px solid var(--first-color);
+	border-radius: 50px;
+}
+
+.modal-order-form > input:hover,
+.modal-order-form > input:focus {
+	border: 2px solid var(--new-color);
+}
+
+/*************** FIN MODAL "ORDER" **************/
+
+/*************** MODAL SEARCH **************/
+.Wrapper-src {
+	position: fixed;
+	top: 4rem;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #5050507e;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	z-index: 5;
+}
+
+.modal-src {
+	background-color: var(--black-alpha-color);
+	width: 400px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0 0 25px black;
+	position: relative;
+	animation: scale 0.5s;
+}
+
+.search > input {
+	height: 2.2em;
+	width: 18em;
+	text-align: center;
+	font-family: var(--second-font);
+	font-size: 1em;
+	border: 1px solid var(--third-color);
+	border-radius: 50px;
+	background-color: transparent;
+	color: var(--second-color);
+}
+
+.search > input:hover,
+.search > input:focus {
+	border: 2px solid var(--new-color);
+}
+
+.btn-close-src {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	font-size: 15px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	color: var(--third-color);
+}
+/*************** FIN MODAL SEARCH **************/
+
+/*************** MODAL ABOUT US **************/
+
+.modal-us {
+	width: 720px;
+	height: 510px;
+	background: var(--second-color);
+	border-radius: 10px;
+	position: relative;
+	animation: scale 0.5s;
+	box-shadow: 0 0 25px black;
+}
+
+.content-us {
+	width: 670px;
+	height: 460px;
+	margin: 25px 25px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	align-items: center;
+	justify-items: center;
 }

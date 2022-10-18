@@ -1,0 +1,52 @@
+.cart-wrapper {
+	min-width: 378px;
+	width: 25%;
+	height: fit-content;
+	position: fixed;
+	top: 4rem;
+	right: 0;
+	padding: 10px;
+	border-radius: 0px 0px 0px 30px;
+	background: var(--second-color);
+	box-shadow: 0 0 25px black;
+	z-index: 50;
+	animation: slide 0.5s ease-out;
+}
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+		/* transform: translate(0px, -100%); */
+	}
+	100% {
+		opacity: 1;
+		/* transform: translate(0, 0%); */
+	}
+}
+
+.modal-cart {
+	background: var(--second-color);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.modal-cart-grid {
+	min-height: 40px;
+	height: fit-content;
+	max-height: 50vh;
+	overflow-y: auto;
+}
+
+.modal-cart-grid > h4 {
+	margin-top: 10px;
+}
+
+.modal-cart-total {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}

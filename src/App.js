@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import FooterDesktop from "./components/footer/FooterDesktop";
+import FooterMobile from "./components/footer/FooterMobile";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
-import ButtonBuy from "./components/main/ButtonBuy";
-import ButtonOrder from "./components/main/ButtonOrder";
-import ButtonInfo from "./components/main/ButtonInfo";
-import ButtonInfoGde from "./components/main/ButtonInfoGde";
-import { textButton } from "./components/helpers/data";
 
-function App(props) {
+function App() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+	const breakPoint = 768;
+
+	useEffect(() => {
+		function watchWidth() {
+			console.log("Cambiando el ancho");
+			setWindowWidth(window.innerWidth);
+		}
+		window.addEventListener("resize", watchWidth);
+
+		return () => window.removeEventListener("resize", watchWidth);
+	}, [windowWidth]);
+
 	return (
 		<div>
 			<Header />
-
-			<Main>
-				<ButtonBuy>{textButton.textoDos}</ButtonBuy>
-				<ButtonOrder>{textButton.textoUno}</ButtonOrder>
-				<ButtonBuy>{textButton.textoUno}</ButtonBuy>
-				<ButtonOrder>{textButton.textoDos}</ButtonOrder>
-				<ButtonInfo />
-				<ButtonInfoGde />
-			</Main>
-
-			<Footer />
+			<Main />
+			{windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
 		</div>
 	);
 }

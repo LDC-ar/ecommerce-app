@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SliderData } from "../helpers/data";
 import "./Main.css";
 import HeroHome from "./HeroHome";
 import HeroProductIphone from "./HeroProductIphone";
@@ -8,20 +9,15 @@ import SectionCardMac from "./SectionCardMac";
 import HeroProductIpad from "./HeroProductIpad";
 import SectionCardIpad from "./SectionCardIpad";
 import ImageSlider from "./ImageSlider";
-import { SliderData } from "../helpers/data";
-// import { useState } from "react";
+import ImageSliderMobile from "./ImageSliderMobile";
 
-function Main(props) {
+function Main() {
 	///////////////////////////////////////////////////////////////////////////////
 	////////////Este event listener es para saber el ancho de la pantalla//////////
 	///////////////////////////////////////////////////////////////////////////////
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
 	const breakPoint = 768;
-
-	// setTimeout(() => {
-	// 	window.removeEventListener("resize", watchWidth);
-	// }, "5000");
 
 	useEffect(() => {
 		function watchWidth() {
@@ -43,7 +39,7 @@ function Main(props) {
 			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
 			<HeroProductIpad />
 			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
-			{/* <ImageSlider slides={SliderData} /> */}
+			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
 		</div>
 	);
 }

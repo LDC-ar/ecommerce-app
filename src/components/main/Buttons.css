@@ -1,7 +1,6 @@
 .btn {
-	/* width: 10rem; */
 	margin: 0.5em 0;
-	padding: 0.2em 2em;
+	padding: 0.3em 1.2em;
 	font-family: var(--first-font);
 	color: var(--second-color);
 	font-size: 1rem;
@@ -20,9 +19,21 @@
 
 .btnInfo {
 	background-color: transparent;
-	color: var(--link-color);
-	border: none;
 	font-family: var(--first-font);
+	color: var(--link-color);
+	font-size: 0.9rem;
+	border: none;
+}
+
+.btnSubmit {
+	background-color: var(--link-color);
+	box-shadow: 0px 1px 5px var(--black-alpha-color);
+	border-radius: 1em;
+	border: 2px solid var(--link-color);
+}
+
+.displayNone {
+	display: none;
 }
 
 .btnBuy:hover,
