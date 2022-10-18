@@ -30,7 +30,7 @@
 }
 
 .modal-cart-grid {
-	padding-top: 1em;
+	/* padding-top: 1em; */
 	min-height: 40px;
 	height: fit-content;
 	max-height: 50vh;
@@ -38,19 +38,12 @@
 	position: relative;
 }
 
-.modal-cart-grid::before {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(180deg, rgb(143, 143, 143) 0%, rgba(255, 255, 255, 1) 5%);
-}
-
 .modal-cart-grid > ul {
 	padding: 0;
 }
 
 .modal-cart-grid > h4 {
-	margin-top: 10px;
+	margin-block: 1em;
 }
 
 .modal-cart-bottom {
@@ -61,8 +54,12 @@
 	grid-template-rows: auto;
 	grid-template-areas: "checkout total totalNumber clearCart";
 	place-items: center;
-	border-top: 2px solid var(--third-color);
+	border-top: 1px solid var(--first-color);
 	/* gap: 5px; */
+}
+
+.displayNone {
+	display: none;
 }
 
 .modal-cart-bottom-checkout {
