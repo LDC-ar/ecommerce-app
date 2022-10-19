@@ -4,6 +4,7 @@ import ButtonBuy from "../common/ButtonBuy";
 import ButtonInfo from "../common/ButtonInfo";
 import "./HeroProductIpad.css";
 import IpadProHero from "../images/ipad-pro-hero.png";
+import { motion } from "framer-motion";
 
 const HeroProductIpad = () => {
 	return (
@@ -23,9 +24,9 @@ const HeroProductIpad = () => {
 					<ButtonInfo id={productsInfo[9].id} category={productsInfo[9].category} />
 				</div>
 			</div>
-			<div className="col-right-ipad">
+			<motion.div className="col-right-ipad" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
 				<img src={IpadProHero} alt="iPad Pro Hero" className="IpadProHero" />
-			</div>
+			</motion.div>
 		</div>
 	);
 };
