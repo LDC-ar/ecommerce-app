@@ -54,18 +54,18 @@
 	font-family: var(--second-font);
 	color: var(--second-color);
 	font-size: 0.9em;
-	background-color: #c53b3b;
+	background-color: var(--black-alpha-color);
 	box-shadow: 0px 1px 5px var(--black-alpha-color);
 	border-radius: 0.7em;
-	border: 2px solid #c53b3b;
+	border: 2px solid var(--black-alpha-color);
 	cursor: pointer;
 }
 
 .btnClear:hover,
 .btnClear:focus {
 	background-color: transparent;
-	color: #c53b3b;
-	border: 2px solid #c53b3b;
+	color: var(--black-alpha-color);
+	border: 2px solid var(--black-alpha-color);
 }
 
 .displayNone {

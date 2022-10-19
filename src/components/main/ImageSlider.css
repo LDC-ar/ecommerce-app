@@ -28,7 +28,7 @@
 	user-select: none;
 }
 
-/*  ESTO NO ESTARIA FUNCIONANDO
+/* ESTO NO ESTARIA FUNCIONANDO */
 
 .slide {
 	opacity: 0;
@@ -38,8 +38,8 @@
 
 .slide.active {
 	opacity: 1;
-	transform: translateX(550px);
-} */
+	transform: translateX(100%);
+}
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 768px) {
