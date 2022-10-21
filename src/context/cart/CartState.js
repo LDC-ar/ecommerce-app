@@ -1,14 +1,14 @@
-import { useReducer, useEffect } from "react";
-import CartContext from "./CartContext";
-import CartReducer from "./CartReducer";
-import { TYPES } from "../cartTypes";
-import { productsInfo } from "../../components/helpers/data";
+import { useReducer, useEffect } from 'react';
+import CartContext from './CartContext';
+import CartReducer from './CartReducer';
+import { TYPES } from '../cartTypes';
+import { productsInfo } from '../../components/helpers/data';
 
 const CartState = ({ children }) => {
 	const { ADD_TO_CART, ADD_ONE_FROM_CART, REMOVE_ONE_FROM_CART, REMOVE_ALL_FROM_CART, CLEAR_CART } = TYPES;
 
 	// Guarda el array que este guardado en localStorage
-	let jsonCart = JSON.parse(localStorage.getItem("carritoGuardado")) || [];
+	let jsonCart = JSON.parse(localStorage.getItem('carritoGuardado')) || [];
 
 	let initialState = {
 		products: [...productsInfo],
@@ -19,7 +19,7 @@ const CartState = ({ children }) => {
 
 	// Guarda el array de cartItems en localStorage
 	useEffect(() => {
-		localStorage.setItem("carritoGuardado", JSON.stringify(state.cartItems));
+		localStorage.setItem('carritoGuardado', JSON.stringify(state.cartItems));
 	}, [state]);
 
 	const addToCart = item => {

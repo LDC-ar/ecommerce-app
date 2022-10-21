@@ -303,14 +303,14 @@ export const productsInfo = [
 export const aboutUs = [
 	{
 		id: 1,
-		image: '',
+		image: '../images/us/ad.jpg',
 		nombre: 'Alejandro Di Tullio',
 		linkedIn: 'https://www.linkedin.com/in/alejandro-di-tullio-70384815',
 		github: 'https://github.com/ditullioale',
 	},
 	{
 		id: 2,
-		image: '',
+		image: '../images/us/bg.jpg',
 		nombre: 'Bruno Ghiotti',
 		linkedIn: 'https://www.linkedin.com/in/bruno-ghiotti-2a16b21a0',
 		github: 'https://github.com/BrunoGhi',

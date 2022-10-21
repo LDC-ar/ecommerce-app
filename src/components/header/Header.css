@@ -14,31 +14,33 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 
 .container-logo {
 	height: 100%;
-	width: 90px;
+	width: 30px;
 	display: flex;
 	align-items: center;
+	z-index: 900;
 }
 
 .container-logo > img {
 	height: 80%;
-	margin-left: 0.3rem;
 }
 
 .container-icons {
-	position: relative;
-	width: 90px;
-	padding-top: 4px;
+	width: 30px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
+	z-index: 101;
+	position: relative;
 }
 
-.icon {
+.cartIcon {
 	height: 33px;
 	cursor: pointer;
+	z-index: 101;
 }
 /* Numerito sobre el carrito */
 .item-count {
@@ -47,29 +49,12 @@ header {
 	place-items: center;
 	background-color: var(--link-color);
 	color: var(--second-color);
-	z-index: 10;
+	z-index: 102;
 	border-radius: 50%;
 	font-size: 12px;
 	height: 17px;
 	width: 17px;
 	bottom: 0;
-	left: 48px;
-}
-
-.container-nav {
-	position: fixed;
-	left: 0;
-	top: 4rem;
-	width: 50vw;
-	background-color: var(--black-alpha-color);
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.5s ease-out;
-}
-
-.container-nav.is-active {
-	opacity: 1;
-	pointer-events: auto;
 }
 
 .container-nav > ul {
@@ -90,80 +75,6 @@ header {
 .container-nav > ul > li > a {
 	color: var(--second-color);
 }
-
-.container-nav > ul > li > a:hover,
-.container-nav > ul > li > a:focus {
-	color: var(--second-color);
-}
-
-/*########### MENU SANDWICHITO #########  */
-.menu-btn {
-	opacity: 1;
-	background-color: transparent;
-	border: 0;
-}
-
-.nav-icon-5 {
-	width: 25px;
-	height: 25px;
-	margin: 10px 10px;
-	position: relative;
-	cursor: pointer;
-	display: inline-block;
-}
-
-.nav-icon-5 > span {
-	background-color: #fff;
-	position: absolute;
-	border-radius: 2px;
-	transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.2);
-	width: 100%;
-	height: 3px;
-	transition-duration: 500ms;
-}
-
-.nav-icon-5 span:nth-child(1) {
-	top: 0px;
-	left: 0px;
-}
-
-.nav-icon-5 span:nth-child(2) {
-	top: 11px;
-	left: 0px;
-	opacity: 1;
-}
-
-.nav-icon-5 span:nth-child(3) {
-	bottom: 0px;
-	left: 0px;
-}
-
-.nav-icon-5:not(.open):hover span:nth-child(1) {
-	transform: rotate(-3deg) scaleY(1.1);
-}
-
-.nav-icon-5:not(.open):hover span:nth-child(2) {
-	transform: rotate(3deg) scaleY(1.1);
-}
-
-.nav-icon-5:not(.open):hover span:nth-child(3) {
-	transform: rotate(-3deg) scaleY(1.1);
-}
-
-.nav-icon-5.open span:nth-child(1) {
-	transform: rotate(45deg);
-	top: 11px;
-}
-
-.nav-icon-5.open span:nth-child(2) {
-	opacity: 0;
-}
-
-.nav-icon-5.open span:nth-child(3) {
-	transform: rotate(-45deg);
-	top: 11px;
-}
-/*########## FIN MENU SANDWICHITO ########  */
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 768px) {

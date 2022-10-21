@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import FooterDesktop from "./components/footer/FooterDesktop";
-import FooterMobile from "./components/footer/FooterMobile";
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
+import React, { useState, useEffect } from 'react';
+import FooterDesktop from './components/footer/FooterDesktop';
+import FooterMobile from './components/footer/FooterMobile';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
 
 function App() {
 	///////////////////////////////////////////////////////////////////////////////
@@ -16,16 +16,22 @@ function App() {
 		function watchWidth() {
 			setWindowWidth(window.innerWidth);
 		}
-		window.addEventListener("resize", watchWidth);
+		window.addEventListener('resize', watchWidth);
 
-		return () => window.removeEventListener("resize", watchWidth);
+		return () => window.removeEventListener('resize', watchWidth);
 	}, [windowWidth]);
 	///////////////////////////////////////////////////////////////////////////////
 
 	return (
 		<div>
-			<Header />
-			<Main windowWidth={windowWidth} breakPoint={breakPoint} />
+			<Header
+				windowWidth={windowWidth}
+				breakPoint={breakPoint}
+			/>
+			<Main
+				windowWidth={windowWidth}
+				breakPoint={breakPoint}
+			/>
 			{windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
 		</div>
 	);

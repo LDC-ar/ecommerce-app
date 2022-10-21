@@ -55,6 +55,7 @@
 	padding-top: 0.5em;
 	padding-bottom: 1em;
 	font-size: 10px;
+	text-align: center;
 }
 
 @media screen and (min-width: 550px) {
