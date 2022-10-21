@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { SliderData, SliderDataMobile } from "../helpers/data";
-import "./ImageSlider.css";
-import LeftArrow from "../images/left-arrow2.png";
-import RightArrow from "../images/right-arrow2.png";
+import React, { useState, useEffect } from 'react';
+import { SliderData, SliderDataMobile } from '../helpers/data';
+import './ImageSlider.css';
+import LeftArrow from '../images/left-arrow2.png';
+import RightArrow from '../images/right-arrow2.png';
 
 const ImageSlider = ({ slides, windowWidth, breakPoint }) => {
 	const [current, setCurrent] = useState(0);
@@ -37,8 +37,17 @@ const ImageSlider = ({ slides, windowWidth, breakPoint }) => {
 				<div>
 					{SliderDataMobile.map((slide, index) => {
 						return (
-							<div className={index === current ? "slide.active" : "slide"} key={index}>
-								{index === current && <img src={slide.image} alt="apple TV" className="image" />}
+							<div
+								className={index === current ? 'slide.active' : 'slide'}
+								key={index}
+							>
+								{index === current && (
+									<img
+										src={slide.image}
+										alt="apple TV"
+										className="image"
+									/>
+								)}
 							</div>
 						);
 					})}
@@ -47,16 +56,35 @@ const ImageSlider = ({ slides, windowWidth, breakPoint }) => {
 				<div>
 					{SliderData.map((slide, index) => {
 						return (
-							<div className={index === current ? "slide.active" : "slide"} key={index}>
-								{index === current && <img src={slide.image} alt="apple TV" className="image" />}
+							<div
+								className={index === current ? 'slide.active' : 'slide'}
+								key={index}
+							>
+								{index === current && (
+									<img
+										src={slide.image}
+										alt="apple TV"
+										className="image"
+									/>
+								)}
 							</div>
 						);
 					})}
 				</div>
 			)}
 			<div className="tv-carrousel-arrows">
-				<img src={LeftArrow} alt="Switch to left arrow" className="left-arrow" onClick={prevSlide} />
-				<img src={RightArrow} alt="Switch to right arrow" className="right-arrow" onClick={nextSlide} />
+				<img
+					src={LeftArrow}
+					alt="Switch to left arrow"
+					className="left-arrow"
+					onClick={prevSlide}
+				/>
+				<img
+					src={RightArrow}
+					alt="Switch to right arrow"
+					className="right-arrow"
+					onClick={nextSlide}
+				/>
 			</div>
 		</section>
 	);

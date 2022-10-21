@@ -31,6 +31,7 @@
 	height: 20rem;
 	margin-top: -9.6rem;
 	background: linear-gradient(6deg, rgba(0, 0, 0, 1) 74.7%, rgba(255, 255, 255, 0) 75%);
+	z-index: 1;
 }
 
 .col-right-hero-home {
@@ -59,6 +60,7 @@
 	line-height: 1.8rem;
 	letter-spacing: 0.05rem;
 	text-align: center;
+	z-index: 2;
 }
 
 /*########### MEDIA QUERIES #########  */
