@@ -10,7 +10,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const ImageCarrouselMobile = () => {
 	return (
 		<AutoplaySlider
-			className="aws-btn"
+			className="aws-btn imageCarrousel-container"
 			play={true}
 			cancelOnInteraction={false}
 			interval={3000}
