@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ModalUs from '../common/ModalUs';
+import ModalUs from './ModalUs';
 import '../common/Modal.css';
 import { motion } from 'framer-motion';
 import './Navbar.css';

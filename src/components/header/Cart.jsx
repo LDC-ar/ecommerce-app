@@ -14,7 +14,7 @@ function SearchCart() {
 	////// Fin Modal de botones ///////////
 
 	return (
-		<>
+		<div className="container-icons">
 			<img
 				src={bag}
 				alt="cart"
@@ -30,7 +30,7 @@ function SearchCart() {
 				</div>
 			)}
 			<ModalCart show={show} />
-		</>
+		</div>
 	);
 }
 

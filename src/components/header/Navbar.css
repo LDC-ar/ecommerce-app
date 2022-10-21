@@ -17,7 +17,9 @@
 .menu ul {
 	width: 100%;
 	position: absolute;
-	z-index: 200;
+	z-index: 900;
+	list-style: none;
+	padding-left: 0;
 }
 
 .menu li {
@@ -25,7 +27,7 @@
 	background-color: var(--first-color);
 }
 
-.menu li: {
+.menu li {
 	padding-block: 0.8em;
 	background-color: var(--first-color);
 }

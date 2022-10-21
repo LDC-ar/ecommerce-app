@@ -19,18 +19,25 @@ header {
 
 .container-logo {
 	height: 100%;
-	width: 40px;
+	width: 30px;
 	display: flex;
 	align-items: center;
+	z-index: 900;
 }
 
 .container-logo > img {
 	height: 80%;
-	margin-left: 0.3rem;
+}
+
+.container-icons {
+	width: 30px;
+	display: flex;
+	justify-content: flex-end;
+	z-index: 101;
+	position: relative;
 }
 
 .cartIcon {
-	position: relative;
 	height: 33px;
 	cursor: pointer;
 	z-index: 101;
@@ -42,29 +49,12 @@ header {
 	place-items: center;
 	background-color: var(--link-color);
 	color: var(--second-color);
-	z-index: 10;
+	z-index: 102;
 	border-radius: 50%;
 	font-size: 12px;
 	height: 17px;
 	width: 17px;
 	bottom: 0;
-	left: 48px;
-}
-
-.container-nav {
-	position: fixed;
-	left: 0;
-	top: 4rem;
-	width: 50vw;
-	background-color: var(--black-alpha-color);
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 0.5s ease-out;
-}
-
-.container-nav.is-active {
-	opacity: 1;
-	pointer-events: auto;
 }
 
 .container-nav > ul {
@@ -85,13 +75,6 @@ header {
 .container-nav > ul > li > a {
 	color: var(--second-color);
 }
-
-.container-nav > ul > li > a:hover,
-.container-nav > ul > li > a:focus {
-	color: var(--second-color);
-}
-
-/*########## FIN MENU SANDWICHITO ########  */
 
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 768px) {

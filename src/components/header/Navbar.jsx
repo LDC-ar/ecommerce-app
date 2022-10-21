@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ModalUs from '../common/ModalUs';
+import ModalUs from './ModalUs';
 import '../common/Modal.css';
 
 function Navbar() {
@@ -11,7 +11,7 @@ function Navbar() {
 		setClicked(!clicked);
 	};
 	return (
-		<nav className={`container-nav ${clicked ? 'is-active' : ' '}`}>
+		<nav className="container-nav">
 			<ul>
 				<li>
 					<a
