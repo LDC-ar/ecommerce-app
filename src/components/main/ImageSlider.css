@@ -38,7 +38,7 @@
 
 .slide.active {
 	opacity: 1;
-	transform: translateX(100%);
+	transform: translateX(1920px);
 }
 
 /*########### MEDIA QUERIES #########  */
