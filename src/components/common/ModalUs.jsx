@@ -1,7 +1,7 @@
 import React from "react";
-import CardsUs from "../main/CardsUs";
-import "../main/Modal.css";
 import { aboutUs } from "../helpers/data";
+import CardsUs from "../common/CardsUs";
+import "../common/Modal.css";
 
 const ModalUs = ({ showUs, onClose }) => {
 	if (!showUs) {

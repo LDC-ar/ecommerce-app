@@ -1,45 +1,44 @@
-import React, { useState, useEffect } from "react";
-import { SliderData } from "../helpers/data";
-import "./Main.css";
-import HeroHome from "./HeroHome";
-import HeroProductIphone from "./HeroProductIphone";
-import SectionCardIphone from "./SectionCardIphone";
-import HeroProductMac from "./HeroProductMac";
-import SectionCardMac from "./SectionCardMac";
-import HeroProductIpad from "./HeroProductIpad";
-import SectionCardIpad from "./SectionCardIpad";
-import ImageSlider from "./ImageSlider";
-import ImageSliderMobile from "./ImageSliderMobile";
+import React from 'react';
+import { sectionTitle, productsInfo } from '../helpers/data';
+import './Main.css';
+import HeroHome from './HeroHome';
+import HeroProductIphone from './HeroProductIphone';
+import HeroProductMac from './HeroProductMac';
+import HeroProductIpad from './HeroProductIpad';
+import SectionCard from './SectionCard';
+import ImageCarrousel from './ImageCarrousel';
+import ImageCarrouselMobile from './ImageCarrouselMobile';
 
-function Main() {
-	///////////////////////////////////////////////////////////////////////////////
-	////////////Este event listener es para saber el ancho de la pantalla//////////
-	///////////////////////////////////////////////////////////////////////////////
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-	const breakPoint = 768;
-
-	useEffect(() => {
-		function watchWidth() {
-			console.log("Cambiando el ancho");
-			setWindowWidth(window.innerWidth);
-		}
-		window.addEventListener("resize", watchWidth);
-
-		return () => window.removeEventListener("resize", watchWidth);
-	}, [windowWidth]);
-	///////////////////////////////////////////////////////////////////////////////
+function Main({ windowWidth, breakPoint }) {
+	const phoneArray = productsInfo.filter(product => product.category === 'Phone');
+	const computerArray = productsInfo.filter(product => product.category === 'Computer');
+	const ipadArray = productsInfo.filter(product => product.category === 'Ipad');
 
 	return (
 		<div className="container-main">
 			<HeroHome />
 			<HeroProductIphone />
-			<SectionCardIphone windowWidth={windowWidth} breakPoint={breakPoint} />
+			<SectionCard
+				productArray={phoneArray}
+				title={sectionTitle.title1}
+				windowWidth={windowWidth}
+				breakPoint={breakPoint}
+			/>
 			<HeroProductMac />
-			<SectionCardMac windowWidth={windowWidth} breakPoint={breakPoint} />
+			<SectionCard
+				productArray={computerArray}
+				title={sectionTitle.title2}
+				windowWidth={windowWidth}
+				breakPoint={breakPoint}
+			/>
 			<HeroProductIpad />
-			<SectionCardIpad windowWidth={windowWidth} breakPoint={breakPoint} />
-			{windowWidth < breakPoint ? <ImageSliderMobile slides={SliderData} /> : <ImageSlider slides={SliderData} />}
+			<SectionCard
+				productArray={ipadArray}
+				title={sectionTitle.title3}
+				windowWidth={windowWidth}
+				breakPoint={breakPoint}
+			/>
+			{windowWidth < breakPoint ? <ImageCarrouselMobile /> : <ImageCarrousel />}
 		</div>
 	);
 }

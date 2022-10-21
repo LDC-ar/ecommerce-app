@@ -48,14 +48,13 @@
 	}
 
 	.container-hero-mac > p {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		line-height: 2.1rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	.container-hero-mac {
-		height: 100vh;
 		padding: 10vw 5%;
 	}
 

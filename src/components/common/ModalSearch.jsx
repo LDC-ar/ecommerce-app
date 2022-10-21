@@ -1,5 +1,5 @@
 import React from "react";
-import "../main/Modal.css";
+import "../common/Modal.css";
 
 const ModalSearch = ({ showSearch, onClose }) => {
 	if (!showSearch) {

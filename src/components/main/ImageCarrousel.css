@@ -1,0 +1,33 @@
+.aws-btn.imageCarrousel-container {
+	--slider-height-percentage: 120%;
+	--slider-transition-duration: 525ms;
+	--organic-arrow-thickness: 5px;
+	--organic-arrow-border-radius: 5px;
+	--organic-arrow-height: 30px;
+	--organic-arrow-color: #f8f8f8;
+	--control-button-width: 10%;
+	--control-button-height: 25%;
+	--control-button-background: transparent;
+	--control-bullet-color: #5fb7b2;
+	--control-bullet-active-color: #519c97;
+	--loader-bar-color: #2077d5;
+	--loader-bar-height: 6px;
+}
+.aws-btn.imageCarrousel-container img {
+	height: fit-content;
+}
+
+.aws-btn-desktop {
+	--organic-arrow-thickness: 5px;
+	--organic-arrow-border-radius: 5px;
+	--organic-arrow-height: 40px;
+	--loader-bar-color: #2077d5;
+	--loader-bar-height: 6px;
+	--organic-arrow-color: #f8f8f8;
+}
+
+@media screen and (min-width: 501px) {
+	.aws-btn {
+		--slider-height-percentage: 150%;
+	}
+}

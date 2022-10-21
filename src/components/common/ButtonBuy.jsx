@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
 import { textButton, productsInfo } from "../helpers/data";
+import CartContext from "../../context/cart/CartContext";
 import ModalBuy from "./ModalBuy";
 import "./Buttons.css";
 import "./Modal.css";
-import CartContext from "../../context/cart/CartContext";
 
 const ButtonBuy = ({ id, product }) => {
 	const { addToCart } = useContext(CartContext);

@@ -1,15 +1,15 @@
-import React from "react";
-import { useState, useContext } from "react";
-import ModalCart from "./ModalCart";
-import logo from "../images/logo-apple.png";
-import bag from "../images/icono-bag.png";
-import search from "../images/icono-search.png";
-import "./Header.css";
-import "../main/Buttons.css";
-import "../main/Modal.css";
-import CartContext from "../../context/cart/CartContext";
-import ModalUs from "./ModalUs";
-import ModalSearch from "./ModalSearch";
+import React, { useState, useContext } from 'react';
+import CartContext from '../../context/cart/CartContext';
+import ModalCart from './ModalCart';
+import ModalUs from '../common/ModalUs';
+import ModalSearch from '../common/ModalSearch';
+import logo from '../images/logo-apple.png';
+import bag from '../images/icono-bag.png';
+import search from '../images/icono-search.png';
+import './Header.css';
+import '../common/Buttons.css';
+import '../common/Modal.css';
+import { motion } from 'framer-motion';
 
 function Header() {
 	const [showSearch, setShowSearch] = useState(false);
@@ -30,34 +30,55 @@ function Header() {
 
 	return (
 		<header>
-			<div className="container-header">
-				<a href="#hero-home" className="container-logo">
-					<img src={logo} alt="logo apple" />
+			<motion.div
+				className="container-header"
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ ease: 'easeOut', duration: 3 }}
+			>
+				<a
+					href="#hero-home"
+					className="container-logo"
+				>
+					<img
+						src={logo}
+						alt="logo apple"
+					/>
 				</a>
-				<button onClick={handleClick} className={`menu-btn icon nav-icon-5 ${clicked ? "open" : ""}`}>
+				<button
+					onClick={handleClick}
+					className={`menu-btn icon nav-icon-5 ${clicked ? 'open' : ''}`}
+				>
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
-
-				<nav className={`container-nav ${clicked ? "is-active" : " "}`}>
+				<nav className={`container-nav ${clicked ? 'is-active' : ' '}`}>
 					<ul>
 						<li>
-							<a href="#home-iphone" onClick={handleClick}>
+							<a
+								href="#home-iphone"
+								onClick={handleClick}
+							>
 								Iphone
 							</a>
 						</li>
 						<li>
-							<a href="#home-mac" onClick={handleClick}>
+							<a
+								href="#home-mac"
+								onClick={handleClick}
+							>
 								Mac
 							</a>
 						</li>
 						<li>
-							<a href="#home-ipad" onClick={handleClick}>
+							<a
+								href="#home-ipad"
+								onClick={handleClick}
+							>
 								IPad
 							</a>
 						</li>
-
 						<li>
 							<a
 								href="#about-us"
@@ -69,7 +90,10 @@ function Header() {
 							</a>
 						</li>
 					</ul>
-					<ModalUs showUs={showUs} onClose={() => setShowUs(false)} />
+					<ModalUs
+						showUs={showUs}
+						onClose={() => setShowUs(false)}
+					/>
 				</nav>
 				<div className="container-icons">
 					<img
@@ -80,7 +104,10 @@ function Header() {
 							setShowSearch(true);
 						}}
 					/>
-					<ModalSearch showSearch={showSearch} onClose={() => setShowSearch(false)} />
+					<ModalSearch
+						showSearch={showSearch}
+						onClose={() => setShowSearch(false)}
+					/>
 					<img
 						src={bag}
 						alt="cart"
@@ -97,7 +124,7 @@ function Header() {
 					)}
 					<ModalCart show={show} />
 				</div>
-			</div>
+			</motion.div>
 		</header>
 	);
 }

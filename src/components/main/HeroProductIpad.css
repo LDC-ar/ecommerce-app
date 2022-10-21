@@ -79,8 +79,8 @@
 
 @media screen and (min-width: 1024px) {
 	.container-hero-ipad {
-		height: 100vh;
 		padding: 0 5%;
+		padding-top: 7em;
 		flex-direction: row;
 	}
 
@@ -145,7 +145,7 @@
 	.container-hero-ipad {
 		padding-left: 0;
 		padding-right: 0;
-		padding-top: 8em;
+		padding-top: 10em;
 	}
 
 	.col-left-ipad {
