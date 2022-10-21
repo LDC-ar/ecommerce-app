@@ -30,6 +30,12 @@
 	gap: 2em;
 }
 
+.right-arrow,
+.left-arrow {
+	width: 25px;
+	cursor: pointer;
+	user-select: none;
+}
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 1366px) {
 	.container-SectionCard > h3 {

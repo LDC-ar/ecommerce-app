@@ -1,12 +1,13 @@
 import React from 'react';
-import { SliderData, sectionTitle, productsInfo } from '../helpers/data';
+import { sectionTitle, productsInfo } from '../helpers/data';
 import './Main.css';
 import HeroHome from './HeroHome';
 import HeroProductIphone from './HeroProductIphone';
 import HeroProductMac from './HeroProductMac';
 import HeroProductIpad from './HeroProductIpad';
 import SectionCard from './SectionCard';
-import ImageSlider from './ImageSlider';
+import ImageCarrousel from './ImageCarrousel';
+import ImageCarrouselMobile from './ImageCarrouselMobile';
 
 function Main({ windowWidth, breakPoint }) {
 	const phoneArray = productsInfo.filter(product => product.category === 'Phone');
@@ -37,11 +38,7 @@ function Main({ windowWidth, breakPoint }) {
 				windowWidth={windowWidth}
 				breakPoint={breakPoint}
 			/>
-			<ImageSlider
-				slides={SliderData}
-				windowWidth={windowWidth}
-				breakPoint={breakPoint}
-			/>
+			{windowWidth < breakPoint ? <ImageCarrouselMobile /> : <ImageCarrousel />}
 		</div>
 	);
 }

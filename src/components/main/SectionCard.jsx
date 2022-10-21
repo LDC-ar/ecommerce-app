@@ -2,7 +2,6 @@ import React from 'react';
 import Cards from '../common/Cards';
 import ProductSlider from './ProductSlider';
 import './SectionCard.css';
-import './ImageSlider.css';
 
 export default function SectionCard({ productArray, title, windowWidth, breakPoint }) {
 	return (
