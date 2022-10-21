@@ -75,6 +75,7 @@
 
 @media screen and (min-width: 1024px) {
 	.container-hero-iphone {
+		margin-top: 9em;
 		height: fit-content;
 		padding-top: 12rem;
 		position: relative;
