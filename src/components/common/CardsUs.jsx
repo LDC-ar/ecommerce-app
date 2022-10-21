@@ -1,12 +1,9 @@
 import React from "react";
 import "./Cards.css";
-import { aboutUs } from "../helpers/data";
 import LinkdeIn from "../images/linkedin-logo-24.png";
 import Github from "../images/github-logo-24.png";
 
 const CardsUs = ({ src, nombre, link1, link2 }) => {
-	console.log(aboutUs);
-
 	return (
 		<div className="content-card-us">
 			<div className="image-us">

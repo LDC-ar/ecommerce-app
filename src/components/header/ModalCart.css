@@ -5,10 +5,9 @@
 	position: fixed;
 	top: 4rem;
 	right: 0;
-	padding: 10px;
-	border-radius: 0px 0px 0px 30px;
-	background: var(--second-color);
-	box-shadow: 0 0 25px black;
+	border-radius: 0px 0px 0px 20px;
+	background: var(--white-color);
+	box-shadow: 0 0 10px #1c1c1c90;
 	z-index: 50;
 	animation: slide 0.5s ease-out;
 }
@@ -16,37 +15,74 @@
 @keyframes slide {
 	0% {
 		opacity: 0;
-		/* transform: translate(0px, -100%); */
 	}
 	100% {
 		opacity: 1;
-		/* transform: translate(0, 0%); */
 	}
 }
 
 .modal-cart {
-	background: var(--second-color);
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 .modal-cart-grid {
+	/* padding-top: 1em; */
 	min-height: 40px;
 	height: fit-content;
 	max-height: 50vh;
 	overflow-y: auto;
+	position: relative;
+}
+
+.modal-cart-grid > ul {
+	padding: 0;
 }
 
 .modal-cart-grid > h4 {
-	margin-top: 10px;
+	margin-block: 1em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	font-size: 1.2em;
 }
 
-.modal-cart-total {
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-between;
+.modal-cart-bottom {
+	width: 100%;
+	padding-block: 1em;
+	display: grid;
+	grid-template-columns: 4fr 2fr 2fr 2fr;
+	grid-template-rows: auto;
+	grid-template-areas: "checkout total totalNumber clearCart";
+	place-items: center;
+	border-top: 1px solid #1c1c1c50;
+	/* gap: 5px; */
+}
+
+.displayNone {
+	display: none;
+}
+
+.modal-cart-bottom-checkout {
+	grid-area: "checkout";
+}
+
+.modal-cart-bottom-total {
+	font-family: var(--second-font);
+	grid-area: "total";
+	justify-self: flex-end;
+	font-weight: bold;
+}
+
+.modal-cart-bottom-totalNumber {
+	grid-area: "totalNumber";
+	padding-left: 0.2em;
+	font-size: 1.1em;
+	justify-self: flex-start;
+}
+
+.modal-cart-bottom-clearCart {
+	grid-area: "clearCart";
 }

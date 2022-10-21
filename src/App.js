@@ -5,24 +5,27 @@ import Header from "./components/header/Header";
 import Main from "./components/main/Main";
 
 function App() {
+	///////////////////////////////////////////////////////////////////////////////
+	////////////Este event listener es para saber el ancho de la pantalla//////////
+	///////////////////////////////////////////////////////////////////////////////
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
 	const breakPoint = 768;
 
 	useEffect(() => {
 		function watchWidth() {
-			console.log("Cambiando el ancho");
 			setWindowWidth(window.innerWidth);
 		}
 		window.addEventListener("resize", watchWidth);
 
 		return () => window.removeEventListener("resize", watchWidth);
 	}, [windowWidth]);
+	///////////////////////////////////////////////////////////////////////////////
 
 	return (
 		<div>
 			<Header />
-			<Main />
+			<Main windowWidth={windowWidth} breakPoint={breakPoint} />
 			{windowWidth < breakPoint ? <FooterMobile /> : <FooterDesktop />}
 		</div>
 	);
