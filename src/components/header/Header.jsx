@@ -3,7 +3,7 @@ import logo from '../images/logo-apple.png';
 import './Header.css';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
-import SearchCart from './SearchCart';
+import Cart from './Cart';
 import NavbarMobile from './NavbarMobile';
 
 function Header({ windowWidth, breakPoint }) {
@@ -25,7 +25,7 @@ function Header({ windowWidth, breakPoint }) {
 					/>
 				</a>
 				{windowWidth < breakPoint ? <NavbarMobile /> : <Navbar />}
-				<SearchCart />
+				<Cart />
 			</motion.div>
 		</header>
 	);

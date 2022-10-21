@@ -118,13 +118,13 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(6, auto);
 	grid-template-areas:
-		"header header header header"
-		"display display display display"
-		"cameraImg	camera camera camera"
-		"batteryImg battery battery battery"
-		"chipsetImg chipset chipset chipset"
-		"recognitionImg recognition recognition recognition"
-		"networkImg	network network network";
+		'header header header header'
+		'display display display display'
+		'cameraImg	camera camera camera'
+		'batteryImg battery battery battery'
+		'chipsetImg chipset chipset chipset'
+		'recognitionImg recognition recognition recognition'
+		'networkImg	network network network';
 }
 
 .modal-info-container-header {
@@ -281,12 +281,12 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(6, auto);
 	grid-template-areas:
-		"header header header header"
-		"display display display display"
-		"cpu gpu ram storage"
-		"batteryImg battery battery battery"
-		"chipsetImg chipset chipset chipset"
-		"recognitionImg recognition recognition recognition";
+		'header header header header'
+		'display display display display'
+		'cpu gpu ram storage'
+		'batteryImg battery battery battery'
+		'chipsetImg chipset chipset chipset'
+		'recognitionImg recognition recognition recognition';
 }
 
 .modal-computer-container-header {
@@ -480,13 +480,13 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(7, auto);
 	grid-template-areas:
-		"header header header header"
-		"display display display display"
-		"storage storage storage storage"
-		"cameraImg camera camera camera"
-		"connectorImg connector connector connector"
-		"chipsetImg chipset chipset chipset"
-		"networkImg network network network";
+		'header header header header'
+		'display display display display'
+		'storage storage storage storage'
+		'cameraImg camera camera camera'
+		'connectorImg connector connector connector'
+		'chipsetImg chipset chipset chipset'
+		'networkImg network network network';
 }
 
 .modal-ipad-container-header {
@@ -687,62 +687,6 @@
 }
 
 /*************** FIN MODAL "ORDER" **************/
-
-/*************** MODAL SEARCH **************/
-.Wrapper-src {
-	position: fixed;
-	top: 4rem;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #5050507e;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	z-index: 5;
-}
-
-.modal-src {
-	background-color: var(--black-alpha-color);
-	width: 400px;
-	height: 80px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 0 0 10px 10px;
-	box-shadow: 0 0 25px black;
-	position: relative;
-	animation: scale 0.5s;
-}
-
-.search > input {
-	height: 2.2em;
-	width: 18em;
-	text-align: center;
-	font-family: var(--second-font);
-	font-size: 1em;
-	border: 1px solid var(--third-color);
-	border-radius: 50px;
-	background-color: transparent;
-	color: var(--second-color);
-}
-
-.search > input:hover,
-.search > input:focus {
-	border: 2px solid var(--new-color);
-}
-
-.btn-close-src {
-	position: absolute;
-	top: 30px;
-	right: 15px;
-	font-size: 15px;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
-	color: var(--third-color);
-}
-/*************** FIN MODAL SEARCH **************/
 
 /*************** MODAL ABOUT US **************/
 

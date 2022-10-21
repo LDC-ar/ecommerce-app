@@ -1,10 +1,10 @@
 .menu {
 	min-width: 150px;
-	width: 40%;
+	width: 90%;
 	padding: 0;
 	align-self: flex-start;
 	text-align: center;
-	position: relative;
+	position: absolute;
 }
 
 .btnMenu {
@@ -17,7 +17,7 @@
 .menu ul {
 	width: 100%;
 	position: absolute;
-	z-index: 100;
+	z-index: 200;
 }
 
 .menu li {
