@@ -28,6 +28,10 @@ function Navbar() {
 
 	const [isOpen, setIsOpen] = useState(false);
 
+	const handleAbout = () => {
+		return setShowUs(true), setIsOpen(false);
+	};
+
 	return (
 		<motion.nav
 			initial={false}
@@ -90,20 +94,33 @@ function Navbar() {
 				style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
 			>
 				<motion.li variants={itemVariants}>
-					<a href="#home-iphone">Iphone</a>
+					<a
+						href="#home-iphone"
+						onClick={() => setIsOpen(!isOpen)}
+					>
+						Iphone
+					</a>
 				</motion.li>
 				<motion.li variants={itemVariants}>
-					<a href="#home-mac">Mac</a>
+					<a
+						href="#home-mac"
+						onClick={() => setIsOpen(!isOpen)}
+					>
+						Mac
+					</a>
 				</motion.li>
 				<motion.li variants={itemVariants}>
-					<a href="#home-ipad">IPad</a>
+					<a
+						href="#home-ipad"
+						onClick={() => setIsOpen(!isOpen)}
+					>
+						IPad
+					</a>
 				</motion.li>
 				<motion.li variants={itemVariants}>
 					<a
 						href="#about-us"
-						onClick={() => {
-							setShowUs(true);
-						}}
+						onClick={handleAbout}
 					>
 						About Us
 					</a>

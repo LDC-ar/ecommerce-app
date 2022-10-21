@@ -715,8 +715,10 @@
 
 @media screen and (min-width: 768px) {
 	.modal-us {
-		width: 720px;
-		height: 510px;
+		width: fit-content;
+		height: fit-content;
+		padding-block: 2em;
+		overflow-y: hidden;
 	}
 
 	.content-us {
