@@ -1,0 +1,48 @@
+.menu {
+	min-width: 150px;
+	width: 40%;
+	padding: 0;
+	align-self: flex-start;
+	text-align: center;
+	position: relative;
+}
+
+.btnMenu {
+	padding-top: 0.8em;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.menu ul {
+	width: 100%;
+	position: absolute;
+	z-index: 100;
+}
+
+.menu li {
+	padding-block: 0.8em;
+	background-color: var(--first-color);
+}
+
+.menu li: {
+	padding-block: 0.8em;
+	background-color: var(--first-color);
+}
+
+.menu li:nth-child(1) {
+	padding-top: 2em;
+}
+
+.menu li:nth-child(4) {
+	padding-bottom: 2em;
+}
+
+.menu li > a {
+	color: var(--second-color);
+}
+
+.menu ul li:hover,
+.menu ul li:focus {
+	color: var(--second-color);
+}

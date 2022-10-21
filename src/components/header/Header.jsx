@@ -4,8 +4,9 @@ import './Header.css';
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
 import SearchCart from './SearchCart';
+import NavbarMobile from './NavbarMobile';
 
-function Header() {
+function Header({ windowWidth, breakPoint }) {
 	return (
 		<header>
 			<motion.div
@@ -23,7 +24,7 @@ function Header() {
 						alt="logo apple"
 					/>
 				</a>
-				<Navbar />
+				{windowWidth < breakPoint ? <NavbarMobile /> : <Navbar />}
 				<SearchCart />
 			</motion.div>
 		</header>
