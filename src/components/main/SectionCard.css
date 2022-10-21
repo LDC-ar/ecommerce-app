@@ -9,7 +9,7 @@
 }
 
 .container-SectionCard > h3 {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	font-size: 2rem;
 	text-align: center;
 }
@@ -19,23 +19,24 @@
 	display: grid;
 	grid-template: auto auto / auto auto;
 	justify-items: center;
-	gap: 4em 0;
+	gap: 4em 2em;
 }
-
-.product-carrousel-arrows {
-	width: 18em;
-	margin-top: 2em;
+.productCarrousel {
 	display: flex;
-	justify-content: center;
-	gap: 2em;
+	flex-direction: row;
+	align-items: center;
 }
 
 .right-arrow,
 .left-arrow {
-	width: 25px;
+	/* width: 30px; */
+	margin-top: 1.3em;
 	cursor: pointer;
 	user-select: none;
+	font-size: 2em;
+	color: #00000080;
 }
+
 /*########### MEDIA QUERIES #########  */
 @media screen and (min-width: 1366px) {
 	.container-SectionCard > h3 {

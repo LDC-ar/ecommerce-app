@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Cards from '../common/Cards';
-import LeftArrow from '../images/left-arrow2.png';
-import RightArrow from '../images/right-arrow2.png';
 import './SectionCard.css';
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 function ProductSlider({ productArray }) {
 	const [currentCard, setCurrentCard] = useState(0);
@@ -18,7 +17,11 @@ function ProductSlider({ productArray }) {
 	};
 
 	return (
-		<div>
+		<div className="productCarrousel">
+			<IoIosArrowBack
+				className="left-arrow"
+				onClick={prevCard}
+			/>
 			{productArray.map((card, index) => {
 				return (
 					index === currentCard && (
@@ -36,20 +39,10 @@ function ProductSlider({ productArray }) {
 					)
 				);
 			})}
-			<div className="product-carrousel-arrows">
-				<img
-					src={LeftArrow}
-					alt="arrow"
-					className="left-arrow"
-					onClick={prevCard}
-				/>
-				<img
-					src={RightArrow}
-					alt="arrow"
-					className="right-arrow"
-					onClick={nextCard}
-				/>
-			</div>
+			<IoIosArrowForward
+				className="right-arrow"
+				onClick={nextCard}
+			/>
 		</div>
 	);
 }
