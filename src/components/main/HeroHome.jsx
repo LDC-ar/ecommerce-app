@@ -14,7 +14,7 @@ const DesktopHeroHome = () => {
 				<motion.h1
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ ease: 'backInOut', duration: 3 }}
+					transition={{ ease: 'backInOut', duration: 2 }}
 				>
 					The future of health is on your wrist.
 				</motion.h1>
@@ -35,12 +35,12 @@ const DesktopHeroHome = () => {
 					className="AppleWatch"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ duration: 2 }}
+					transition={{ duration: 1.5 }}
 				/>
 				<motion.p
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ ease: 'backInOut', duration: 4 }}
+					transition={{ ease: 'backInOut', duration: 2.5 }}
 				>
 					Measure your blood oxygen level.
 					<br />
