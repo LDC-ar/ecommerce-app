@@ -694,7 +694,7 @@
 	width: 100vw;
 	height: 90vh;
 	padding-block: 3em;
-	background: var(--second-color);
+	background: var(--third-color);
 	border-radius: 10px;
 	position: relative;
 	animation: scale 0.5s;

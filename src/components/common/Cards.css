@@ -68,7 +68,7 @@
 	justify-content: space-around;
 	align-items: center;
 	background-color: var(--second-color);
-	box-shadow: 1px 1px 7px var(--first-color);
+	box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.38);
 }
 .image-us {
 	width: 60px;
@@ -98,7 +98,7 @@
 .info-us > h3 {
 	padding: 0.8rem;
 	color: var(--first-color);
-	text-shadow: 1px 1px 3px var(--first-color);
+	/* text-shadow: 1px 1px 3px var(--first-color); */
 }
 
 .icons-us {
