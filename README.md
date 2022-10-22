@@ -34,7 +34,7 @@ un carrusel. ✔
 
 ### Diseño:
 
-#### Descargo de responsabilidad: El nombre, imagenes y todo el contenido de la web que comprende al proyecto es propiedad de la marca `Apple`. La las imagenes utilizadas, nombres y/o cualquier propiedad intelectual, es propiedad de Apple. Los fines de este proyecto son pura y exclusivamente con fines educativos.
+#### Descargo de responsabilidad: El nombre, imagenes y todo el contenido de la web que comprende al proyecto es propiedad de la marca `Apple`. Las imagenes utilizadas, nombres y/o cualquier propiedad intelectual, es propiedad de Apple. Los fines de este proyecto son pura y exclusivamente con fines educativos.
 
 Para el diseño nos inspiramos en el sitio web de la marca de [Apple](https://www.apple.com/).
 
