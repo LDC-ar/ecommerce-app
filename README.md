@@ -53,7 +53,7 @@ En cuanto a los requerimiento funcionales se cumplió tambien con la funcionalid
 1.- El modal mostrando los productos en el carrito y todas sus funciones para agregar o quitar productos, incluso limpiar el carrito completo.
 2.- El carro de compras mantiene los productos aunque se recargue el sitio, es persistente.\
 3.- Animaciones de elementos como imagenes, textos, transiciones.\
-4.- Variacion entre Carrousel de productos en version para dispositivos mobiles y grilla de productos para pantallas mas grandes.
+4.- Variacion entre Carrousel de productos en version para dispositivos mobiles y grilla de productos para pantallas mas grandes.\
 5.- Modales con detalles de cada producto mostrando mas caracteristicas del mismo.
 
 Esperamos que disfrutes de ver este proyecto tanto como nosotros haciendolo. Saludos!
