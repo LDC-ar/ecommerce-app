@@ -56,7 +56,7 @@ As for the functional requirements were also met with the functionality of the b
 
 1.- The modal showing the products in the cart and all its functions to add or remove products, including cleaning the entire cart.\
 2.- The shopping cart keeps the products even if the site is reloaded, it is persistent.\
-3 .- Animations of elements such as images, text, transitions.\
+3 .- Animations of elements such as images, text, buttons, transitions.\
 4 .- Variation between Carrousel products in version for mobile devices and product grid for larger screens.\
 5.- Modals with details of each product showing more features of it.
 
@@ -122,7 +122,7 @@ En cuanto a los requerimiento funcionales se cumplió tambien con la funcionalid
 
 1.- El modal mostrando los productos en el carrito y todas sus funciones para agregar o quitar productos, incluso limpiar el carrito completo.
 2.- El carro de compras mantiene los productos aunque se recargue el sitio, es persistente.\
-3.- Animaciones de elementos como imagenes, textos, transiciones.\
+3.- Animaciones de elementos como imagenes, textos, botones, transiciones.\
 4.- Variacion entre Carrousel de productos en version para dispositivos mobiles y grilla de productos para pantallas mas grandes.\
 5.- Modales con detalles de cada producto mostrando mas caracteristicas del mismo.
 
