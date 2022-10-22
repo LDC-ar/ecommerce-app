@@ -1,6 +1,7 @@
-import React from "react";
-import { RiCloseFill } from "react-icons/ri";
-import "./Modal.css";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { RiCloseFill } from 'react-icons/ri';
+import './Modal.css';
 
 const ModalOrder = ({ show, onClose, productInfo }) => {
 	if (!show) {
@@ -12,13 +13,20 @@ const ModalOrder = ({ show, onClose, productInfo }) => {
 	return (
 		<div className="Wrapper">
 			<div className="modal">
-				<button onClick={onClose} className="btn-close">
+				<button
+					onClick={onClose}
+					className="btn-close"
+				>
 					<span>
 						<RiCloseFill />
 					</span>
 				</button>
 				<div className="modal-order-container">
-					<img src={imgModal} alt={title} className="modal-order-image" />
+					<img
+						src={imgModal}
+						alt={title}
+						className="modal-order-image"
+					/>
 					<h3 className="modal-order-title">{title}</h3>
 					<div className="modal-order-text">
 						<p>Available soon!</p>
@@ -26,10 +34,18 @@ const ModalOrder = ({ show, onClose, productInfo }) => {
 						<p>Please leave us your email so we can send you a notification.</p>
 					</div>
 					<form className="modal-order-form">
-						<input type="email" placeholder="Enter your email here" required></input>
-						<button type="submit" className="btn btnSubmit">
+						<input
+							type="email"
+							placeholder="Enter your email here"
+							required
+						></input>
+						<motion.button
+							type="submit"
+							className="btn btnSubmit"
+							whileTap={{ scale: 0.95, boxShadow: '0px' }}
+						>
 							Send
-						</button>
+						</motion.button>
 					</form>
 				</div>
 			</div>
