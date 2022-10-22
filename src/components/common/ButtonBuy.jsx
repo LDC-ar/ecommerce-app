@@ -1,9 +1,10 @@
-import React, { useContext, useState } from "react";
-import { textButton, productsInfo } from "../helpers/data";
-import CartContext from "../../context/cart/CartContext";
-import ModalBuy from "./ModalBuy";
-import "./Buttons.css";
-import "./Modal.css";
+import React, { useContext, useState } from 'react';
+import { motion } from 'framer-motion';
+import { textButton, productsInfo } from '../helpers/data';
+import CartContext from '../../context/cart/CartContext';
+import ModalBuy from './ModalBuy';
+import './Buttons.css';
+import './Modal.css';
 
 const ButtonBuy = ({ id, product }) => {
 	const { addToCart } = useContext(CartContext);
@@ -26,10 +27,18 @@ const ButtonBuy = ({ id, product }) => {
 	return (
 		<div>
 			<div className="container">
-				<button className="btn btnCH btnBuy" onClick={() => handleClick(id)}>
+				<motion.button
+					className="btn btnCH btnBuy"
+					onClick={() => handleClick(id)}
+					whileTap={{ scale: 0.95, boxShadow: '0px' }}
+				>
 					{textButton.buy}
-				</button>
-				<ModalBuy show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
+				</motion.button>
+				<ModalBuy
+					show={show}
+					productInfo={modalInfo}
+					onClose={() => setShow(false)}
+				/>
 			</div>
 		</div>
 	);

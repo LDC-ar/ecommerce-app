@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from '../images/logo-apple.png';
 import './Header.css';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar';
+import logo from '../images/logo-apple.png';
 import Cart from './Cart';
+import Navbar from './Navbar';
 import NavbarMobile from './NavbarMobile';
 
 function Header({ windowWidth, breakPoint }) {
@@ -19,9 +19,10 @@ function Header({ windowWidth, breakPoint }) {
 					href="#hero-home"
 					className="container-logo"
 				>
-					<img
+					<motion.img
 						src={logo}
 						alt="logo apple"
+						whileTap={{ scale: 0.95 }}
 					/>
 				</a>
 				{windowWidth < breakPoint ? <NavbarMobile /> : <Navbar />}

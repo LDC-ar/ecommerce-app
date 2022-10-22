@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { textButton, productsInfo } from "../helpers/data";
-import ModalInfo from "./ModalInfo";
-import "./Buttons.css";
-import "./Modal.css";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { textButton, productsInfo } from '../helpers/data';
+import ModalInfo from './ModalInfo';
+import './Buttons.css';
+import './Modal.css';
 
 const ButtonInfo = ({ id, category }) => {
 	// Estado 1: Muestra o no el modal
@@ -23,10 +24,19 @@ const ButtonInfo = ({ id, category }) => {
 	return (
 		<div>
 			<div className="container">
-				<button className="btn btnInfo btnCH" onClick={() => handleClick(id)}>
+				<motion.button
+					className="btn btnInfo btnCH"
+					onClick={() => handleClick(id)}
+					whileTap={{ scale: 0.95 }}
+				>
 					{textButton.learnMore}
-				</button>
-				<ModalInfo category={category} show={show} productInfo={modalInfo} onClose={() => setShow(false)} />
+				</motion.button>
+				<ModalInfo
+					category={category}
+					show={show}
+					productInfo={modalInfo}
+					onClose={() => setShow(false)}
+				/>
 			</div>
 		</div>
 	);

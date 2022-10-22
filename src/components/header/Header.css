@@ -54,7 +54,8 @@ header {
 	font-size: 12px;
 	height: 17px;
 	width: 17px;
-	bottom: 0;
+	bottom: -5px;
+	left: 18px;
 }
 
 .container-nav > ul {

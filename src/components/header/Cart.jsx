@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { motion } from 'framer-motion';
 import bag from '../images/icono-bag.png';
 import ModalCart from './ModalCart';
 import '../common/Buttons.css';
@@ -15,19 +16,26 @@ function SearchCart() {
 
 	return (
 		<div className="container-icons">
-			<img
+			<motion.img
 				src={bag}
 				alt="cart"
 				className="cartIcon"
 				onClick={() => {
 					setShow(!show);
 				}}
+				whileTap={{ scale: 0.95 }}
 			/>
 			{cartItems.length > 0 && (
-				<div className="item-count">
+				<motion.div
+					className="item-count"
+					initial={{ scale: 0 }}
+					animate={{ scale: 1 }}
+					exit={{ scale: 0 }}
+					transition={{ ease: 'easeOut', duration: 1 }}
+				>
 					{/* Este Span lleva el numero total de las cantidades de productos en el carrito "product.quantity" */}
-					<span>{cartItems.reduce((amount, item) => item.quantity + amount, 0)}</span>
-				</div>
+					<span>{cartItems.reduce((amount, item) => item.quantity + amount, 0)} </span>
+				</motion.div>
 			)}
 			<ModalCart show={show} />
 		</div>
